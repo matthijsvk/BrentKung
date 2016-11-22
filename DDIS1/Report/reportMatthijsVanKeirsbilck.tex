@@ -196,23 +196,22 @@ Worst Case EDP &              733578 ps*fJ \\
 For the maximum speed circuit, the delay goes up when pMOSscalar is lowered too much, but this is not the case for the minimum power circuit (the only difference between the circuits is the sizing of the critical paths).
 For the minimum power circuit, it is very surprising that the extremely low width of pMOS transistors doesn't increase delay (since it introduces asymmetricalities), and seems to improve the circuit by a large margin (EDP of 55k while it was \textgreater 70k before). The reason the simulation gave these results might be because the test cases don't cover every possible switching event. 
 Therefore, the simulation above, with more conservative pMOS sizes obtined from the maximum speed optimizations is considered to show the actual performance of the circuit.
+In order to reach DC power \textlesser 1nW, a few parameters were tuned. See Adder16b_BrentKung_Power_Pmos1.m2s .
 
 \begin{table}[h]
 \centering
 \begin{tabular}{ |l|r| }
 \hline
-Supply	&	0.94 V \\
-Worst Case delay &            645.5 ps \\
-Worst Case Switching energy & 85.14 fJ \\
-Worst Case DC power &         1.7786 nW \\
-Worst Case EDP &              54963 ps*fJ\*fJ \\
+Supply	&	0.932 V \\
+Worst Case delay &            648.1732 ps \\
+Worst Case Switching energy & 85.224 fJ \\
+Worst Case DC power &         0.999 nW \\
+Worst Case EDP &              55240 ps*fJ\*fJ \\
 \hline
 \end{tabular}
 \caption{Performance tuned for minimum power and 650ps delay, with pMOSscalar = 1.0}
 \label{PowerPerformancePmos1.0}
 \end{table}
-
-
 
 \newpage{}
 

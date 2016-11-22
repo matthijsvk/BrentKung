@@ -1,8 +1,8 @@
 ******************************
 **** 16b Brent-Kung adder ****
 ******************************
-.param supply = 0.932
-.param halfsupply = 0.466
+.param supply = 1
+.param halfsupply = 0.5
 
 
 * Some simulation options
@@ -18,7 +18,7 @@
 
 .probe i
 
-.param supply = 0.932
+.param supply = 1
 
 Vdd vdd vss supply
 Vdd2 vdd2 vss supply
@@ -212,33 +212,33 @@ Xadder a_buff0 a_buff1 a_buff2 a_buff3 a_buff4 a_buff5 a_buff6 a_buff7 a_buff8 a
 .SUBCKT MYNAND inputA inputB output vdd vss multfac='1'
     xM1 output inputA int   vss MOSN w='multfac*120e-9 * 1 *2.6 *1 ' l=4.5e-08 
     xM2 int    inputB vss   vss MOSN w='multfac*120e-9 * 1 *2.6 *1 ' l=4.5e-08 
-    xM3 output inputA vdd   vdd MOSP w='multfac*120e-9 * 1 *1 '   l=4.5e-08 
-    xM4 output inputB vdd   vdd MOSP w='multfac*120e-9 * 1 *1 '   l=4.5e-08 
+    xM3 output inputA vdd   vdd MOSP w='multfac*120e-9 * 1.6 *1 '   l=4.5e-08 
+    xM4 output inputB vdd   vdd MOSP w='multfac*120e-9 * 1.6 *1 '   l=4.5e-08 
 .ENDS MYNAND
 
 .SUBCKT MYNOR input1 input2 output vdd vss multfac='1'
 *    drain  gate   src  bulk
     xMn1 output input1 vss  vss MOSN w='multfac*120e-9 * 1 *1  '                            l=4.5e-08 
     xMn2 output input2 vss  vss MOSN w='multfac*120e-9 * 1 *1  '                            l=4.5e-08 
-    xMp1 sp1    input1 vdd  vdd MOSP w='multfac*120e-9 * 1 *2.6 *1 ' l=4.5e-08  * double b/c pMos, anoter b/c for NOR gate nMOS in parallel, and we want equal delays
-    xMp2 output input2 sp1  vdd MOSP w='multfac*120e-9 * 1 *2.6 *1 ' l=4.5e-08  * factor 1.5 b/c series has extra node, so extra cap
+    xMp1 sp1    input1 vdd  vdd MOSP w='multfac*120e-9 * 1.6 *2.6 *1 ' l=4.5e-08  * double b/c pMos, anoter b/c for NOR gate nMOS in parallel, and we want equal delays
+    xMp2 output input2 sp1  vdd MOSP w='multfac*120e-9 * 1.6 *2.6 *1 ' l=4.5e-08  * factor 1.5 b/c series has extra node, so extra cap
 .ENDS MYNOR
 
 .SUBCKT MYNOT input output vdd vss multfac='1'
     xM1 output input vss    vss MOSN w='multfac*120e-9 * 1 *1 '                       l=4.5e-08 
-    xM2 output input vdd    vdd MOSP w='multfac*1 *120e-9 *1 '          l=4.5e-08 
+    xM2 output input vdd    vdd MOSP w='multfac*1.6 *120e-9 *1 '          l=4.5e-08 
 .ENDS MYNOT
 
 .SUBCKT MYXOR inputA inputB  output vdd vss multfac='1'
       *    drain  gate   src  bulk
        xMNA output1  inputA  vss        vss MOSN w='multfac*120e-9* 1 *1 '                 l=4.5e-08 
-       xMPA output1  inputA  vdd        vdd MOSP w='multfac*1 *120e-9*1 '    l=4.5e-08 
+       xMPA output1  inputA  vdd        vdd MOSP w='multfac*1.6 *120e-9*1 '    l=4.5e-08 
 
        xMNB output  inputB  output1     vss MOSN w='multfac*120e-9* 1 *1 '                 l=4.5e-08 
-       xMPB output  inputB  inputA      vdd MOSP w='multfac*1 *120e-9*1 '    l=4.5e-08 
+       xMPB output  inputB  inputA      vdd MOSP w='multfac*1.6 *120e-9*1 '    l=4.5e-08 
 
        xMNtrans inputB  output1  output vss MOSN w='multfac*120e-9* 1 *1 '                 l=4.5e-08 
-       xMPtrans output  inputA  inputB  vdd MOSP w='multfac*1 *120e-9*1 '    l=4.5e-08 
+       xMPtrans output  inputA  inputB  vdd MOSP w='multfac*1.6 *120e-9*1 '    l=4.5e-08 
  .ENDS MYXOR
 
  .SUBCKT MYXNOR inputA inputB output vdd vss multfac='1' 
@@ -252,9 +252,9 @@ Xadder a_buff0 a_buff1 a_buff2 a_buff3 a_buff4 a_buff5 a_buff6 a_buff7 a_buff8 a
 .ENDS SUBCKT MYXNOR
     
 .SUBCKT MYAOI A B C Out vdd vss multfac='1'
-    xM3 Out     A  np1      vdd MOSP w='multfac * 2.6 *1 *120e-9' l=4.5e-08 
-    xM1 np1     B  vdd      vdd MOSP w='multfac * 1 * 120e-9' l=4.5e-08 
-    xM2 np1     C  vdd      vdd MOSP w='multfac * 1 * 120e-9' l=4.5e-08 
+    xM3 Out     A  np1      vdd MOSP w='multfac * 2.6 *1.6 *120e-9' l=4.5e-08 
+    xM1 np1     B  vdd      vdd MOSP w='multfac * 1.6 * 120e-9' l=4.5e-08 
+    xM2 np1     C  vdd      vdd MOSP w='multfac * 1.6 * 120e-9' l=4.5e-08 
     
     xM5 Out     A  vss      vss MOSN w='multfac * 120e-9 * 1 '                             l=4.5e-08 
     xM7 nn1     B  vss      vss MOSN w='multfac * 120e-9 * 2.6 * 1 '              l=4.5e-08 
@@ -262,9 +262,9 @@ Xadder a_buff0 a_buff1 a_buff2 a_buff3 a_buff4 a_buff5 a_buff6 a_buff7 a_buff8 a
 .ENDS MYAOI
 
 .SUBCKT MYOAI A B C Out vdd vss multfac='1'
-    xM1 np1     B  vdd      vdd MOSP w='multfac * 120e-9 * 1 *2.6 ' l=4.5e-08 
-    xM2 Out     C  np1      vdd MOSP w='multfac * 120e-9 * 1 *2.6 ' l=4.5e-08 
-    xM3 Out     A  vdd      vdd MOSP w='multfac * 120e-9 * 1 '                 l=4.5e-08 
+    xM1 np1     B  vdd      vdd MOSP w='multfac * 120e-9 * 1.6 *2.6 ' l=4.5e-08 
+    xM2 Out     C  np1      vdd MOSP w='multfac * 120e-9 * 1.6 *2.6 ' l=4.5e-08 
+    xM3 Out     A  vdd      vdd MOSP w='multfac * 120e-9 * 1.6 '                 l=4.5e-08 
     
     xM5 Out     A  nn1      vss MOSN w='multfac * 120e-9 * 1 *2.6 '                l=4.5e-08 
     xM6 nn1     C  vss      vss MOSN w='multfac * 120e-9 * 1 '                l=4.5e-08 

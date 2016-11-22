@@ -5,12 +5,12 @@
   terms and conditions of the license agreement from Synopsys.
   Use of this program is your acceptance to be bound by the
   license agreement. HSPICE is the trademark of Synopsys, Inc.
-  Input File: /users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_EDP.sp      
-  Command line options: -i /users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_EDP.sp -o /users/start2016/r0364010/temp_m2s
+  Input File: /users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_648ps.sp    
+  Command line options: -i /users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_648ps.sp -o /users/start2016/r0364010/temp_m2s
  lic:  
  lic: FLEXlm: v10.9.8 
  lic: USER:   r0364010             HOSTNAME: pc-klas1-4.esat.kuleuven.be 
- lic: HOSTID:                      PID:      23591 
+ lic: HOSTID:                      PID:      25383 
  lic: Using FLEXlm license file: 
  lic: 27020@saturn 
  lic: Checkout 1 hspice 
@@ -18,7 +18,7 @@
  lic: 1(in_use)/50(total) FLOATING license(s) on SERVER saturn 
  lic:   
  Init: read install configuration file: /esat/micas-data/software/hspice_2012.06/hspice/meta.cfg
-  **warning** (/users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_EDP.sp:19) Syntax error for output type i, the left parenthese is expected. This output is ignored.
+  **warning** (/users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_648ps.sp:19) Syntax error for output type i, the left parenthese is expected. This output is ignored.
 1****** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******              
  ******  
  ******************************
@@ -1382,7 +1382,7 @@
  search = /esat/micas-data/software/hspice_2012.06/hspice/parts
   
   Opening plot unit= 15
- file=/users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_EDP.pa0
+ file=/users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_648ps.pa0
 
  **info** dc convergence successful
  you can increase the efficiency of the
@@ -1401,119 +1401,119 @@
  +  0:a14     =   0.        0:a15     =   0.        0:a2      =   0.     
  +  0:a3      =   0.        0:a4      =   0.        0:a5      =   0.     
  +  0:a6      =   0.        0:a7      =   0.        0:a8      =   0.     
- +  0:a9      =   0.        0:a_buff0 =  39.0038n   0:a_buff1 =  39.0038n
- +  0:a_buff10=  39.0038n   0:a_buff11=  39.0038n   0:a_buff12=  39.0038n
- +  0:a_buff13=  39.0038n   0:a_buff14=  39.0038n   0:a_buff15=  39.0038n
- +  0:a_buff2 =  39.0038n   0:a_buff3 =  39.0038n   0:a_buff4 =  39.0038n
- +  0:a_buff5 =  39.0038n   0:a_buff6 =  39.0038n   0:a_buff7 =  39.0038n
- +  0:a_buff8 =  39.0038n   0:a_buff9 =  39.0038n   0:an0     = 931.9999m
- +  0:an1     = 931.9999m   0:an10    = 931.9999m   0:an11    = 931.9999m
- +  0:an12    = 931.9999m   0:an13    = 931.9999m   0:an14    = 931.9999m
- +  0:an15    = 931.9999m   0:an2     = 931.9999m   0:an3     = 931.9999m
- +  0:an4     = 931.9999m   0:an5     = 931.9999m   0:an6     = 931.9999m
- +  0:an7     = 931.9999m   0:an8     = 931.9999m   0:an9     = 931.9999m
+ +  0:a9      =   0.        0:a_buff0 =  65.4094n   0:a_buff1 =  65.4094n
+ +  0:a_buff10=  65.4094n   0:a_buff11=  65.4094n   0:a_buff12=  65.4094n
+ +  0:a_buff13=  65.4094n   0:a_buff14=  65.4094n   0:a_buff15=  65.4094n
+ +  0:a_buff2 =  65.4094n   0:a_buff3 =  65.4094n   0:a_buff4 =  65.4094n
+ +  0:a_buff5 =  65.4094n   0:a_buff6 =  65.4094n   0:a_buff7 =  65.4094n
+ +  0:a_buff8 =  65.4094n   0:a_buff9 =  65.4094n   0:an0     = 999.9999m
+ +  0:an1     = 999.9999m   0:an10    = 999.9999m   0:an11    = 999.9999m
+ +  0:an12    = 999.9999m   0:an13    = 999.9999m   0:an14    = 999.9999m
+ +  0:an15    = 999.9999m   0:an2     = 999.9999m   0:an3     = 999.9999m
+ +  0:an4     = 999.9999m   0:an5     = 999.9999m   0:an6     = 999.9999m
+ +  0:an7     = 999.9999m   0:an8     = 999.9999m   0:an9     = 999.9999m
  +  0:b0      =   0.        0:b1      =   0.        0:b10     =   0.     
  +  0:b11     =   0.        0:b12     =   0.        0:b13     =   0.     
  +  0:b14     =   0.        0:b15     =   0.        0:b2      =   0.     
  +  0:b3      =   0.        0:b4      =   0.        0:b5      =   0.     
  +  0:b6      =   0.        0:b7      =   0.        0:b8      =   0.     
- +  0:b9      =   0.        0:b_buff0 =  81.3711n   0:b_buff1 =  87.6847n
- +  0:b_buff10=  93.9984n   0:b_buff11=  93.9984n   0:b_buff12=  93.9984n
- +  0:b_buff13=  93.9984n   0:b_buff14= 100.1284n   0:b_buff15= 100.8861n
- +  0:b_buff2 =  93.9984n   0:b_buff3 =  93.9984n   0:b_buff4 =  93.9984n
- +  0:b_buff5 =  93.9984n   0:b_buff6 =  93.9984n   0:b_buff7 =  93.9984n
- +  0:b_buff8 =  93.9984n   0:b_buff9 =  97.4423n   0:bn0     = 931.9999m
- +  0:bn1     = 931.9999m   0:bn10    = 931.9999m   0:bn11    = 931.9999m
- +  0:bn12    = 931.9999m   0:bn13    = 931.9999m   0:bn14    = 931.9999m
- +  0:bn15    = 931.9999m   0:bn2     = 931.9999m   0:bn3     = 931.9999m
- +  0:bn4     = 931.9999m   0:bn5     = 931.9999m   0:bn6     = 931.9999m
- +  0:bn7     = 931.9999m   0:bn8     = 931.9999m   0:bn9     = 931.9999m
- +  0:s0      =  28.5522n   0:s1      = 234.7200n   0:s10     = 337.7981n
- +  0:s11     = 231.6506n   0:s12     = 272.9863n   0:s13     = 231.6506n
- +  0:s14     = 231.6506n   0:s15     = 217.6027n   0:s16     = 332.2949n
- +  0:s2      = 231.6506n   0:s3      = 332.2949n   0:s4      = 324.5186n
- +  0:s5      = 231.6506n   0:s6      = 231.6506n   0:s7      = 332.2949n
- +  0:s8      = 231.6506n   0:s9      = 304.7835n   0:sn1     = 932.0000m
- +  0:sn10    = 932.0000m   0:sn11    = 932.0000m   0:sn12    = 932.0000m
- +  0:sn13    = 932.0000m   0:sn14    = 932.0000m   0:sn15    = 932.0000m
- +  0:sn16    = 932.0000m   0:sn2     = 932.0000m   0:sn3     = 932.0000m
- +  0:sn4     = 932.0000m   0:sn5     = 932.0000m   0:sn6     = 932.0000m
- +  0:sn7     = 932.0000m   0:sn8     = 932.0000m   0:sn9     = 932.0000m
- +  0:vdd     = 932.0000m   0:vdd2    = 932.0000m   0:vss     =   0.     
- + 65:gen0    =  96.5395n  65:gen1    =  28.0045n  65:gen10   =  31.0738n
- + 65:gen10_0 = 931.9998m  65:gen11   =  28.0045n  65:gen11_0 = 134.8059n
- + 65:gen11_10= 931.9998m  65:gen11_8 =  77.9799n  65:gen12   =  31.0738n
- + 65:gen12_0 = 931.9998m  65:gen13   =  28.0045n  65:gen13_0 = 931.9999m
- + 65:gen13_12= 931.9998m  65:gen14   =  28.6965n  65:gen14_0 = 140.2798n
- + 65:gen15   =  28.0045n  65:gen15_0 = 194.1145n  65:gen15_12=  76.7391n
- + 65:gen15_14= 931.9998m  65:gen15_8 = 931.9998m  65:gen1_0  = 931.9998m
- + 65:gen2    =  25.7164n  65:gen2_0  = 194.1145n  65:gen3    =  28.0045n
- + 65:gen3_0  =  72.6368n  65:gen3_0bu= 186.3383n  65:gen3_2  = 931.9998m
- + 65:gen4    =  31.0738n  65:gen4_0  = 931.9998m  65:gen5    =  28.0045n
- + 65:gen5_0  = 931.9998m  65:gen5_4  = 931.9998m  65:gen6    =  25.7164n
- + 65:gen6_0  = 194.1145n  65:gen7    =  28.0045n  65:gen7_0  = 931.9997m
- + 65:gen7_0bu= 931.9998m  65:gen7_4  =  76.7391n  65:gen7_6  = 931.9998m
- + 65:gen8    =  25.7164n  65:gen8_0  = 207.5628n  65:gen9    =  28.0045n
- + 65:gen9_0  = 199.6177n  65:gen9_8  = 931.9998m  65:prop0   = 120.8978n
- + 65:prop1   = 133.5252n  65:prop10  = 146.1525n  65:prop11  = 146.1525n
- + 65:prop11_1= 931.9999m  65:prop11_8=  22.5798n  65:prop12  = 146.1525n
- + 65:prop13  = 146.1525n  65:prop13_1= 931.9999m  65:prop14  = 158.4125n
- + 65:prop15  = 159.9279n  65:prop15_1=  19.5148n  65:prop15_1= 931.9999m
- + 65:prop15_8= 932.0000m  65:prop2   = 146.1525n  65:prop3   = 146.1525n
- + 65:prop3_2 = 932.0000m  65:prop4   = 146.1525n  65:prop5   = 146.1525n
- + 65:prop5_4 = 931.9999m  65:prop6   = 146.1525n  65:prop7   = 146.1525n
- + 65:prop7_4 =  16.3580n  65:prop7_6 = 931.9999m  65:prop8   = 146.1525n
- + 65:prop9   = 153.0402n  65:prop9_8 = 931.9999m 210:ngen    = 931.9999m
- +211:ngen    = 931.9999m 212:ngen    = 931.9999m 213:ngen    = 931.9999m
- +214:ngen    = 931.9999m 215:ngen    = 931.9999m 216:ngen    = 931.9999m
- +217:ngen    = 931.9999m 218:ngen    = 931.9999m 219:ngen    = 931.9999m
- +220:ngen    = 931.9999m 221:ngen    = 931.9999m 222:ngen    = 931.9999m
- +223:ngen    = 931.9999m 224:ngen    = 931.9999m 225:ngen    = 931.9999m
- +235:out1    = 931.9999m 240:out1    =  28.0293n 243:gen2inv = 931.9999m
- +243:prop2inv= 931.9999m 244:gen2inv =  39.0495n 244:prop2inv=  28.0292n
- +246:gen2inv =  36.8421n 246:prop2inv=  26.1100n 247:gen2inv = 931.9998m
- +247:prop2inv= 931.9999m 249:gen2inv = 931.9998m 249:prop2inv= 931.9999m
- +250:gen2inv = 931.9998m 250:prop2inv= 931.9999m 253:gen2inv = 931.9999m
- +253:prop2inv= 931.9999m 254:output1 = 931.9999m 255:output1 = 931.9999m
- +256:inputbin=  93.4702n 257:output1 = 931.9999m 258:output1 = 931.9999m
- +259:inputbin=  93.4702n 260:inputbin=  93.4702n 261:output1 = 931.9999m
- +262:inputbin=  93.4702n 263:output1 = 931.9999m 264:output1 = 931.9999m
- +265:inputbin=  93.4702n 266:output1 = 931.9999m 267:inputbin=  93.4702n
- +268:inputbin=  93.4702n 269:output1 = 931.9999m 270:output1 = 931.9999m
- +303:int     =  45.3340m 305:output1 = 931.9999m 306:int     =  45.3340m
- +308:output1 = 931.9999m 309:int     =  45.3339m 311:output1 = 931.9999m
- +312:int     =  45.3339m 314:output1 = 931.9999m 315:int     =  45.3339m
- +317:output1 = 931.9999m 318:int     =  45.3339m 320:output1 = 931.9999m
- +321:int     =  45.3339m 323:output1 = 931.9999m 324:int     =  45.3339m
- +326:output1 = 931.9999m 327:int     =  45.3339m 329:output1 = 931.9999m
- +330:int     =  45.3339m 332:output1 = 931.9999m 333:int     =  45.3339m
- +335:output1 = 931.9999m 336:int     =  45.3339m 338:output1 = 931.9999m
- +339:int     =  45.3339m 341:output1 = 931.9999m 342:int     =  45.3339m
- +344:output1 = 931.9999m 345:int     =  45.3339m 347:output1 = 931.9999m
- +348:int     =  45.3339m 350:output1 = 931.9999m 351:nn1     =  45.3340m
- +351:np1     = 931.9999m 352:nn1     =  45.3339m 352:np1     = 931.9999m
- +353:int     =  45.3340m 354:nn1     =  45.3339m 354:np1     = 931.9999m
- +355:int     =  45.3340m 356:nn1     =  45.3339m 356:np1     = 931.9999m
- +357:int     =  45.3340m 358:nn1     =  45.3339m 358:np1     = 931.9999m
- +359:int     =  45.3340m 360:nn1     =  45.3339m 360:np1     = 931.9999m
- +361:int     =  45.3340m 362:nn1     =  45.3339m 362:np1     = 931.9999m
- +363:int     =  45.3340m 364:nn1     =  45.3339m 364:np1     = 931.9999m
- +365:int     =  45.3340m 366:nn1     =  50.9278n 366:np1     = 881.1996m
- +369:nn1     =  53.2811n 369:np1     = 881.1996m 370:sp1     = 881.1997m
- +371:nn1     =  53.9928n 371:np1     = 881.1996m 372:sp1     = 881.1997m
- +373:nn1     =  53.2811n 373:np1     = 881.1996m 374:sp1     = 881.1997m
- +375:nn1     =  45.3340m 375:np1     = 931.9998m 378:nn1     =  45.3340m
- +378:np1     = 931.9999m 379:int     =  45.3340m 380:nn1     = 120.6118n
- +380:np1     = 881.1996m 383:nn1     =  86.1250n 383:np1     = 879.3939m
- +386:nn1     =  45.3341m 386:np1     = 931.9999m 387:nn1     = 123.7686n
- +387:np1     = 881.1996m 390:nn1     =  46.3492m 390:np1     = 931.9999m
- +393:nn1     = 120.6118n 393:np1     = 881.1996m 394:nn1     =  45.3340m
- +394:np1     = 931.9999m 397:nn1     = 120.6118n 397:np1     = 881.1996m
- +400:nn1     = 128.3262n 400:np1     = 881.1996m 401:nn1     =  45.3340m
- +401:np1     = 931.9999m 402:nn1     =  45.3340m 402:np1     = 931.9999m
- +405:nn1     =  89.2424n 405:np1     = 879.3940m 419:output1 = 931.9999m
- +433:output1 = 931.9999m 435:output1 = 931.9999m 443:output1 = 931.9999m
- +457:output1 = 931.9999m 465:output1 = 931.9999m 467:output1 = 931.9999m
+ +  0:b9      =   0.        0:b_buff0 = 116.8261n   0:b_buff1 = 131.3039n
+ +  0:b_buff10= 145.7817n   0:b_buff11= 145.7817n   0:b_buff12= 145.7817n
+ +  0:b_buff13= 145.7817n   0:b_buff14= 159.3749n   0:b_buff15= 161.0550n
+ +  0:b_buff2 = 145.7817n   0:b_buff3 = 145.7817n   0:b_buff4 = 145.7817n
+ +  0:b_buff5 = 145.7817n   0:b_buff6 = 145.7817n   0:b_buff7 = 145.7817n
+ +  0:b_buff8 = 145.7817n   0:b_buff9 = 153.4184n   0:bn0     = 999.9999m
+ +  0:bn1     = 999.9999m   0:bn10    = 999.9999m   0:bn11    = 999.9999m
+ +  0:bn12    = 999.9999m   0:bn13    = 999.9999m   0:bn14    = 999.9999m
+ +  0:bn15    = 999.9999m   0:bn2     = 999.9999m   0:bn3     = 999.9999m
+ +  0:bn4     = 999.9999m   0:bn5     = 999.9999m   0:bn6     = 999.9999m
+ +  0:bn7     = 999.9999m   0:bn8     = 999.9999m   0:bn9     = 999.9999m
+ +  0:s0      =  33.0825n   0:s1      = 457.2491n   0:s10     = 636.5660n
+ +  0:s11     = 450.1987n   0:s12     = 515.6227n   0:s13     = 450.1987n
+ +  0:s14     = 450.1987n   0:s15     = 385.8517n   0:s16     = 623.9355n
+ +  0:s2      = 450.1987n   0:s3      = 623.9355n   0:s4      = 632.5599n
+ +  0:s5      = 450.1987n   0:s6      = 450.1987n   0:s7      = 623.9355n
+ +  0:s8      = 450.1987n   0:s9      = 555.0349n   0:sn1     =   1.0000 
+ +  0:sn10    =   1.0000    0:sn11    =   1.0000    0:sn12    =   1.0000 
+ +  0:sn13    =   1.0000    0:sn14    =   1.0000    0:sn15    =   1.0000 
+ +  0:sn16    =   1.0000    0:sn2     =   1.0000    0:sn3     =   1.0000 
+ +  0:sn4     =   1.0000    0:sn5     =   1.0000    0:sn6     =   1.0000 
+ +  0:sn7     =   1.0000    0:sn8     =   1.0000    0:sn9     =   1.0000 
+ +  0:vdd     =   1.0000    0:vdd2    =   1.0000    0:vss     =   0.     
+ + 65:gen0    = 180.5895n  65:gen1    =  48.8341n  65:gen10   =  55.8845n
+ + 65:gen10_0 = 999.9999m  65:gen11   =  48.8341n  65:gen11_0 = 238.9632n
+ + 65:gen11_10= 999.9998m  65:gen11_8 = 127.0409n  65:gen12   =  55.8845n
+ + 65:gen12_0 = 999.9999m  65:gen13   =  48.8341n  65:gen13_0 = 999.9999m
+ + 65:gen13_12= 999.9998m  65:gen14   =  50.6037n  65:gen14_0 = 238.3793n
+ + 65:gen15   =  48.8341n  65:gen15_0 = 347.2761n  65:gen15_12= 123.8707n
+ + 65:gen15_14= 999.9998m  65:gen15_8 = 999.9998m  65:gen1_0  = 999.9998m
+ + 65:gen2    =  43.9840n  65:gen2_0  = 347.2761n  65:gen3    =  48.8341n
+ + 65:gen3_0  = 115.1820n  65:gen3_0bu= 355.9006n  65:gen3_2  = 999.9998m
+ + 65:gen4    =  55.8845n  65:gen4_0  = 999.9999m  65:gen5    =  48.8341n
+ + 65:gen5_0  = 999.9998m  65:gen5_4  = 999.9999m  65:gen6    =  43.9840n
+ + 65:gen6_0  = 347.2761n  65:gen7    =  48.8341n  65:gen7_0  = 999.9998m
+ + 65:gen7_0bu= 999.9999m  65:gen7_4  = 123.8707n  65:gen7_6  = 999.9998m
+ + 65:gen8    =  43.9840n  65:gen8_0  = 365.2743n  65:gen9    =  48.8341n
+ + 65:gen9_0  = 359.9067n  65:gen9_8  = 999.9998m  65:prop0   = 168.8885n
+ + 65:prop1   = 197.8441n  65:prop10  = 226.7997n  65:prop11  = 226.7997n
+ + 65:prop11_1= 999.9999m  65:prop11_8=  39.7850n  65:prop12  = 226.7997n
+ + 65:prop13  = 226.7997n  65:prop13_1= 999.9999m  65:prop14  = 253.9861n
+ + 65:prop15  = 257.3464n  65:prop15_1=  32.9884n  65:prop15_1= 999.9999m
+ + 65:prop15_8=   1.0000   65:prop2   = 226.7997n  65:prop3   = 226.7997n
+ + 65:prop3_2 =   1.0000   65:prop4   = 226.7997n  65:prop5   = 226.7997n
+ + 65:prop5_4 = 999.9999m  65:prop6   = 226.7997n  65:prop7   = 226.7997n
+ + 65:prop7_4 =  25.7495n  65:prop7_6 = 999.9999m  65:prop8   = 226.7997n
+ + 65:prop9   = 242.0731n  65:prop9_8 = 999.9999m 210:ngen    = 999.9999m
+ +211:ngen    = 999.9999m 212:ngen    = 999.9999m 213:ngen    = 999.9999m
+ +214:ngen    = 999.9999m 215:ngen    = 999.9999m 216:ngen    = 999.9999m
+ +217:ngen    = 999.9999m 218:ngen    = 999.9999m 219:ngen    = 999.9999m
+ +220:ngen    = 999.9999m 221:ngen    = 999.9999m 222:ngen    = 999.9999m
+ +223:ngen    = 999.9999m 224:ngen    = 999.9999m 225:ngen    = 999.9999m
+ +235:out1    = 999.9999m 240:out1    =  46.4295n 243:gen2inv = 999.9999m
+ +243:prop2inv= 999.9999m 244:gen2inv =  70.8668n 244:prop2inv=  46.4295n
+ +246:gen2inv =  68.3236n 246:prop2inv=  44.4871n 247:gen2inv = 999.9999m
+ +247:prop2inv= 999.9999m 249:gen2inv = 999.9999m 249:prop2inv= 999.9999m
+ +250:gen2inv = 999.9999m 250:prop2inv= 999.9999m 253:gen2inv = 999.9999m
+ +253:prop2inv= 999.9999m 254:output1 = 999.9999m 255:output1 = 999.9999m
+ +256:inputbin= 173.5392n 257:output1 = 999.9999m 258:output1 = 999.9999m
+ +259:inputbin= 173.5392n 260:inputbin= 173.5392n 261:output1 = 999.9999m
+ +262:inputbin= 173.5392n 263:output1 = 999.9999m 264:output1 = 999.9999m
+ +265:inputbin= 173.5392n 266:output1 = 999.9999m 267:inputbin= 173.5392n
+ +268:inputbin= 173.5392n 269:output1 = 999.9999m 270:output1 = 999.9999m
+ +303:int     =  48.0326m 305:output1 = 999.9999m 306:int     =  48.0326m
+ +308:output1 = 999.9999m 309:int     =  48.0326m 311:output1 = 999.9999m
+ +312:int     =  48.0326m 314:output1 = 999.9999m 315:int     =  48.0326m
+ +317:output1 = 999.9999m 318:int     =  48.0326m 320:output1 = 999.9999m
+ +321:int     =  48.0326m 323:output1 = 999.9999m 324:int     =  48.0326m
+ +326:output1 = 999.9999m 327:int     =  48.0326m 329:output1 = 999.9999m
+ +330:int     =  48.0326m 332:output1 = 999.9999m 333:int     =  48.0326m
+ +335:output1 = 999.9999m 336:int     =  48.0326m 338:output1 = 999.9999m
+ +339:int     =  48.0326m 341:output1 = 999.9999m 342:int     =  48.0326m
+ +344:output1 = 999.9999m 345:int     =  48.0326m 347:output1 = 999.9999m
+ +348:int     =  48.0326m 350:output1 = 999.9999m 351:nn1     =  48.0327m
+ +351:np1     = 999.9999m 352:nn1     =  48.0326m 352:np1     = 999.9999m
+ +353:int     =  48.0327m 354:nn1     =  48.0326m 354:np1     = 999.9999m
+ +355:int     =  48.0327m 356:nn1     =  48.0326m 356:np1     = 999.9999m
+ +357:int     =  48.0327m 358:nn1     =  48.0326m 358:np1     = 999.9999m
+ +359:int     =  48.0327m 360:nn1     =  48.0326m 360:np1     = 999.9999m
+ +361:int     =  48.0327m 362:nn1     =  48.0326m 362:np1     = 999.9999m
+ +363:int     =  48.0327m 364:nn1     =  48.0326m 364:np1     = 999.9999m
+ +365:int     =  48.0327m 366:nn1     =  80.0235n 366:np1     = 944.4550m
+ +369:nn1     =  85.0033n 369:np1     = 944.4551m 370:sp1     = 944.4551m
+ +371:nn1     =  86.8202n 371:np1     = 944.4551m 372:sp1     = 944.4551m
+ +373:nn1     =  85.0033n 373:np1     = 944.4551m 374:sp1     = 944.4551m
+ +375:nn1     =  48.0327m 375:np1     = 999.9999m 378:nn1     =  48.0327m
+ +378:np1     = 999.9999m 379:int     =  48.0327m 380:nn1     = 213.0423n
+ +380:np1     = 944.4550m 383:nn1     = 150.1904n 383:np1     = 943.1956m
+ +386:nn1     =  48.0328m 386:np1     = 999.9999m 387:nn1     = 220.2812n
+ +387:np1     = 944.4550m 390:nn1     =  49.1016m 390:np1     = 999.9999m
+ +393:nn1     = 213.0424n 393:np1     = 944.4551m 394:nn1     =  48.0328m
+ +394:np1     = 999.9999m 397:nn1     = 213.0423n 397:np1     = 944.4551m
+ +400:nn1     = 223.3575n 400:np1     = 944.4551m 401:nn1     =  48.0328m
+ +401:np1     = 999.9999m 402:nn1     =  48.0327m 402:np1     = 999.9999m
+ +405:nn1     = 149.8580n 405:np1     = 943.1957m 419:output1 = 999.9999m
+ +433:output1 = 999.9999m 435:output1 = 999.9999m 443:output1 = 999.9999m
+ +457:output1 = 999.9999m 465:output1 = 999.9999m 467:output1 = 999.9999m
 
 
           ***** job concluded
@@ -1527,7 +1527,7 @@
  ******  Machine Information  ******
  CPU:
  model name	: Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz
- cpu MHz	: 2873.070
+ cpu MHz	: 3318.816
   
  OS:
  Linux version 3.10.0-327.36.3.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) ) #1 SMP Mon Oct 24 16:09:20 UTC 2016
@@ -1555,19 +1555,19 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.23           1          87
-  transient          2.34        7201        1933         622 rev=        15
-  readin             0.01
-  errchk             0.03
-  setup              0.12
+  op point           0.27           1         105
+  transient          2.33        7201        1831         598 rev=        15
+  readin             0.02
+  errchk             0.04
+  setup              0.16
   output             0.00
 
 
            peak memory used        116.30 megabytes
-           total cpu time            2.74 seconds
-           total elapsed time        3.24 seconds
-           job started at     20:16:53 11/22/2016
-           job ended   at     20:16:56 11/22/2016
+           total cpu time            2.82 seconds
+           total elapsed time        3.40 seconds
+           job started at     20:26:14 11/22/2016
+           job ended   at     20:26:17 11/22/2016
 
 
  lic: Release hspice token(s) 

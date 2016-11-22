@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "G-2012.06-SP2 32-BIT"
 * "format" "HSP"
-* "rundate" "13:25:11 11/18/2016 "
+* "rundate" "20:24:36 11/22/2016 "
 * "netlist" "/users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_Power650ps.sp "
 * "runtitle" "******************************"
 * time =    0.            

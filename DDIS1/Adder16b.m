@@ -3,13 +3,13 @@
 % clear all;
 % close all;
 % clc;
-inputfile = 'Adder16b_BrentKungStandard';
+inputfile = 'Adder16b_BrentKung_648ps';
 clear transientsim
 clear acsim
 close all
 
 if (exist('supply', 'var') == 0)
-    supply = 0.935; 
+    supply = 1; 
 end
 
 if (exist('pathIndex', 'var') == 0)  % for running GenerateOverview.m
