@@ -1,0 +1,72 @@
+***** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******
+ Input File: /users/start2016/r0364010/temp_m2s/Adder16b_BrentKungModifiedAOIinv
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   r0364010             HOSTNAME: pc-klas1-16.esat.kuleuven.be
+ lic: HOSTID:                      PID:      10122
+ lic: Using FLEXlm license file:
+ lic: 27020@saturn
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 15-sep-2017/2016.06
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER saturn
+ lic:
+ init: begin read circuit files,  cpu clock=  3.00E-02
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/ad
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/ad
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/behave
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/bjt
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/burr_brn
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/comlinear
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/dio
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/fet
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/lin_tech
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/pci
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/signet
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/ti
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/tline
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/xilinx
+       option runlvl
+       option post
+       option nomod
+       option opts
+       option fast
+       option parhier = local
+ init: end read circuit files,  cpu clock=  3.00E-02 peak memory=       105 mb
+ init: begin check errors,  cpu clock=  3.00E-02
+ **warning**  No DC path to ground from node      226:                gen2inv
+ init: end check errors,  cpu clock=  9.00E-02 peak memory=       111 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  9.00E-02
+       establish matrix -- done,  cpu clock=  9.00E-02 peak memory=       112 mb
+       re-order matrix -- done,  cpu clock=  2.00E-01 peak memory=       115 mb
+ init: end setup matrix,  cpu clock=  2.00E-01 peak memory=       115 mb
+ dcop: begin dcop,  cpu clock=  2.00E-01
+ dcop: end dcop,  cpu clock=  4.70E-01 peak memory=       115 mb                tot_iter=      82
+ output: /users/start2016/r0364010/temp_m2s/Adder16b_BrentKungModifiedAOIinverto
+ sweep: tran tran0    begin, stop_t=  1.60E-08 #sweeps=3201 cpu clock=  4.70E-01
+ tran: time= 2.2108E-09 tot_iter=      16 conv_iter=       8 cpu clock= 4.80E-01
+ tran: time= 3.8108E-09 tot_iter=      20 conv_iter=      10 cpu clock= 4.90E-01
+ tran: time= 5.4108E-09 tot_iter=      24 conv_iter=      12 cpu clock= 4.90E-01
+ tran: time= 7.0108E-09 tot_iter=      28 conv_iter=      14 cpu clock= 4.90E-01
+ tran: time= 8.0500E-09 tot_iter=      32 conv_iter=      16 cpu clock= 5.00E-01
+ tran: time= 9.7277E-09 tot_iter=     371 conv_iter=     117 cpu clock= 9.70E-01
+ tran: time= 1.1700E-08 tot_iter=     381 conv_iter=     122 cpu clock= 9.80E-01
+ tran: time= 1.2807E-08 tot_iter=     655 conv_iter=     200 cpu clock= 1.36E+00
+ tran: time= 1.4800E-08 tot_iter=     671 conv_iter=     208 cpu clock= 1.38E+00
+ tran: time= 1.6000E-08 tot_iter=     677 conv_iter=     211 cpu clock= 1.38E+00
+ sweep: tran tran0    end,  cpu clock=  1.39E+00 peak memory=       116 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

@@ -1,0 +1,363 @@
+ ****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+  Copyright (c) 1986 - 2016 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: /users/start2016/r0364010/temp_m2s/inverterArray.sp               
+  Command line options: /esat/micas-data/software/hspice_2015.06/hspice/linux64/hspice -i /users/start2016/r0364010/temp_m2s/inverterArray.sp -o /users/start2016/r0364010/temp_m2s
+ lic:  
+ lic: FLEXlm: v11.2.1 
+ lic: USER:   r0364010             HOSTNAME: pc-klas5-3.esat.kuleuven.be 
+ lic: HOSTID: d4bed9e4ca61         PID:      19106 
+ lic: Using FLEXlm license file: 
+ lic: 27020@saturn 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 15-sep-2017/2016.06 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@saturn 
+ lic:   
+ Init: read install configuration file: /esat/micas-data/software/hspice_2015.06/hspice/meta.cfg
+  **warning** (/users/start2016/r0364010/temp_m2s/inverterArray.sp:18) Syntax error for output type v, the left parenthese is expected. This output is ignored.
+1****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+ ******  
+ **********************************
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xnot0.                          mybuf              1.00 
+        2 xnot1.                          mybuf              1.00 
+        3 xnot2.                          mybuf              1.00 
+        4 xnot3.                          mybuf              1.00 
+        5 xnot4.                          mybuf              1.00 
+        6 xnot5.                          mybuf              1.00 
+        7 xnot6.                          mybuf              1.00 
+        8 xnot7.                          mybuf              1.00 
+        9 xnot8.                          mybuf              1.00 
+       10 xnot9.                          mybuf              1.00 
+       11 xnot10.                         mybuf              1.00 
+       12 xnot11.                         mybuf              1.00 
+       13 xnot12.                         mybuf              1.00 
+       14 xnot13.                         mybuf              1.00 
+       15 xnot14.                         mybuf              1.00 
+       16 xnot15.                         mybuf              1.00 
+       17 xnot0.xnot1.                    mynot              1.00 
+       18 xnot0.xnot2.                    mynot              1.00 
+       19 xnot1.xnot1.                    mynot              1.00 
+       20 xnot1.xnot2.                    mynot              1.00 
+       21 xnot2.xnot1.                    mynot              1.00 
+       22 xnot2.xnot2.                    mynot              1.00 
+       23 xnot3.xnot1.                    mynot              1.00 
+       24 xnot3.xnot2.                    mynot              1.00 
+       25 xnot4.xnot1.                    mynot              1.00 
+       26 xnot4.xnot2.                    mynot              1.00 
+       27 xnot5.xnot1.                    mynot              1.00 
+       28 xnot5.xnot2.                    mynot              1.00 
+       29 xnot6.xnot1.                    mynot              1.00 
+       30 xnot6.xnot2.                    mynot              1.00 
+       31 xnot7.xnot1.                    mynot              1.00 
+       32 xnot7.xnot2.                    mynot              1.00 
+       33 xnot8.xnot1.                    mynot              1.00 
+       34 xnot8.xnot2.                    mynot              1.00 
+       35 xnot9.xnot1.                    mynot              1.00 
+       36 xnot9.xnot2.                    mynot              1.00 
+       37 xnot10.xnot1.                   mynot              1.00 
+       38 xnot10.xnot2.                   mynot              1.00 
+       39 xnot11.xnot1.                   mynot              1.00 
+       40 xnot11.xnot2.                   mynot              1.00 
+       41 xnot12.xnot1.                   mynot              1.00 
+       42 xnot12.xnot2.                   mynot              1.00 
+       43 xnot13.xnot1.                   mynot              1.00 
+       44 xnot13.xnot2.                   mynot              1.00 
+       45 xnot14.xnot1.                   mynot              1.00 
+       46 xnot14.xnot2.                   mynot              1.00 
+       47 xnot15.xnot1.                   mynot              1.00 
+       48 xnot15.xnot2.                   mynot              1.00 
+       49 xnot0.xnot1.xm1.                mosn               1.00 
+       50 xnot0.xnot1.xm2.                mosp               1.00 
+       51 xnot0.xnot2.xm1.                mosn               1.00 
+       52 xnot0.xnot2.xm2.                mosp               1.00 
+       53 xnot1.xnot1.xm1.                mosn               1.00 
+       54 xnot1.xnot1.xm2.                mosp               1.00 
+       55 xnot1.xnot2.xm1.                mosn               1.00 
+       56 xnot1.xnot2.xm2.                mosp               1.00 
+       57 xnot2.xnot1.xm1.                mosn               1.00 
+       58 xnot2.xnot1.xm2.                mosp               1.00 
+       59 xnot2.xnot2.xm1.                mosn               1.00 
+       60 xnot2.xnot2.xm2.                mosp               1.00 
+       61 xnot3.xnot1.xm1.                mosn               1.00 
+       62 xnot3.xnot1.xm2.                mosp               1.00 
+       63 xnot3.xnot2.xm1.                mosn               1.00 
+       64 xnot3.xnot2.xm2.                mosp               1.00 
+       65 xnot4.xnot1.xm1.                mosn               1.00 
+       66 xnot4.xnot1.xm2.                mosp               1.00 
+       67 xnot4.xnot2.xm1.                mosn               1.00 
+       68 xnot4.xnot2.xm2.                mosp               1.00 
+       69 xnot5.xnot1.xm1.                mosn               1.00 
+       70 xnot5.xnot1.xm2.                mosp               1.00 
+       71 xnot5.xnot2.xm1.                mosn               1.00 
+       72 xnot5.xnot2.xm2.                mosp               1.00 
+       73 xnot6.xnot1.xm1.                mosn               1.00 
+       74 xnot6.xnot1.xm2.                mosp               1.00 
+       75 xnot6.xnot2.xm1.                mosn               1.00 
+       76 xnot6.xnot2.xm2.                mosp               1.00 
+       77 xnot7.xnot1.xm1.                mosn               1.00 
+       78 xnot7.xnot1.xm2.                mosp               1.00 
+       79 xnot7.xnot2.xm1.                mosn               1.00 
+       80 xnot7.xnot2.xm2.                mosp               1.00 
+       81 xnot8.xnot1.xm1.                mosn               1.00 
+       82 xnot8.xnot1.xm2.                mosp               1.00 
+       83 xnot8.xnot2.xm1.                mosn               1.00 
+       84 xnot8.xnot2.xm2.                mosp               1.00 
+       85 xnot9.xnot1.xm1.                mosn               1.00 
+       86 xnot9.xnot1.xm2.                mosp               1.00 
+       87 xnot9.xnot2.xm1.                mosn               1.00 
+       88 xnot9.xnot2.xm2.                mosp               1.00 
+       89 xnot10.xnot1.xm1.               mosn               1.00 
+       90 xnot10.xnot1.xm2.               mosp               1.00 
+       91 xnot10.xnot2.xm1.               mosn               1.00 
+       92 xnot10.xnot2.xm2.               mosp               1.00 
+       93 xnot11.xnot1.xm1.               mosn               1.00 
+       94 xnot11.xnot1.xm2.               mosp               1.00 
+       95 xnot11.xnot2.xm1.               mosn               1.00 
+       96 xnot11.xnot2.xm2.               mosp               1.00 
+       97 xnot12.xnot1.xm1.               mosn               1.00 
+       98 xnot12.xnot1.xm2.               mosp               1.00 
+       99 xnot12.xnot2.xm1.               mosn               1.00 
+      100 xnot12.xnot2.xm2.               mosp               1.00 
+      101 xnot13.xnot1.xm1.               mosn               1.00 
+      102 xnot13.xnot1.xm2.               mosp               1.00 
+      103 xnot13.xnot2.xm1.               mosn               1.00 
+      104 xnot13.xnot2.xm2.               mosp               1.00 
+      105 xnot14.xnot1.xm1.               mosn               1.00 
+      106 xnot14.xnot1.xm2.               mosp               1.00 
+      107 xnot14.xnot2.xm1.               mosn               1.00 
+      108 xnot14.xnot2.xm2.               mosp               1.00 
+      109 xnot15.xnot1.xm1.               mosn               1.00 
+      110 xnot15.xnot1.xm2.               mosp               1.00 
+      111 xnot15.xnot2.xm1.               mosn               1.00 
+      112 xnot15.xnot2.xm2.               mosp               1.00 
+  **warning** (nmos:m1 (/users/start2016/r0364010/Master2/DDIS/DDIS1/Resources/Technology/tech_wrapper.lib:8)) Warning:  Acde = 0.280299 may be too small in BSIM4 model with w=1.2e-07 l=4.5e-08.
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ absh    = 0         absin   = 0         absmos  = 1.00000u  abstol  = 1.00000n  
+ absvar  = 500.000m  absvdc  = 50.0000u  accurate= 0         acout   = 0         
+ add_variation= 0         altcc   = 0         altchk  = 0         appendall= 0         
+ artist  = 0         aspec   = 0         auto_inc_off= 0         autost  = 0         
+ ba_activehier= 0         ba_coupling= 0         ba_error= 0         ba_geoshrink= 1.00000   
+ ba_mergeport= 0         ba_netfmt= 0         ba_print= ideal     ba_scale= 1.00000   
+ badchr  = 0         bdfatolset= 1.00000m  bdfrtol = 1.00000m  biasfmt = 0         
+ biasinte= 3         biasnode= 0         biaspara= 0         biawarn = 0         
+ binprnt = 0         bkpsiz  = 50000     blkbytol= 10.0000u  block_name= 1         
+ bsim4pds= 0         bypass  = 2.00000   bytol   = 100.000u  captab  = 0         
+ cflflag = 0         chgtol  = 1.00000f  cmi00opt= -1.23457e-29 cmi01opt= -1.23457e-29 
+ cmi02opt= -1.23457e-29 cmi03opt= -1.23457e-29 cmi04opt= -1.23457e-29 cmi05opt= -1.23457e-29 
+ cmi06opt= -1.23457e-29 cmi07opt= -1.23457e-29 cmi08opt= -1.23457e-29 cmi09opt= -1.23457e-29 
+ cmiflag = 0         cmimcflag= 0         cmivth  = 0         co      = 78        
+ cptime  = 10.0000x  cscal   = 1.00000t  csdf    = 0         cshdc   = 1.00000p  
+ cshunt  = 0         custcmi = 0         cvtol   = 200.000m  dcap    = 2         
+ dccap   = 0         dcfor   = 0         dchold  = 1         dcic    = 1         
+ dcon    = 0         dcstep  = 0         dctran  = 0         defad   = 0         
+ defas   = 0         defl    = 100.000u  defnrd  = 0         defnrs  = 0         
+ defpd   = 0         defps   = 0         defsa   = 0         defsb   = 0         
+ defsd   = 0         defw    = 100.000u  degf    = 100.000m  degfn   = 100.000m  
+ degfp   = 100.000m  delmax  = 0         di      = 100.000   diagno  = 0         
+ dlencsdf= 5         do_not_vary= 0         dumpcfl = 0         dv      = 1.00000k  
+ dvdt    = 3         dvtr    = 1.00000k  dynacc  = 0         em_recovery= 1.00000   
+ epsmin  = 1e-28     etmiagechk= 1         etmif_sharemod= 1         expli   = 0         
+ expmax  = 80.0000   ext_op  = 0         extend_bisection_window= 0         external_file= 0         
+ extmodparchk= 0         fast    = 1         fft_accu= -1        fftout  = 0         
+ fmax    = 1.00000t  fs      = 250.000m  fscal   = 1.00000n  ft      = 250.000m  
+ g_clamp = 1         gdcpath = 1.00000p  gen_cur_pol= 0         genk    = 1         
+ geocheck= 0         geoshrink= 1.00000   gmax    = 100.000   gmin    = 1.00000p  
+ gmindc  = 1.00000p  gramp   = 0         gscal   = 1.00000k  gshdc   = 0         
+ gshunt  = 0         h9007   = 0         hier_delim= 0         hier_sca= 0         
+ histogram_bins= 1         hpp_block_bypass= 1         ic_accurate= 0         icsweep = 1         
+ ignore_variation= 0         ingold  = 0         interp  = 0         intervals= 1         
+ iprop   = 0         itl1    = 200       itl2    = 50        itl3    = 3         
+ itl4    = 8         itl5    = 0         itlptran= 30        itlpz   = 100       
+ itrprt  = 0         ivdmargin= 0         ivth    = 0         ivth_model= 0         
+ ivthn   = 0         ivthp   = 0         kcltes  = 0         klim    = 10.0000m  
+ la_freq = 1.00000g  la_maxr = 1.00000y  la_minc = 100.000a  la_time = 1.00000n  
+ la_tol  = 50.0000m  large_scale_mc= 0         lennam  = 8         limtim  = 2         
+ lis_new = 0         lislvl  = 0         list    = 0         lscal   = 1.00000x  
+ lvltim  = 4         macmod  = 0         maxamp  = 0         maxord  = 2         
+ maxwarns= 5         mbypas  = 2.00000   mc_file_only= 0         mcbrief = 0         
+ measdg  = 4         measfail= 1         measfile= 0         measform= 0         
+ measou  = 1         measure_file= 0         method  = 1         min_ver_abort= 0         
+ minval  = 1.00000p  mirror_component= 0         mixed_num_format= 0         modmon  = 0         
+ modparchk= 1         modprt  = 0         modsrh  = 1         module_def_rule= 0         
+ montecon= 1         mraapi  = 0         mradtempba= 1         mraext  = 0         
+ mrapaged= 0         mt_check= 0         mtthresh= 0         mu      = 500.000m  
+ mult_less_1= 0         ncfilter= -1.00000p ncwarn  = 0         newtol  = 0         
+ node    = 0         noelck  = 0         noisem  = 10.0000u  noisum  = 0         
+ nomod   = 1         nopiv   = 0         notop   = 0         nowarn  = 0         
+ numdgt  = 4         nxx     = 0         off     = 0         off_output= 0         
+ opfile  = 0         optcon  = 0         optlst  = 0         optparhier= global    
+ opts    = 1         other_percentile= 0         output_sigma_value= 1         parhier = local     
+ parse_module_netlist= 0         pathnu  = 0         pcb_scale_format= 0         phd     = 0         
+ pivot   = 0         pivtol  = 1.00000f  plim    = 0         post    = binary    
+ post_ver= 9601      postlvl = 0         posttop = 0         probe   = 0         
+ psf     = 0         puretp  = 0         putmeas = 1         pz_method= muller    
+ pz_num  = 10        pzabs   = 10.0000m  pztol   = 1.00000u  qqnorm_file= 1         
+ radegoutput= 0         randgen = 0         random_generator= 0         redefmodel= 0         
+ redefsub= 0         relh    = 50.0000m  reli    = 10.0000m  relin   = 1.00000m  
+ relmos  = 50.0000m  relq    = 10.0000m  reltol  = 1.00000m  relvar  = 300.000m  
+ relvdc  = 1.00000m  replicates= 1         res_bits= 0         resmin  = 10.0000u  
+ risetime= 1.00000p  ritol   = 1.00000u  rm_rmin = 10.0000u  rmax    = 5.00000   
+ rmin    = 1.00000n  runlvl  = 3         sampling_method= 1         scale   = 1.00000   
+ scalm   = 1.00000   sda     = 0         seed    = 1         sensitivity_analysis= 1         
+ set_missing_values= 1         shrink  = 1.00000   si_scale_symbols= 0         sim_la  = 0         
+ slopetol= 500.000m  soiq0   = 0         spice   = 0         split_dp= 0         
+ splitma = 0         spmodel = 0         sstamp  = 0         statfl  = 0         
+ stream  = 1         strict_check= 0         sx_factor= 1.00000   symb    = 1         
+ tail_samples= 1         timeres = 1.00000p  tmevthmod= 0         tmiage  = 0         
+ tmiba   = 0         tmiflag = 0         tmisave = 0         tmplt_pol= 0         
+ tnom    = 25.0000   trcon   = 1         trtol   = 7.00000   unwrap  = 0         
+ use_agauss_format= 0         use_temp= 0         va_bypass= -1        vamodel = 0         
+ vary_only= 0         vcd     = 0         vecbus  = 0         ver_control= 0         
+ vfloor  = 500.000n  vntol   = 50.0000u  wacc    = -1.00000  warn    = 1         
+ warn_sep= 0         warnli  = 1         wave_pop= 100.000m  wdelayopt= 0         
+ wdf     = 0         wdf_op  = 1         wincludegdimag= no        wl      = 0         
+ wnflag  = 1         x0i     = 0         x0r     = -123.456k x1i     = 0         
+ x1r     = -1.23456x x2i     = 0         x2r     = 1.23456x  xdtemp  = 0         
+ xmult_in_expr= 0         zuken   = 0         
+ biasfile =                 
+ cmipath = 
+ tmipath = 
+ tmiinput = 
+ etmiusrinput = 
+ mra00path = 
+ mra01path = 
+ mra02path = 
+ mra03path = 
+ radegfile = 
+ tmisort = 
+ d_ibis = 
+ search = 
+  
+ search = /users/start2016/r0364010/temp_m2s
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/ad
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/ad
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/behave
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/bjt
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/burr_brn
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/comlinear
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/dio
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/fet
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/lin_tech
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/pci
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/signet
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/ti
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/tline
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/xilinx
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts
+  
+  Opening plot unit= 15
+ file=/users/start2016/r0364010/temp_m2s/inverterArray.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+ ******  
+ **********************************
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+      node    =voltage        node    =voltage        node    =voltage
+
+ +  0:in0     =   0.        0:in1     =   0.        0:in10    =   0.     
+ +  0:in11    =   0.        0:in12    =   0.        0:in13    =   0.     
+ +  0:in14    =   0.        0:in15    =   0.        0:in2     =   0.     
+ +  0:in3     =   0.        0:in4     =   0.        0:in5     =   0.     
+ +  0:in6     =   0.        0:in7     =   0.        0:in8     =   0.     
+ +  0:in9     =   0.        0:out0    =  35.5324n   0:out1    =  35.5324n
+ +  0:out10   =  35.5324n   0:out11   =  35.5324n   0:out12   =  35.5324n
+ +  0:out13   =  35.5324n   0:out14   =  35.5324n   0:out15   =  35.5324n
+ +  0:out2    =  35.5324n   0:out3    =  35.5324n   0:out4    =  35.5324n
+ +  0:out5    =  35.5324n   0:out6    =  35.5324n   0:out7    =  35.5324n
+ +  0:out8    =  35.5324n   0:out9    =  35.5324n   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:out1    = 999.9999m   2:out1    = 999.9999m
+ +  3:out1    = 999.9999m   4:out1    = 999.9999m   5:out1    = 999.9999m
+ +  6:out1    = 999.9999m   7:out1    = 999.9999m   8:out1    = 999.9999m
+ +  9:out1    = 999.9999m  10:out1    = 999.9999m  11:out1    = 999.9999m
+ + 12:out1    = 999.9999m  13:out1    = 999.9999m  14:out1    = 999.9999m
+ + 15:out1    = 999.9999m  16:out1    = 999.9999m
+
+
+          ***** job concluded
+1****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+ ******  
+ **********************************
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz
+ cpu MHz	: 3324.386
+  
+ OS:
+ Linux version 3.10.0-327.36.1.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) ) #1 SMP Sun Sep 18 13:04:29 UTC 2016
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =     307 # elements   =     114
+  # resistors   =       0 # capacitors =      16 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      64 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =      32 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.12           1           9
+  transient          0.12        5001         394         162 rev=        27
+  readin             0.10
+  errchk             0.00
+  setup              0.07
+  output             0.00
+
+
+           peak memory used        222.52 megabytes
+           total cpu time            0.39 seconds
+           total elapsed time        0.61 seconds
+           job started at     17:32:58 10/05/2016
+           job ended   at     17:32:59 10/05/2016
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.12(s)

@@ -1,0 +1,39 @@
+
+
+
+.lib tt
+.include '45nm_LP.pm'
+
+.subckt mosn d g s b mult='1' w='50e-9' l='45e-9'
+m1 d g s b nmos w=w l=l m='mult'
+.ends
+
+
+.subckt mosp d g s b mult='1' w='50e-9' l='45e-9'
+m1 d g s b pmos w=w l=l  m='mult'
+.ends
+.endl
+
+
+.lib mc
+.include '45nm_LP.pm'
+
+.subckt mosn d g s b mult='1' w='50e-9' l='45e-9'
+.param abetan='1.1n'
+.param avtn='2.5n'
+.param dvtn=agauss(0,'avtn/sqrt(mult*w*l)',1)
+.param dbetan_op_beta=agauss(0,'abetan/sqrt(mult*w*l)',1)
+m1 d g s b nmos w=w l=l delvto=dvtn m='mult*(1+dbetan_op_beta)'
+.ends
+
+
+.subckt mosp d g s b mult='1' w='50e-9' l='45e-9'
+.param abetan='1.1n'
+.param avtn='2.5n'
+.param dvtn=agauss(0,'avtn/sqrt(mult*w*l)',1)
+.param dbetan_op_beta=agauss(0,'abetan/sqrt(mult*w*l)',1)
+m1 d g s b pmos w=w l=l delvto=dvtn  m='mult*(1+dbetan_op_beta)'
+.ends
+
+
+.endl

@@ -1,0 +1,24 @@
+$% This file serves to generate a table of contents for an .m2html file.
+$% This file should be included in the .m2html file using the $insert directive at the location
+$% where the table of contents should be.
+$% 
+$% Usage: Add entries to the table of contents using the addEntry function defined in
+$% toc_helper.m2s.  When all entries have been added, call createTOC() with no arguments.
+
+
+$% Generates the table of contents
+$% 
+$% This function should be called AFTER all the entries are added.
+$ function createTOC()
+$   toc = getTOC();
+$ 
+$   if isempty(toc)
+$       error('Table of contents is empty.');
+$   end % if
+$   
+$   for i = 1:length(toc)
+$       indent = repmat('&emsp;', 1, toc(i).level);
+$       line = [indent '<a href=#' toc(i).label '>' toc(i).title '</a><br>'];
+$<line>$
+$   end % for i
+$ end % function

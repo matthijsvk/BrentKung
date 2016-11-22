@@ -1,0 +1,240 @@
+ ****** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******              
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: /users/start2016/r0364010/temp_m2s/bufferChain.sp                 
+  Command line options: -i /users/start2016/r0364010/temp_m2s/bufferChain.sp -o /users/start2016/r0364010/temp_m2s
+ lic:  
+ lic: FLEXlm: v10.9.8 
+ lic: USER:   r0364010             HOSTNAME: pc-klas1-16.esat.kuleuven.be 
+ lic: HOSTID:                      PID:      14892 
+ lic: Using FLEXlm license file: 
+ lic: 27020@saturn 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 15-sep-2017/2016.06 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER saturn 
+ lic:   
+ Init: read install configuration file: /esat/micas-data/software/hspice_2012.06/hspice/meta.cfg
+  **warning** (/users/start2016/r0364010/temp_m2s/bufferChain.sp:18) Syntax error for output type v, the left parenthese is expected. This output is ignored.
+1****** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******              
+ ******  
+ **********************************
+
+  ******  circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xnot0.                          mynot              1.00 
+        2 xnotchain2.                     mynot              1.00 
+        3 xnotchain3.                     mynot              1.00 
+        4 xnot99.                         mynot              1.00 
+        5 xnot0.xm1.                      mosn               1.00 
+        6 xnot0.xm2.                      mosp               1.00 
+        7 xnotchain2.xm1.                 mosn               1.00 
+        8 xnotchain2.xm2.                 mosp               1.00 
+        9 xnotchain3.xm1.                 mosn               1.00 
+       10 xnotchain3.xm2.                 mosp               1.00 
+       11 xnot99.xm1.                     mosn               1.00 
+       12 xnot99.xm2.                     mosp               1.00 
+ **warning**(nmos:m1)Warning:  Acde = 0.280299 may be too small in BSIM4 model with w=1.2e-07 l=4.5e-08.
+  
+  **warning** (/users/start2016/r0364010/temp_m2s/bufferChain.sp:37) Only 1 connection at node out2 called in element cap2.
+ related element is ignored, and node is isolated.
+
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ absh    = 0         absin   = 0         absmos  = 1.00000u  abstol  = 1.00000n  
+ absvar  = 500.000m  absvdc  = 50.0000u  accurate= 0         acout   = 0         
+ altcc   = 0         altchk  = 0         appendall= 0         artist  = 0         
+ aspec   = 0         auto_inc_off= 0         autost  = 0         ba_activehier= 0         
+ ba_coupling= 0         ba_error= 0         ba_geoshrink= 1.00000   ba_mergeport= 0         
+ ba_netfmt= 0         ba_print= ideal     ba_scale= 1.00000   badchr  = 0         
+ bdfatolset= 1.00000m  bdfrtol = 1.00000m  biasinte= 0         biasnode= 0         
+ biaspara= 0         biawarn = 0         binprnt = 0         bkpsiz  = 50000     
+ block_name= 1         bsim4pds= 0         bypass  = 2.00000   bytol   = 100.000u  
+ captab  = 0         cflflag = 0         chgtol  = 1.00000f  cmi00opt= -1.23457e-29 
+ cmi01opt= -1.23457e-29 cmi02opt= -1.23457e-29 cmi03opt= -1.23457e-29 cmi04opt= -1.23457e-29 
+ cmi05opt= -1.23457e-29 cmi06opt= -1.23457e-29 cmi07opt= -1.23457e-29 cmi08opt= -1.23457e-29 
+ cmi09opt= -1.23457e-29 cmifla  = 0         cmimcflag= 0         cmivth  = 0         
+ co      = 78        cptime  = 10.0000x  cscal   = 1.00000t  csdf    = 0         
+ cshdc   = 1.00000p  cshunt  = 0         custcmi = 0         cvtol   = 200.000m  
+ dcap    = 2         dccap   = 0         dcfor   = 0         dchold  = 1         
+ dcic    = 1         dcon    = 0         dcstep  = 0         dctran  = 0         
+ defad   = 0         defas   = 0         defl    = 100.000u  defnrd  = 0         
+ defnrs  = 0         defpd   = 0         defps   = 0         defsa   = 0         
+ defsb   = 0         defsd   = 0         defw    = 100.000u  degf    = 100.000m  
+ degfn   = 100.000m  degfp   = 100.000m  delmax  = 0         di      = 100.000   
+ diagno  = 0         dlencsdf= 5         dv      = 1.00000k  dvdt    = 3         
+ dvtr    = 1.00000k  dynacc  = 0         em_recovery= 1.00000   epsmin  = 1e-28     
+ expli   = 0         expmax  = 80.0000   fast    = 1         fft_accu= 0         
+ fftout  = 0         fmax    = 1.00000t  fs      = 250.000m  fscal   = 1.00000n  
+ ft      = 250.000m  gdcpath = 1.00000p  gen_cur_pol= 0         genk    = 1         
+ geocheck= 0         geoshrink= 1.00000   gmax    = 100.000   gmb_clamp= 1         
+ gmin    = 1.00000p  gmindc  = 1.00000p  gramp   = 0         gscal   = 1.00000k  
+ gshdc   = 0         gshunt  = 0         h9007   = 0         hier_delim= 0         
+ hier_sca= 0         ic_accurate= 0         icsweep = 1         ingold  = 0         
+ interp  = 0         iprop   = 0         itl1    = 200       itl2    = 50        
+ itl3    = 3         itl4    = 8         itl5    = 0         itlptran= 30        
+ itlpz   = 100       itrprt  = 0         ivdmargin= 0         ivth    = 0         
+ ivthn   = 0         ivthp   = 0         kcltes  = 0         klim    = 10.0000m  
+ la_freq = 1.00000g  la_maxr = 1.00000y  la_minc = 100.000a  la_time = 1.00000n  
+ la_tol  = 50.0000m  lennam  = 8         limtim  = 2         lis_new = 0         
+ lislvl  = 0         list    = 0         lscal   = 1.00000x  lvltim  = 4         
+ macmod  = 0         maxamp  = 0         maxord  = 2         maxwarns= 5         
+ mbypas  = 2.00000   mcbrief = 0         measdg  = 4         measfail= 1         
+ measfile= 0         measform= 0         measou  = 1         method  = 1         
+ minval  = 1.00000p  mixed_num_format= 0         modmon  = 0         modparchk= 1         
+ modprt  = 0         modsrh  = 1         module_def_rule= 0         montecon= 1         
+ mraapi  = 0         mraext  = 0         mrapaged= 0         mt_check= 0         
+ mtthresh= 0         mu      = 500.000m  ncfilter= -1.00000p ncwarn  = 0         
+ newtol  = 0         node    = 0         noelck  = 0         noisem  = 10.0000u  
+ noisum  = 0         nomod   = 1         nopiv   = 1         notop   = 0         
+ nowarn  = 0         numdgt  = 4         nxx     = 0         off     = 0         
+ opfile  = 0         optcon  = 0         optlst  = 0         optparhier= global    
+ opts    = 1         parhier = local     parse_module_netlist= 0         pathnu  = 0         
+ pcb_scale_format= 0         phd     = 0         pivot   = 0         pivtol  = 1.00000f  
+ plim    = 0         post    = binary    post_ver= 9601      postlvl = 0         
+ posttop = 0         probe   = 0         psf     = 0         puretp  = 0         
+ putmeas = 1         pzabs   = 10.0000m  pztol   = 1.00000u  radegoutput= 0         
+ randgen = 0         redefmodel= 0         redefsub= 0         relh    = 50.0000m  
+ reli    = 10.0000m  relin   = 1.00000m  relmos  = 50.0000m  relq    = 10.0000m  
+ reltol  = 1.00000m  relvar  = 300.000m  relvdc  = 1.00000m  replicates= 1         
+ resmin  = 10.0000u  risetime= 1.00000p  ritol   = 1.00000u  rmax    = 5.00000   
+ rmin    = 1.00000n  runlvl  = 3         sampling_method= 1         scale   = 1.00000   
+ scalm   = 1.00000   sda     = 0         seed    = 1         set_missing_values= 1         
+ shrink  = 1.00000   si_scale_symbols= 0         sim_la  = 0         slopetol= 500.000m  
+ soiq0   = 0         spice   = 0         split_dp= 0         spmodel = 0         
+ sstamp  = 0         statfl  = 0         strict_check= 0         sx_factor= 1.00000   
+ symb    = 0         timeres = 1.00000p  tmiage  = 0         tmiba   = 0         
+ tmiflag = 0         tmisave = 0         tmplt_pol= 0         tnom    = 25.0000   
+ trcon   = 1         trtol   = 7.00000   unwrap  = 0         use_temp= 0         
+ vamodel = 0         vecbus  = 0         ver_control= 0         vfloor  = 500.000n  
+ vntol   = 50.0000u  wacc    = -1.00000  warn    = 1         warn_sep= 0         
+ warnli  = 1         wave_pop= 100.000m  wdelayopt= 0         wdf     = 0         
+ wdf_op  = 1         wincludegdimag= no        wl      = 0         wnflag  = 1         
+ x0i     = 0         x0r     = -123.456k x1i     = 0         x1r     = -1.23456x 
+ x2i     = 0         x2r     = 1.23456x  xdtemp  = 0         xmult_in_expr= 0         
+ zuken   = 0         
+ biasfile =                 
+ cmipath = 
+ tmipath = 
+ tmiinput = 
+ etmiusrinput = 
+ mra00path = 
+ mra01path = 
+ mra02path = 
+ mra03path = 
+ radegfile = 
+ tmisort = 
+ d_ibis = 
+ search = 
+  
+ search = /users/start2016/r0364010/temp_m2s
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/ad
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/ad
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/behave
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/bjt
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/burr_brn
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/comlinear
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/dio
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/fet
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/lin_tech
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/pci
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/signet
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/ti
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/tline
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/xilinx
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts
+  
+  Opening plot unit= 15
+ file=/users/start2016/r0364010/temp_m2s/bufferChain.pa0
+
+1****** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******              
+ ******  
+ **********************************
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:in0     =   0.       0:in1     = 999.9999m  0:in2     =  98.4362n
+ + 0:out     = 999.9997m  0:out1    =  31.3861n  0:out2    =   0.     
+ + 0:out3    =   0.       0:vdd     =   1.0000   0:vss     =   0.     
+
+
+          ***** job concluded
+1****** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******              
+ ******  
+ **********************************
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz
+ cpu MHz	: 2203.785
+  
+ OS:
+ Linux version 3.10.0-327.36.3.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) ) #1 SMP Mon Oct 24 16:09:20 UTC 2016
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      42 # elements   =      10
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       8 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       2 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          10
+  transient          0.02       10001         408         163 rev=         5
+  readin             0.00
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        107.12 megabytes
+           total cpu time            0.03 seconds
+           total elapsed time        0.32 seconds
+           job started at     17:22:15 11/04/2016
+           job ended   at     17:22:15 11/04/2016
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.25(s)

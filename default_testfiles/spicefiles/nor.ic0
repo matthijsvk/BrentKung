@@ -1,0 +1,19 @@
+* "simulator" "HSPICE" 
+* "version" "K-2015.06-SP1 linux64"
+* "format" "HSP"
+* "rundate" "17:06:06 10/05/2016 "
+* "netlist" "/users/start2016/r0364010/temp_m2s/nor.sp "
+* "runtitle" "**********************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in1 =   1.0000        
++ in2 =   1.0000        
++ out =  18.4249n       
++ vdd =   1.0000        
++ vss =   0.            
++ xnor1.sp1 = 944.5582m       
+***   END: Saved Operating Point ***                     

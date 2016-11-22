@@ -1,0 +1,21 @@
+; Vector file for a switchable inverter
+
+radix           4444     1   4444   
+vname           in[0:15] sw  out[0:15]
+io              iiii     i   oooo   
+tunit           ns      
+period          1       
+tdelay    0.2   0000     0   FFFF   
+vih       1.0   FFFF     1   0000   
+Vth       0.5   0000     0   FFFF
+vil       0.0   FFFF     1   0000
+trise     0.001 FFFF     1   0000
+tfall     0.001 FFFF     1   0000
+
+;Bit patterns that will be applied. Inputs will be applied as PWL voltage sources, outputs will be checked for correct behaviour
+                0000     1   FFFF
+				0000     0   0000
+                FFFF     1   0000
+				FFFF     0   FFFF
+                5A5A     1   A5A5
+                A5A5     0   A5A5

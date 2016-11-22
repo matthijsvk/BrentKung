@@ -1,0 +1,20 @@
+; Vector file for a simple inverter
+
+radix           1   1 
+vname           in0 out
+io              i        o
+tunit           ns      
+period          2       
+tdelay    1.9   0   1
+vih       supply   
+Vth       0.5   
+vil       0.0   
+trise     0.001 
+tfall     0.001 
+
+;Bit patterns that will be applied. Inputs will be applied as PWL voltage sources, outputs will be checked for correct behaviour
+                0   1
+                1   0
+                0   1
+                1   0
+                0   1

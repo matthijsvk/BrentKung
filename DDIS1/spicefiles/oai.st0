@@ -1,0 +1,72 @@
+***** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******
+ Input File: /users/start2016/r0364010/temp_m2s/oai.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   r0364010             HOSTNAME: pc-klas1-16.esat.kuleuven.be
+ lic: HOSTID:                      PID:      9982
+ lic: Using FLEXlm license file:
+ lic: 27020@saturn
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 15-sep-2017/2016.06
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER saturn
+ lic:
+ init: begin read circuit files,  cpu clock=  3.00E-02
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/ad
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/ad
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/behave
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/bjt
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/burr_brn
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/comlinear
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/dio
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/fet
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/lin_tech
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/pci
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/signet
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/ti
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/tline
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/xilinx
+       option runlvl
+       option post
+       option nomod
+       option opts
+       option fast
+       option parhier = local
+       option captab
+ init: end read circuit files,  cpu clock=  3.00E-02 peak memory=       105 mb
+ init: begin check errors,  cpu clock=  3.00E-02
+ init: end check errors,  cpu clock=  3.00E-02 peak memory=       105 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  3.00E-02
+       establish matrix -- done,  cpu clock=  3.00E-02 peak memory=       105 mb
+       re-order matrix -- done,  cpu clock=  3.00E-02 peak memory=       105 mb
+ init: end setup matrix,  cpu clock=  3.00E-02 peak memory=       106 mb
+ dcop: begin dcop,  cpu clock=  3.00E-02
+ dcop: end dcop,  cpu clock=  3.00E-02 peak memory=       106 mb                tot_iter=      15
+ output: /users/start2016/r0364010/temp_m2s/oai.tr0
+ sweep: tran tran0    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock=  3.00E-02
+ tran: time= 1.0000E-09 tot_iter=      14 conv_iter=       7 cpu clock= 3.00E-02
+ tran: time= 2.0000E-09 tot_iter=      65 conv_iter=      29 cpu clock= 4.00E-02
+ tran: time= 3.0000E-09 tot_iter=     145 conv_iter=      62 cpu clock= 4.00E-02
+ tran: time= 4.0000E-09 tot_iter=     230 conv_iter=      96 cpu clock= 4.00E-02
+ tran: time= 5.0000E-09 tot_iter=     310 conv_iter=     130 cpu clock= 5.00E-02
+ tran: time= 6.0000E-09 tot_iter=     384 conv_iter=     161 cpu clock= 5.00E-02
+ tran: time= 7.0000E-09 tot_iter=     450 conv_iter=     187 cpu clock= 5.00E-02
+ tran: time= 8.0000E-09 tot_iter=     541 conv_iter=     225 cpu clock= 6.00E-02
+ tran: time= 9.0000E-09 tot_iter=     605 conv_iter=     250 cpu clock= 6.00E-02
+ tran: time= 1.0000E-08 tot_iter=     685 conv_iter=     283 cpu clock= 6.00E-02
+ sweep: tran tran0    end,  cpu clock=  6.00E-02 peak memory=       107 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

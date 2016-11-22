@@ -1,0 +1,37 @@
+$% This file serves to generate a table of contents for an .m2html file.
+$% This file should be included in the .m2html file using the $import directive prior to adding any
+$% entries to the table of contents.
+$% 
+$% Usage: Add entries to the table of contents using the addEntry function.  When all entries have
+$% been added, call createTOC() (defined in toc.m2s) with no arguments.
+
+$% Variable for storing the table of contents (initialised here as an empty structure array)
+$ toc = struct('level', {}, 'title', {}, 'label', {}); 
+
+$% Adds an entry to the table of contents
+$% 
+$% LEVEL:   0 = section
+$%          1 = subsection
+$%          2 = subsubsection
+$%          ...
+$%      Used for indenting the TOC
+$%
+$% TITLE:   Title of the section
+$% 
+$% LABEL:   HTML label (without the #) that the TOC should link to
+$ function addEntry(level, title, label)
+${
+    entry.level = level;
+    entry.title = title;
+    entry.label = label;
+    
+    toc(end+1) = entry;
+}$
+$ end % function
+
+$% Returns the table of contents as a struct array
+$% 
+$% Should normally be called only by the createTOC function
+$ function TOC = getTOC
+$   TOC = toc;
+$ end

@@ -1,0 +1,2 @@
+* .vec '$< strcat(pwd, '/m2sfiles/Adder16b.vec')>$'
+.vec '$< strcat(pwd, strcat('/m2sfiles/Adder16b',strcat(num2str(globals.pathIndex),'.vec')))>$'

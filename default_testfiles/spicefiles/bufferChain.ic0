@@ -1,0 +1,22 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "17:22:15 11/04/2016 "
+* "netlist" "/users/start2016/r0364010/temp_m2s/bufferChain.sp "
+* "runtitle" "**********************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in0 =   0.            
++ in1 = 999.9999m       
++ in2 =  98.4362n       
++ out = 999.9997m       
++ out1 =  31.3861n       
++ out2 =   0.            
++ out3 =   0.            
++ vdd =   1.0000        
++ vss =   0.            
+***   END: Saved Operating Point ***                     

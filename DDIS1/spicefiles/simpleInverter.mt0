@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='K-2015.06-SP1 linux64' PARAM_COUNT=0
+.TITLE '**********************************'
+ avg_power        temper           alter#          
+  2.492e-07         25.0000        1               

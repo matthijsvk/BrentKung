@@ -1,0 +1,1559 @@
+ ****** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******              
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: /users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_InvertorGone
+  Command line options: -i /users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_InvertorGone_ModifiedSizes.sp -o /users/start2016/r0364010/temp_m2s
+ lic:  
+ lic: FLEXlm: v10.9.8 
+ lic: USER:   r0364010             HOSTNAME: pc-klas1-13.esat.kuleuven.be 
+ lic: HOSTID:                      PID:      14305 
+ lic: Using FLEXlm license file: 
+ lic: 27020@saturn 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 15-sep-2017/2016.06 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER saturn 
+ lic:   
+ Init: read install configuration file: /esat/micas-data/software/hspice_2012.06/hspice/meta.cfg
+  **warning** (/users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_InvertorGone_ModifiedSizes.sp:17) Syntax error for output type i, the left parenthese is expected. This output is ignored.
+1****** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******              
+ ******  
+ ******************************
+
+  ******  circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xnota0.                         mynot              1.00 
+        2 xnotan0.                        mynot              1.00 
+        3 xnotb0.                         mynot              1.00 
+        4 xnotbn0.                        mynot              1.00 
+        5 xnota1.                         mynot              1.00 
+        6 xnotan1.                        mynot              1.00 
+        7 xnotb1.                         mynot              1.00 
+        8 xnotbn1.                        mynot              1.00 
+        9 xnota2.                         mynot              1.00 
+       10 xnotan2.                        mynot              1.00 
+       11 xnotb2.                         mynot              1.00 
+       12 xnotbn2.                        mynot              1.00 
+       13 xnota3.                         mynot              1.00 
+       14 xnotan3.                        mynot              1.00 
+       15 xnotb3.                         mynot              1.00 
+       16 xnotbn3.                        mynot              1.00 
+       17 xnota4.                         mynot              1.00 
+       18 xnotan4.                        mynot              1.00 
+       19 xnotb4.                         mynot              1.00 
+       20 xnotbn4.                        mynot              1.00 
+       21 xnota5.                         mynot              1.00 
+       22 xnotan5.                        mynot              1.00 
+       23 xnotb5.                         mynot              1.00 
+       24 xnotbn5.                        mynot              1.00 
+       25 xnota6.                         mynot              1.00 
+       26 xnotan6.                        mynot              1.00 
+       27 xnotb6.                         mynot              1.00 
+       28 xnotbn6.                        mynot              1.00 
+       29 xnota7.                         mynot              1.00 
+       30 xnotan7.                        mynot              1.00 
+       31 xnotb7.                         mynot              1.00 
+       32 xnotbn7.                        mynot              1.00 
+       33 xnota8.                         mynot              1.00 
+       34 xnotan8.                        mynot              1.00 
+       35 xnotb8.                         mynot              1.00 
+       36 xnotbn8.                        mynot              1.00 
+       37 xnota9.                         mynot              1.00 
+       38 xnotan9.                        mynot              1.00 
+       39 xnotb9.                         mynot              1.00 
+       40 xnotbn9.                        mynot              1.00 
+       41 xnota10.                        mynot              1.00 
+       42 xnotan10.                       mynot              1.00 
+       43 xnotb10.                        mynot              1.00 
+       44 xnotbn10.                       mynot              1.00 
+       45 xnota11.                        mynot              1.00 
+       46 xnotan11.                       mynot              1.00 
+       47 xnotb11.                        mynot              1.00 
+       48 xnotbn11.                       mynot              1.00 
+       49 xnota12.                        mynot              1.00 
+       50 xnotan12.                       mynot              1.00 
+       51 xnotb12.                        mynot              1.00 
+       52 xnotbn12.                       mynot              1.00 
+       53 xnota13.                        mynot              1.00 
+       54 xnotan13.                       mynot              1.00 
+       55 xnotb13.                        mynot              1.00 
+       56 xnotbn13.                       mynot              1.00 
+       57 xnota14.                        mynot              1.00 
+       58 xnotan14.                       mynot              1.00 
+       59 xnotb14.                        mynot              1.00 
+       60 xnotbn14.                       mynot              1.00 
+       61 xnota15.                        mynot              1.00 
+       62 xnotan15.                       mynot              1.00 
+       63 xnotb15.                        mynot              1.00 
+       64 xnotbn15.                       mynot              1.00 
+       65 xadder.                         adder              1.00 
+       66 xnot1.                          mynot              1.00 
+       67 xnot2.                          mynot              1.00 
+       68 xnot3.                          mynot              1.00 
+       69 xnot4.                          mynot              1.00 
+       70 xnot5.                          mynot              1.00 
+       71 xnot6.                          mynot              1.00 
+       72 xnot7.                          mynot              1.00 
+       73 xnot8.                          mynot              1.00 
+       74 xnot9.                          mynot              1.00 
+       75 xnot10.                         mynot              1.00 
+       76 xnot11.                         mynot              1.00 
+       77 xnot12.                         mynot              1.00 
+       78 xnot13.                         mynot              1.00 
+       79 xnot14.                         mynot              1.00 
+       80 xnot15.                         mynot              1.00 
+       81 xnot16.                         mynot              1.00 
+       82 xnota0.xm1.                     mosn               1.00 
+       83 xnota0.xm2.                     mosp               1.00 
+       84 xnotan0.xm1.                    mosn               1.00 
+       85 xnotan0.xm2.                    mosp               1.00 
+       86 xnotb0.xm1.                     mosn               1.00 
+       87 xnotb0.xm2.                     mosp               1.00 
+       88 xnotbn0.xm1.                    mosn               1.00 
+       89 xnotbn0.xm2.                    mosp               1.00 
+       90 xnota1.xm1.                     mosn               1.00 
+       91 xnota1.xm2.                     mosp               1.00 
+       92 xnotan1.xm1.                    mosn               1.00 
+       93 xnotan1.xm2.                    mosp               1.00 
+       94 xnotb1.xm1.                     mosn               1.00 
+       95 xnotb1.xm2.                     mosp               1.00 
+       96 xnotbn1.xm1.                    mosn               1.00 
+       97 xnotbn1.xm2.                    mosp               1.00 
+       98 xnota2.xm1.                     mosn               1.00 
+       99 xnota2.xm2.                     mosp               1.00 
+      100 xnotan2.xm1.                    mosn               1.00 
+      101 xnotan2.xm2.                    mosp               1.00 
+      102 xnotb2.xm1.                     mosn               1.00 
+      103 xnotb2.xm2.                     mosp               1.00 
+      104 xnotbn2.xm1.                    mosn               1.00 
+      105 xnotbn2.xm2.                    mosp               1.00 
+      106 xnota3.xm1.                     mosn               1.00 
+      107 xnota3.xm2.                     mosp               1.00 
+      108 xnotan3.xm1.                    mosn               1.00 
+      109 xnotan3.xm2.                    mosp               1.00 
+      110 xnotb3.xm1.                     mosn               1.00 
+      111 xnotb3.xm2.                     mosp               1.00 
+      112 xnotbn3.xm1.                    mosn               1.00 
+      113 xnotbn3.xm2.                    mosp               1.00 
+      114 xnota4.xm1.                     mosn               1.00 
+      115 xnota4.xm2.                     mosp               1.00 
+      116 xnotan4.xm1.                    mosn               1.00 
+      117 xnotan4.xm2.                    mosp               1.00 
+      118 xnotb4.xm1.                     mosn               1.00 
+      119 xnotb4.xm2.                     mosp               1.00 
+      120 xnotbn4.xm1.                    mosn               1.00 
+      121 xnotbn4.xm2.                    mosp               1.00 
+      122 xnota5.xm1.                     mosn               1.00 
+      123 xnota5.xm2.                     mosp               1.00 
+      124 xnotan5.xm1.                    mosn               1.00 
+      125 xnotan5.xm2.                    mosp               1.00 
+      126 xnotb5.xm1.                     mosn               1.00 
+      127 xnotb5.xm2.                     mosp               1.00 
+      128 xnotbn5.xm1.                    mosn               1.00 
+      129 xnotbn5.xm2.                    mosp               1.00 
+      130 xnota6.xm1.                     mosn               1.00 
+      131 xnota6.xm2.                     mosp               1.00 
+      132 xnotan6.xm1.                    mosn               1.00 
+      133 xnotan6.xm2.                    mosp               1.00 
+      134 xnotb6.xm1.                     mosn               1.00 
+      135 xnotb6.xm2.                     mosp               1.00 
+      136 xnotbn6.xm1.                    mosn               1.00 
+      137 xnotbn6.xm2.                    mosp               1.00 
+      138 xnota7.xm1.                     mosn               1.00 
+      139 xnota7.xm2.                     mosp               1.00 
+      140 xnotan7.xm1.                    mosn               1.00 
+      141 xnotan7.xm2.                    mosp               1.00 
+      142 xnotb7.xm1.                     mosn               1.00 
+      143 xnotb7.xm2.                     mosp               1.00 
+      144 xnotbn7.xm1.                    mosn               1.00 
+      145 xnotbn7.xm2.                    mosp               1.00 
+      146 xnota8.xm1.                     mosn               1.00 
+      147 xnota8.xm2.                     mosp               1.00 
+      148 xnotan8.xm1.                    mosn               1.00 
+      149 xnotan8.xm2.                    mosp               1.00 
+      150 xnotb8.xm1.                     mosn               1.00 
+      151 xnotb8.xm2.                     mosp               1.00 
+      152 xnotbn8.xm1.                    mosn               1.00 
+      153 xnotbn8.xm2.                    mosp               1.00 
+      154 xnota9.xm1.                     mosn               1.00 
+      155 xnota9.xm2.                     mosp               1.00 
+      156 xnotan9.xm1.                    mosn               1.00 
+      157 xnotan9.xm2.                    mosp               1.00 
+      158 xnotb9.xm1.                     mosn               1.00 
+      159 xnotb9.xm2.                     mosp               1.00 
+      160 xnotbn9.xm1.                    mosn               1.00 
+      161 xnotbn9.xm2.                    mosp               1.00 
+      162 xnota10.xm1.                    mosn               1.00 
+      163 xnota10.xm2.                    mosp               1.00 
+      164 xnotan10.xm1.                   mosn               1.00 
+      165 xnotan10.xm2.                   mosp               1.00 
+      166 xnotb10.xm1.                    mosn               1.00 
+      167 xnotb10.xm2.                    mosp               1.00 
+      168 xnotbn10.xm1.                   mosn               1.00 
+      169 xnotbn10.xm2.                   mosp               1.00 
+      170 xnota11.xm1.                    mosn               1.00 
+      171 xnota11.xm2.                    mosp               1.00 
+      172 xnotan11.xm1.                   mosn               1.00 
+      173 xnotan11.xm2.                   mosp               1.00 
+      174 xnotb11.xm1.                    mosn               1.00 
+      175 xnotb11.xm2.                    mosp               1.00 
+      176 xnotbn11.xm1.                   mosn               1.00 
+      177 xnotbn11.xm2.                   mosp               1.00 
+      178 xnota12.xm1.                    mosn               1.00 
+      179 xnota12.xm2.                    mosp               1.00 
+      180 xnotan12.xm1.                   mosn               1.00 
+      181 xnotan12.xm2.                   mosp               1.00 
+      182 xnotb12.xm1.                    mosn               1.00 
+      183 xnotb12.xm2.                    mosp               1.00 
+      184 xnotbn12.xm1.                   mosn               1.00 
+      185 xnotbn12.xm2.                   mosp               1.00 
+      186 xnota13.xm1.                    mosn               1.00 
+      187 xnota13.xm2.                    mosp               1.00 
+      188 xnotan13.xm1.                   mosn               1.00 
+      189 xnotan13.xm2.                   mosp               1.00 
+      190 xnotb13.xm1.                    mosn               1.00 
+      191 xnotb13.xm2.                    mosp               1.00 
+      192 xnotbn13.xm1.                   mosn               1.00 
+      193 xnotbn13.xm2.                   mosp               1.00 
+      194 xnota14.xm1.                    mosn               1.00 
+      195 xnota14.xm2.                    mosp               1.00 
+      196 xnotan14.xm1.                   mosn               1.00 
+      197 xnotan14.xm2.                   mosp               1.00 
+      198 xnotb14.xm1.                    mosn               1.00 
+      199 xnotb14.xm2.                    mosp               1.00 
+      200 xnotbn14.xm1.                   mosn               1.00 
+      201 xnotbn14.xm2.                   mosp               1.00 
+      202 xnota15.xm1.                    mosn               1.00 
+      203 xnota15.xm2.                    mosp               1.00 
+      204 xnotan15.xm1.                   mosn               1.00 
+      205 xnotan15.xm2.                   mosp               1.00 
+      206 xnotb15.xm1.                    mosn               1.00 
+      207 xnotb15.xm2.                    mosp               1.00 
+      208 xnotbn15.xm1.                   mosn               1.00 
+      209 xnotbn15.xm2.                   mosp               1.00 
+      210 xadder.xgenprop0.               genprop            1.00 
+      211 xadder.xgenprop1.               genprop            1.00 
+      212 xadder.xgenprop2.               genprop            1.00 
+      213 xadder.xgenprop3.               genprop            1.00 
+      214 xadder.xgenprop4.               genprop            1.00 
+      215 xadder.xgenprop5.               genprop            1.00 
+      216 xadder.xgenprop6.               genprop            1.00 
+      217 xadder.xgenprop7.               genprop            1.00 
+      218 xadder.xgenprop8.               genprop            1.00 
+      219 xadder.xgenprop9.               genprop            1.00 
+      220 xadder.xgenprop10.              genprop            1.00 
+      221 xadder.xgenprop11.              genprop            1.00 
+      222 xadder.xgenprop12.              genprop            1.00 
+      223 xadder.xgenprop13.              genprop            1.00 
+      224 xadder.xgenprop14.              genprop            1.00 
+      225 xadder.xgenprop15.              genprop            1.00 
+      226 xadder.xdotoperator_a_0.        dotoperatorsimplenormalin
+                                                                 1.00 
+      227 xadder.xdotoperator_a_1.        dotoperatornormalin
+                                                                 1.00 
+      228 xadder.xdotoperator_a_2.        dotoperatornormalin
+                                                                 1.00 
+      229 xadder.xdotoperator_a_3.        dotoperatornormalin
+                                                                 1.00 
+      230 xadder.xdotoperator_a_4.        dotoperatornormalin
+                                                                 1.00 
+      231 xadder.xdotoperator_a_5.        dotoperatornormalin
+                                                                 1.00 
+      232 xadder.xdotoperator_a_6.        dotoperatornormalin
+                                                                 1.00 
+      233 xadder.xdotoperator_a_7.        dotoperatornormalin
+                                                                 1.00 
+      234 xadder.xdotoperator_b_0.        dotoperatorsimpleinvertedin
+                                                                 1.00 
+      235 xadder.xdotoperator_b_1.        dotoperatorinvertedin
+                                                                 1.00 
+      236 xadder.xdotoperator_b_2.        dotoperatorinvertedin
+                                                                 1.00 
+      237 xadder.xdotoperator_b_3.        dotoperatorinvertedin
+                                                                 1.00 
+      238 xadder.xdotoperator_c_0.        dotoperatorsimplenormalin
+                                                                 1.00 
+      239 xadder.xdotoperator_c_1.        dotoperatornormalin
+                                                                 1.00 
+      240 xadder.xdotoperator_d_0.        dotoperatorsimpleinvertedin
+                                                                 1.00 
+      241 xadder.xdotoperator_l_1.        dotoperatorsimplenormalhighinvertedlow
+                                                                 1.00 
+      242 xadder.xdotoperator_m_1.        dotoperatorsimpleinvertedhighnormallow
+                                                                 1.00 
+      243 xadder.xdotoperator_m_2.        dotoperatorsimpleinvertedin
+                                                                 1.00 
+      244 xadder.xdotoperator_m_3.        dotoperatorsimpleinvertedhighnormallow
+                                                                 1.00 
+      245 xadder.xdotoperator_n_1.        dotoperatorsimplenormalhighinvertedlow
+                                                                 1.00 
+      246 xadder.xdotoperator_n_2.        dotoperatorsimplenormalin
+                                                                 1.00 
+      247 xadder.xdotoperator_n_3.        dotoperatorsimplenormalhighinvertedlow
+                                                                 1.00 
+      248 xadder.xdotoperator_n_4.        dotoperatorsimplenormalhighinvertedlow
+                                                                 1.00 
+      249 xadder.xdotoperator_n_5.        dotoperatorsimplenormalin
+                                                                 1.00 
+      250 xadder.xdotoperator_n_6.        dotoperatorsimplenormalin
+                                                                 1.00 
+      251 xadder.xdotoperator_n_7.        dotoperatorsimplenormalhighinvertedlow
+                                                                 1.00 
+      252 xadder.xxor_0.                  myxor              1.00 
+      253 xadder.xxor_1.                  myxor              1.00 
+      254 xadder.xxor_2.                  mynotxor           1.00 
+      255 xadder.xxor_3.                  myxor              1.00 
+      256 xadder.xxor_4.                  myxor              1.00 
+      257 xadder.xxor_5.                  mynotxor           1.00 
+      258 xadder.xxor_6.                  mynotxor           1.00 
+      259 xadder.xxor_7.                  myxor              1.00 
+      260 xadder.xxor_8.                  mynotxor           1.00 
+      261 xadder.xxor_9.                  myxor              1.00 
+      262 xadder.xxor_10.                 myxor              1.00 
+      263 xadder.xxor_11.                 mynotxor           1.00 
+      264 xadder.xxor_12.                 myxor              1.00 
+      265 xadder.xxor_13.                 mynotxor           1.00 
+      266 xadder.xxor_14.                 mynotxor           1.00 
+      267 xadder.xxor_15.                 myxor              1.00 
+      268 xadder.xxor_16.                 myxor              1.00 
+      269 xnot1.xm1.                      mosn               1.00 
+      270 xnot1.xm2.                      mosp               1.00 
+      271 xnot2.xm1.                      mosn               1.00 
+      272 xnot2.xm2.                      mosp               1.00 
+      273 xnot3.xm1.                      mosn               1.00 
+      274 xnot3.xm2.                      mosp               1.00 
+      275 xnot4.xm1.                      mosn               1.00 
+      276 xnot4.xm2.                      mosp               1.00 
+      277 xnot5.xm1.                      mosn               1.00 
+      278 xnot5.xm2.                      mosp               1.00 
+      279 xnot6.xm1.                      mosn               1.00 
+      280 xnot6.xm2.                      mosp               1.00 
+      281 xnot7.xm1.                      mosn               1.00 
+      282 xnot7.xm2.                      mosp               1.00 
+      283 xnot8.xm1.                      mosn               1.00 
+      284 xnot8.xm2.                      mosp               1.00 
+      285 xnot9.xm1.                      mosn               1.00 
+      286 xnot9.xm2.                      mosp               1.00 
+      287 xnot10.xm1.                     mosn               1.00 
+      288 xnot10.xm2.                     mosp               1.00 
+      289 xnot11.xm1.                     mosn               1.00 
+      290 xnot11.xm2.                     mosp               1.00 
+      291 xnot12.xm1.                     mosn               1.00 
+      292 xnot12.xm2.                     mosp               1.00 
+      293 xnot13.xm1.                     mosn               1.00 
+      294 xnot13.xm2.                     mosp               1.00 
+      295 xnot14.xm1.                     mosn               1.00 
+      296 xnot14.xm2.                     mosp               1.00 
+      297 xnot15.xm1.                     mosn               1.00 
+      298 xnot15.xm2.                     mosp               1.00 
+      299 xnot16.xm1.                     mosn               1.00 
+      300 xnot16.xm2.                     mosp               1.00 
+      301 xadder.xgenprop0.xnand.         mynand             1.00 
+      302 xadder.xgenprop0.xnot.          mynot              1.00 
+      303 xadder.xgenprop0.xxor.          myxor              1.00 
+      304 xadder.xgenprop1.xnand.         mynand             1.00 
+      305 xadder.xgenprop1.xnot.          mynot              1.00 
+      306 xadder.xgenprop1.xxor.          myxor              1.00 
+      307 xadder.xgenprop2.xnand.         mynand             1.00 
+      308 xadder.xgenprop2.xnot.          mynot              1.00 
+      309 xadder.xgenprop2.xxor.          myxor              1.00 
+      310 xadder.xgenprop3.xnand.         mynand             1.00 
+      311 xadder.xgenprop3.xnot.          mynot              1.00 
+      312 xadder.xgenprop3.xxor.          myxor              1.00 
+      313 xadder.xgenprop4.xnand.         mynand             1.00 
+      314 xadder.xgenprop4.xnot.          mynot              1.00 
+      315 xadder.xgenprop4.xxor.          myxor              1.00 
+      316 xadder.xgenprop5.xnand.         mynand             1.00 
+      317 xadder.xgenprop5.xnot.          mynot              1.00 
+      318 xadder.xgenprop5.xxor.          myxor              1.00 
+      319 xadder.xgenprop6.xnand.         mynand             1.00 
+      320 xadder.xgenprop6.xnot.          mynot              1.00 
+      321 xadder.xgenprop6.xxor.          myxor              1.00 
+      322 xadder.xgenprop7.xnand.         mynand             1.00 
+      323 xadder.xgenprop7.xnot.          mynot              1.00 
+      324 xadder.xgenprop7.xxor.          myxor              1.00 
+      325 xadder.xgenprop8.xnand.         mynand             1.00 
+      326 xadder.xgenprop8.xnot.          mynot              1.00 
+      327 xadder.xgenprop8.xxor.          myxor              1.00 
+      328 xadder.xgenprop9.xnand.         mynand             1.00 
+      329 xadder.xgenprop9.xnot.          mynot              1.00 
+      330 xadder.xgenprop9.xxor.          myxor              1.00 
+      331 xadder.xgenprop10.xnand.        mynand             1.00 
+      332 xadder.xgenprop10.xnot.         mynot              1.00 
+      333 xadder.xgenprop10.xxor.         myxor              1.00 
+      334 xadder.xgenprop11.xnand.        mynand             1.00 
+      335 xadder.xgenprop11.xnot.         mynot              1.00 
+      336 xadder.xgenprop11.xxor.         myxor              1.00 
+      337 xadder.xgenprop12.xnand.        mynand             1.00 
+      338 xadder.xgenprop12.xnot.         mynot              1.00 
+      339 xadder.xgenprop12.xxor.         myxor              1.00 
+      340 xadder.xgenprop13.xnand.        mynand             1.00 
+      341 xadder.xgenprop13.xnot.         mynot              1.00 
+      342 xadder.xgenprop13.xxor.         myxor              1.00 
+      343 xadder.xgenprop14.xnand.        mynand             1.00 
+      344 xadder.xgenprop14.xnot.         mynot              1.00 
+      345 xadder.xgenprop14.xxor.         myxor              1.00 
+      346 xadder.xgenprop15.xnand.        mynand             1.00 
+      347 xadder.xgenprop15.xnot.         mynot              1.00 
+      348 xadder.xgenprop15.xxor.         myxor              1.00 
+      349 xadder.xdotoperator_a_0.xaoi.   myaoi              1.00 
+      350 xadder.xdotoperator_a_1.xaoi.   myaoi              1.00 
+      351 xadder.xdotoperator_a_1.xnand.  mynand             1.00 
+      352 xadder.xdotoperator_a_2.xaoi.   myaoi              1.00 
+      353 xadder.xdotoperator_a_2.xnand.  mynand             1.00 
+      354 xadder.xdotoperator_a_3.xaoi.   myaoi              1.00 
+      355 xadder.xdotoperator_a_3.xnand.  mynand             1.00 
+      356 xadder.xdotoperator_a_4.xaoi.   myaoi              1.00 
+      357 xadder.xdotoperator_a_4.xnand.  mynand             1.00 
+      358 xadder.xdotoperator_a_5.xaoi.   myaoi              1.00 
+      359 xadder.xdotoperator_a_5.xnand.  mynand             1.00 
+      360 xadder.xdotoperator_a_6.xaoi.   myaoi              1.00 
+      361 xadder.xdotoperator_a_6.xnand.  mynand             1.00 
+      362 xadder.xdotoperator_a_7.xaoi.   myaoi              1.00 
+      363 xadder.xdotoperator_a_7.xnand.  mynand             1.00 
+      364 xadder.xdotoperator_b_0.xoai.   myoai              1.00 
+      365 xadder.xdotoperator_b_1.xoai.   myoai              1.00 
+      366 xadder.xdotoperator_b_1.xnor.   mynor              1.00 
+      367 xadder.xdotoperator_b_2.xoai.   myoai              1.00 
+      368 xadder.xdotoperator_b_2.xnor.   mynor              1.00 
+      369 xadder.xdotoperator_b_3.xoai.   myoai              1.00 
+      370 xadder.xdotoperator_b_3.xnor.   mynor              1.00 
+      371 xadder.xdotoperator_c_0.xaoi.   myaoi              1.00 
+      372 xadder.xdotoperator_c_1.xaoi.   myaoi              1.00 
+      373 xadder.xdotoperator_c_1.xnand.  mynand             1.00 
+      374 xadder.xdotoperator_d_0.xoai.   myoai              1.00 
+      375 xadder.xdotoperator_l_1.xnot1.  mynot              1.00 
+      376 xadder.xdotoperator_l_1.xnot2.  mynot              1.00 
+      377 xadder.xdotoperator_l_1.xoai.   myoai              1.00 
+      378 xadder.xdotoperator_m_1.xnot1.  mynot              1.00 
+      379 xadder.xdotoperator_m_1.xnot2.  mynot              1.00 
+      380 xadder.xdotoperator_m_1.xaoi.   myaoi              1.00 
+      381 xadder.xdotoperator_m_2.xoai.   myoai              1.00 
+      382 xadder.xdotoperator_m_3.xnot1.  mynot              1.00 
+      383 xadder.xdotoperator_m_3.xnot2.  mynot              1.00 
+      384 xadder.xdotoperator_m_3.xaoi.   myaoi              1.00 
+      385 xadder.xdotoperator_n_1.xnot1.  mynot              1.00 
+      386 xadder.xdotoperator_n_1.xnot2.  mynot              1.00 
+      387 xadder.xdotoperator_n_1.xoai.   myoai              1.00 
+      388 xadder.xdotoperator_n_2.xaoi.   myaoi              1.00 
+      389 xadder.xdotoperator_n_3.xnot1.  mynot              1.00 
+      390 xadder.xdotoperator_n_3.xnot2.  mynot              1.00 
+      391 xadder.xdotoperator_n_3.xoai.   myoai              1.00 
+      392 xadder.xdotoperator_n_4.xnot1.  mynot              1.00 
+      393 xadder.xdotoperator_n_4.xnot2.  mynot              1.00 
+      394 xadder.xdotoperator_n_4.xoai.   myoai              1.00 
+      395 xadder.xdotoperator_n_5.xaoi.   myaoi              1.00 
+      396 xadder.xdotoperator_n_6.xaoi.   myaoi              1.00 
+      397 xadder.xdotoperator_n_7.xnot1.  mynot              1.00 
+      398 xadder.xdotoperator_n_7.xnot2.  mynot              1.00 
+      399 xadder.xdotoperator_n_7.xoai.   myoai              1.00 
+      400 xadder.xxor_0.xmna.             mosn               1.00 
+      401 xadder.xxor_0.xmpa.             mosp               1.00 
+      402 xadder.xxor_0.xmnb.             mosn               1.00 
+      403 xadder.xxor_0.xmpb.             mosp               1.00 
+      404 xadder.xxor_0.xmntrans.         mosn               1.00 
+      405 xadder.xxor_0.xmptrans.         mosp               1.00 
+      406 xadder.xxor_1.xmna.             mosn               1.00 
+      407 xadder.xxor_1.xmpa.             mosp               1.00 
+      408 xadder.xxor_1.xmnb.             mosn               1.00 
+      409 xadder.xxor_1.xmpb.             mosp               1.00 
+      410 xadder.xxor_1.xmntrans.         mosn               1.00 
+      411 xadder.xxor_1.xmptrans.         mosp               1.00 
+      412 xadder.xxor_2.xnot_1.           mynot              1.00 
+      413 xadder.xxor_2.xxor_0.           myxor              1.00 
+      414 xadder.xxor_3.xmna.             mosn               1.00 
+      415 xadder.xxor_3.xmpa.             mosp               1.00 
+      416 xadder.xxor_3.xmnb.             mosn               1.00 
+      417 xadder.xxor_3.xmpb.             mosp               1.00 
+      418 xadder.xxor_3.xmntrans.         mosn               1.00 
+      419 xadder.xxor_3.xmptrans.         mosp               1.00 
+      420 xadder.xxor_4.xmna.             mosn               1.00 
+      421 xadder.xxor_4.xmpa.             mosp               1.00 
+      422 xadder.xxor_4.xmnb.             mosn               1.00 
+      423 xadder.xxor_4.xmpb.             mosp               1.00 
+      424 xadder.xxor_4.xmntrans.         mosn               1.00 
+      425 xadder.xxor_4.xmptrans.         mosp               1.00 
+      426 xadder.xxor_5.xnot_1.           mynot              1.00 
+      427 xadder.xxor_5.xxor_0.           myxor              1.00 
+      428 xadder.xxor_6.xnot_1.           mynot              1.00 
+      429 xadder.xxor_6.xxor_0.           myxor              1.00 
+      430 xadder.xxor_7.xmna.             mosn               1.00 
+      431 xadder.xxor_7.xmpa.             mosp               1.00 
+      432 xadder.xxor_7.xmnb.             mosn               1.00 
+      433 xadder.xxor_7.xmpb.             mosp               1.00 
+      434 xadder.xxor_7.xmntrans.         mosn               1.00 
+      435 xadder.xxor_7.xmptrans.         mosp               1.00 
+      436 xadder.xxor_8.xnot_1.           mynot              1.00 
+      437 xadder.xxor_8.xxor_0.           myxor              1.00 
+      438 xadder.xxor_9.xmna.             mosn               1.00 
+      439 xadder.xxor_9.xmpa.             mosp               1.00 
+      440 xadder.xxor_9.xmnb.             mosn               1.00 
+      441 xadder.xxor_9.xmpb.             mosp               1.00 
+      442 xadder.xxor_9.xmntrans.         mosn               1.00 
+      443 xadder.xxor_9.xmptrans.         mosp               1.00 
+      444 xadder.xxor_10.xmna.            mosn               1.00 
+      445 xadder.xxor_10.xmpa.            mosp               1.00 
+      446 xadder.xxor_10.xmnb.            mosn               1.00 
+      447 xadder.xxor_10.xmpb.            mosp               1.00 
+      448 xadder.xxor_10.xmntrans.        mosn               1.00 
+      449 xadder.xxor_10.xmptrans.        mosp               1.00 
+      450 xadder.xxor_11.xnot_1.          mynot              1.00 
+      451 xadder.xxor_11.xxor_0.          myxor              1.00 
+      452 xadder.xxor_12.xmna.            mosn               1.00 
+      453 xadder.xxor_12.xmpa.            mosp               1.00 
+      454 xadder.xxor_12.xmnb.            mosn               1.00 
+      455 xadder.xxor_12.xmpb.            mosp               1.00 
+      456 xadder.xxor_12.xmntrans.        mosn               1.00 
+      457 xadder.xxor_12.xmptrans.        mosp               1.00 
+      458 xadder.xxor_13.xnot_1.          mynot              1.00 
+      459 xadder.xxor_13.xxor_0.          myxor              1.00 
+      460 xadder.xxor_14.xnot_1.          mynot              1.00 
+      461 xadder.xxor_14.xxor_0.          myxor              1.00 
+      462 xadder.xxor_15.xmna.            mosn               1.00 
+      463 xadder.xxor_15.xmpa.            mosp               1.00 
+      464 xadder.xxor_15.xmnb.            mosn               1.00 
+      465 xadder.xxor_15.xmpb.            mosp               1.00 
+      466 xadder.xxor_15.xmntrans.        mosn               1.00 
+      467 xadder.xxor_15.xmptrans.        mosp               1.00 
+      468 xadder.xxor_16.xmna.            mosn               1.00 
+      469 xadder.xxor_16.xmpa.            mosp               1.00 
+      470 xadder.xxor_16.xmnb.            mosn               1.00 
+      471 xadder.xxor_16.xmpb.            mosp               1.00 
+      472 xadder.xxor_16.xmntrans.        mosn               1.00 
+      473 xadder.xxor_16.xmptrans.        mosp               1.00 
+      474 xadder.xgenprop0.xnand.xm1.     mosn               1.00 
+      475 xadder.xgenprop0.xnand.xm2.     mosn               1.00 
+      476 xadder.xgenprop0.xnand.xm3.     mosp               1.00 
+      477 xadder.xgenprop0.xnand.xm4.     mosp               1.00 
+      478 xadder.xgenprop0.xnot.xm1.      mosn               1.00 
+      479 xadder.xgenprop0.xnot.xm2.      mosp               1.00 
+      480 xadder.xgenprop0.xxor.xmna.     mosn               1.00 
+      481 xadder.xgenprop0.xxor.xmpa.     mosp               1.00 
+      482 xadder.xgenprop0.xxor.xmnb.     mosn               1.00 
+      483 xadder.xgenprop0.xxor.xmpb.     mosp               1.00 
+      484 xadder.xgenprop0.xxor.xmntrans. mosn               1.00 
+      485 xadder.xgenprop0.xxor.xmptrans. mosp               1.00 
+      486 xadder.xgenprop1.xnand.xm1.     mosn               1.00 
+      487 xadder.xgenprop1.xnand.xm2.     mosn               1.00 
+      488 xadder.xgenprop1.xnand.xm3.     mosp               1.00 
+      489 xadder.xgenprop1.xnand.xm4.     mosp               1.00 
+      490 xadder.xgenprop1.xnot.xm1.      mosn               1.00 
+      491 xadder.xgenprop1.xnot.xm2.      mosp               1.00 
+      492 xadder.xgenprop1.xxor.xmna.     mosn               1.00 
+      493 xadder.xgenprop1.xxor.xmpa.     mosp               1.00 
+      494 xadder.xgenprop1.xxor.xmnb.     mosn               1.00 
+      495 xadder.xgenprop1.xxor.xmpb.     mosp               1.00 
+      496 xadder.xgenprop1.xxor.xmntrans. mosn               1.00 
+      497 xadder.xgenprop1.xxor.xmptrans. mosp               1.00 
+      498 xadder.xgenprop2.xnand.xm1.     mosn               1.00 
+      499 xadder.xgenprop2.xnand.xm2.     mosn               1.00 
+      500 xadder.xgenprop2.xnand.xm3.     mosp               1.00 
+      501 xadder.xgenprop2.xnand.xm4.     mosp               1.00 
+      502 xadder.xgenprop2.xnot.xm1.      mosn               1.00 
+      503 xadder.xgenprop2.xnot.xm2.      mosp               1.00 
+      504 xadder.xgenprop2.xxor.xmna.     mosn               1.00 
+      505 xadder.xgenprop2.xxor.xmpa.     mosp               1.00 
+      506 xadder.xgenprop2.xxor.xmnb.     mosn               1.00 
+      507 xadder.xgenprop2.xxor.xmpb.     mosp               1.00 
+      508 xadder.xgenprop2.xxor.xmntrans. mosn               1.00 
+      509 xadder.xgenprop2.xxor.xmptrans. mosp               1.00 
+      510 xadder.xgenprop3.xnand.xm1.     mosn               1.00 
+      511 xadder.xgenprop3.xnand.xm2.     mosn               1.00 
+      512 xadder.xgenprop3.xnand.xm3.     mosp               1.00 
+      513 xadder.xgenprop3.xnand.xm4.     mosp               1.00 
+      514 xadder.xgenprop3.xnot.xm1.      mosn               1.00 
+      515 xadder.xgenprop3.xnot.xm2.      mosp               1.00 
+      516 xadder.xgenprop3.xxor.xmna.     mosn               1.00 
+      517 xadder.xgenprop3.xxor.xmpa.     mosp               1.00 
+      518 xadder.xgenprop3.xxor.xmnb.     mosn               1.00 
+      519 xadder.xgenprop3.xxor.xmpb.     mosp               1.00 
+      520 xadder.xgenprop3.xxor.xmntrans. mosn               1.00 
+      521 xadder.xgenprop3.xxor.xmptrans. mosp               1.00 
+      522 xadder.xgenprop4.xnand.xm1.     mosn               1.00 
+      523 xadder.xgenprop4.xnand.xm2.     mosn               1.00 
+      524 xadder.xgenprop4.xnand.xm3.     mosp               1.00 
+      525 xadder.xgenprop4.xnand.xm4.     mosp               1.00 
+      526 xadder.xgenprop4.xnot.xm1.      mosn               1.00 
+      527 xadder.xgenprop4.xnot.xm2.      mosp               1.00 
+      528 xadder.xgenprop4.xxor.xmna.     mosn               1.00 
+      529 xadder.xgenprop4.xxor.xmpa.     mosp               1.00 
+      530 xadder.xgenprop4.xxor.xmnb.     mosn               1.00 
+      531 xadder.xgenprop4.xxor.xmpb.     mosp               1.00 
+      532 xadder.xgenprop4.xxor.xmntrans. mosn               1.00 
+      533 xadder.xgenprop4.xxor.xmptrans. mosp               1.00 
+      534 xadder.xgenprop5.xnand.xm1.     mosn               1.00 
+      535 xadder.xgenprop5.xnand.xm2.     mosn               1.00 
+      536 xadder.xgenprop5.xnand.xm3.     mosp               1.00 
+      537 xadder.xgenprop5.xnand.xm4.     mosp               1.00 
+      538 xadder.xgenprop5.xnot.xm1.      mosn               1.00 
+      539 xadder.xgenprop5.xnot.xm2.      mosp               1.00 
+      540 xadder.xgenprop5.xxor.xmna.     mosn               1.00 
+      541 xadder.xgenprop5.xxor.xmpa.     mosp               1.00 
+      542 xadder.xgenprop5.xxor.xmnb.     mosn               1.00 
+      543 xadder.xgenprop5.xxor.xmpb.     mosp               1.00 
+      544 xadder.xgenprop5.xxor.xmntrans. mosn               1.00 
+      545 xadder.xgenprop5.xxor.xmptrans. mosp               1.00 
+      546 xadder.xgenprop6.xnand.xm1.     mosn               1.00 
+      547 xadder.xgenprop6.xnand.xm2.     mosn               1.00 
+      548 xadder.xgenprop6.xnand.xm3.     mosp               1.00 
+      549 xadder.xgenprop6.xnand.xm4.     mosp               1.00 
+      550 xadder.xgenprop6.xnot.xm1.      mosn               1.00 
+      551 xadder.xgenprop6.xnot.xm2.      mosp               1.00 
+      552 xadder.xgenprop6.xxor.xmna.     mosn               1.00 
+      553 xadder.xgenprop6.xxor.xmpa.     mosp               1.00 
+      554 xadder.xgenprop6.xxor.xmnb.     mosn               1.00 
+      555 xadder.xgenprop6.xxor.xmpb.     mosp               1.00 
+      556 xadder.xgenprop6.xxor.xmntrans. mosn               1.00 
+      557 xadder.xgenprop6.xxor.xmptrans. mosp               1.00 
+      558 xadder.xgenprop7.xnand.xm1.     mosn               1.00 
+      559 xadder.xgenprop7.xnand.xm2.     mosn               1.00 
+      560 xadder.xgenprop7.xnand.xm3.     mosp               1.00 
+      561 xadder.xgenprop7.xnand.xm4.     mosp               1.00 
+      562 xadder.xgenprop7.xnot.xm1.      mosn               1.00 
+      563 xadder.xgenprop7.xnot.xm2.      mosp               1.00 
+      564 xadder.xgenprop7.xxor.xmna.     mosn               1.00 
+      565 xadder.xgenprop7.xxor.xmpa.     mosp               1.00 
+      566 xadder.xgenprop7.xxor.xmnb.     mosn               1.00 
+      567 xadder.xgenprop7.xxor.xmpb.     mosp               1.00 
+      568 xadder.xgenprop7.xxor.xmntrans. mosn               1.00 
+      569 xadder.xgenprop7.xxor.xmptrans. mosp               1.00 
+      570 xadder.xgenprop8.xnand.xm1.     mosn               1.00 
+      571 xadder.xgenprop8.xnand.xm2.     mosn               1.00 
+      572 xadder.xgenprop8.xnand.xm3.     mosp               1.00 
+      573 xadder.xgenprop8.xnand.xm4.     mosp               1.00 
+      574 xadder.xgenprop8.xnot.xm1.      mosn               1.00 
+      575 xadder.xgenprop8.xnot.xm2.      mosp               1.00 
+      576 xadder.xgenprop8.xxor.xmna.     mosn               1.00 
+      577 xadder.xgenprop8.xxor.xmpa.     mosp               1.00 
+      578 xadder.xgenprop8.xxor.xmnb.     mosn               1.00 
+      579 xadder.xgenprop8.xxor.xmpb.     mosp               1.00 
+      580 xadder.xgenprop8.xxor.xmntrans. mosn               1.00 
+      581 xadder.xgenprop8.xxor.xmptrans. mosp               1.00 
+      582 xadder.xgenprop9.xnand.xm1.     mosn               1.00 
+      583 xadder.xgenprop9.xnand.xm2.     mosn               1.00 
+      584 xadder.xgenprop9.xnand.xm3.     mosp               1.00 
+      585 xadder.xgenprop9.xnand.xm4.     mosp               1.00 
+      586 xadder.xgenprop9.xnot.xm1.      mosn               1.00 
+      587 xadder.xgenprop9.xnot.xm2.      mosp               1.00 
+      588 xadder.xgenprop9.xxor.xmna.     mosn               1.00 
+      589 xadder.xgenprop9.xxor.xmpa.     mosp               1.00 
+      590 xadder.xgenprop9.xxor.xmnb.     mosn               1.00 
+      591 xadder.xgenprop9.xxor.xmpb.     mosp               1.00 
+      592 xadder.xgenprop9.xxor.xmntrans. mosn               1.00 
+      593 xadder.xgenprop9.xxor.xmptrans. mosp               1.00 
+      594 xadder.xgenprop10.xnand.xm1.    mosn               1.00 
+      595 xadder.xgenprop10.xnand.xm2.    mosn               1.00 
+      596 xadder.xgenprop10.xnand.xm3.    mosp               1.00 
+      597 xadder.xgenprop10.xnand.xm4.    mosp               1.00 
+      598 xadder.xgenprop10.xnot.xm1.     mosn               1.00 
+      599 xadder.xgenprop10.xnot.xm2.     mosp               1.00 
+      600 xadder.xgenprop10.xxor.xmna.    mosn               1.00 
+      601 xadder.xgenprop10.xxor.xmpa.    mosp               1.00 
+      602 xadder.xgenprop10.xxor.xmnb.    mosn               1.00 
+      603 xadder.xgenprop10.xxor.xmpb.    mosp               1.00 
+      604 xadder.xgenprop10.xxor.xmntrans.
+                                            mosn               1.00 
+      605 xadder.xgenprop10.xxor.xmptrans.
+                                            mosp               1.00 
+      606 xadder.xgenprop11.xnand.xm1.    mosn               1.00 
+      607 xadder.xgenprop11.xnand.xm2.    mosn               1.00 
+      608 xadder.xgenprop11.xnand.xm3.    mosp               1.00 
+      609 xadder.xgenprop11.xnand.xm4.    mosp               1.00 
+      610 xadder.xgenprop11.xnot.xm1.     mosn               1.00 
+      611 xadder.xgenprop11.xnot.xm2.     mosp               1.00 
+      612 xadder.xgenprop11.xxor.xmna.    mosn               1.00 
+      613 xadder.xgenprop11.xxor.xmpa.    mosp               1.00 
+      614 xadder.xgenprop11.xxor.xmnb.    mosn               1.00 
+      615 xadder.xgenprop11.xxor.xmpb.    mosp               1.00 
+      616 xadder.xgenprop11.xxor.xmntrans.
+                                            mosn               1.00 
+      617 xadder.xgenprop11.xxor.xmptrans.
+                                            mosp               1.00 
+      618 xadder.xgenprop12.xnand.xm1.    mosn               1.00 
+      619 xadder.xgenprop12.xnand.xm2.    mosn               1.00 
+      620 xadder.xgenprop12.xnand.xm3.    mosp               1.00 
+      621 xadder.xgenprop12.xnand.xm4.    mosp               1.00 
+      622 xadder.xgenprop12.xnot.xm1.     mosn               1.00 
+      623 xadder.xgenprop12.xnot.xm2.     mosp               1.00 
+      624 xadder.xgenprop12.xxor.xmna.    mosn               1.00 
+      625 xadder.xgenprop12.xxor.xmpa.    mosp               1.00 
+      626 xadder.xgenprop12.xxor.xmnb.    mosn               1.00 
+      627 xadder.xgenprop12.xxor.xmpb.    mosp               1.00 
+      628 xadder.xgenprop12.xxor.xmntrans.
+                                            mosn               1.00 
+      629 xadder.xgenprop12.xxor.xmptrans.
+                                            mosp               1.00 
+      630 xadder.xgenprop13.xnand.xm1.    mosn               1.00 
+      631 xadder.xgenprop13.xnand.xm2.    mosn               1.00 
+      632 xadder.xgenprop13.xnand.xm3.    mosp               1.00 
+      633 xadder.xgenprop13.xnand.xm4.    mosp               1.00 
+      634 xadder.xgenprop13.xnot.xm1.     mosn               1.00 
+      635 xadder.xgenprop13.xnot.xm2.     mosp               1.00 
+      636 xadder.xgenprop13.xxor.xmna.    mosn               1.00 
+      637 xadder.xgenprop13.xxor.xmpa.    mosp               1.00 
+      638 xadder.xgenprop13.xxor.xmnb.    mosn               1.00 
+      639 xadder.xgenprop13.xxor.xmpb.    mosp               1.00 
+      640 xadder.xgenprop13.xxor.xmntrans.
+                                            mosn               1.00 
+      641 xadder.xgenprop13.xxor.xmptrans.
+                                            mosp               1.00 
+      642 xadder.xgenprop14.xnand.xm1.    mosn               1.00 
+      643 xadder.xgenprop14.xnand.xm2.    mosn               1.00 
+      644 xadder.xgenprop14.xnand.xm3.    mosp               1.00 
+      645 xadder.xgenprop14.xnand.xm4.    mosp               1.00 
+      646 xadder.xgenprop14.xnot.xm1.     mosn               1.00 
+      647 xadder.xgenprop14.xnot.xm2.     mosp               1.00 
+      648 xadder.xgenprop14.xxor.xmna.    mosn               1.00 
+      649 xadder.xgenprop14.xxor.xmpa.    mosp               1.00 
+      650 xadder.xgenprop14.xxor.xmnb.    mosn               1.00 
+      651 xadder.xgenprop14.xxor.xmpb.    mosp               1.00 
+      652 xadder.xgenprop14.xxor.xmntrans.
+                                            mosn               1.00 
+      653 xadder.xgenprop14.xxor.xmptrans.
+                                            mosp               1.00 
+      654 xadder.xgenprop15.xnand.xm1.    mosn               1.00 
+      655 xadder.xgenprop15.xnand.xm2.    mosn               1.00 
+      656 xadder.xgenprop15.xnand.xm3.    mosp               1.00 
+      657 xadder.xgenprop15.xnand.xm4.    mosp               1.00 
+      658 xadder.xgenprop15.xnot.xm1.     mosn               1.00 
+      659 xadder.xgenprop15.xnot.xm2.     mosp               1.00 
+      660 xadder.xgenprop15.xxor.xmna.    mosn               1.00 
+      661 xadder.xgenprop15.xxor.xmpa.    mosp               1.00 
+      662 xadder.xgenprop15.xxor.xmnb.    mosn               1.00 
+      663 xadder.xgenprop15.xxor.xmpb.    mosp               1.00 
+      664 xadder.xgenprop15.xxor.xmntrans.
+                                            mosn               1.00 
+      665 xadder.xgenprop15.xxor.xmptrans.
+                                            mosp               1.00 
+      666 xadder.xdotoperator_a_0.xaoi.xm3.
+                                            mosp               1.00 
+      667 xadder.xdotoperator_a_0.xaoi.xm1.
+                                            mosp               1.00 
+      668 xadder.xdotoperator_a_0.xaoi.xm2.
+                                            mosp               1.00 
+      669 xadder.xdotoperator_a_0.xaoi.xm5.
+                                            mosn               1.00 
+      670 xadder.xdotoperator_a_0.xaoi.xm7.
+                                            mosn               1.00 
+      671 xadder.xdotoperator_a_0.xaoi.xm6.
+                                            mosn               1.00 
+      672 xadder.xdotoperator_a_1.xaoi.xm3.
+                                            mosp               1.00 
+      673 xadder.xdotoperator_a_1.xaoi.xm1.
+                                            mosp               1.00 
+      674 xadder.xdotoperator_a_1.xaoi.xm2.
+                                            mosp               1.00 
+      675 xadder.xdotoperator_a_1.xaoi.xm5.
+                                            mosn               1.00 
+      676 xadder.xdotoperator_a_1.xaoi.xm7.
+                                            mosn               1.00 
+      677 xadder.xdotoperator_a_1.xaoi.xm6.
+                                            mosn               1.00 
+      678 xadder.xdotoperator_a_1.xnand.xm1.
+                                            mosn               1.00 
+      679 xadder.xdotoperator_a_1.xnand.xm2.
+                                            mosn               1.00 
+      680 xadder.xdotoperator_a_1.xnand.xm3.
+                                            mosp               1.00 
+      681 xadder.xdotoperator_a_1.xnand.xm4.
+                                            mosp               1.00 
+      682 xadder.xdotoperator_a_2.xaoi.xm3.
+                                            mosp               1.00 
+      683 xadder.xdotoperator_a_2.xaoi.xm1.
+                                            mosp               1.00 
+      684 xadder.xdotoperator_a_2.xaoi.xm2.
+                                            mosp               1.00 
+      685 xadder.xdotoperator_a_2.xaoi.xm5.
+                                            mosn               1.00 
+      686 xadder.xdotoperator_a_2.xaoi.xm7.
+                                            mosn               1.00 
+      687 xadder.xdotoperator_a_2.xaoi.xm6.
+                                            mosn               1.00 
+      688 xadder.xdotoperator_a_2.xnand.xm1.
+                                            mosn               1.00 
+      689 xadder.xdotoperator_a_2.xnand.xm2.
+                                            mosn               1.00 
+      690 xadder.xdotoperator_a_2.xnand.xm3.
+                                            mosp               1.00 
+      691 xadder.xdotoperator_a_2.xnand.xm4.
+                                            mosp               1.00 
+      692 xadder.xdotoperator_a_3.xaoi.xm3.
+                                            mosp               1.00 
+      693 xadder.xdotoperator_a_3.xaoi.xm1.
+                                            mosp               1.00 
+      694 xadder.xdotoperator_a_3.xaoi.xm2.
+                                            mosp               1.00 
+      695 xadder.xdotoperator_a_3.xaoi.xm5.
+                                            mosn               1.00 
+      696 xadder.xdotoperator_a_3.xaoi.xm7.
+                                            mosn               1.00 
+      697 xadder.xdotoperator_a_3.xaoi.xm6.
+                                            mosn               1.00 
+      698 xadder.xdotoperator_a_3.xnand.xm1.
+                                            mosn               1.00 
+      699 xadder.xdotoperator_a_3.xnand.xm2.
+                                            mosn               1.00 
+      700 xadder.xdotoperator_a_3.xnand.xm3.
+                                            mosp               1.00 
+      701 xadder.xdotoperator_a_3.xnand.xm4.
+                                            mosp               1.00 
+      702 xadder.xdotoperator_a_4.xaoi.xm3.
+                                            mosp               1.00 
+      703 xadder.xdotoperator_a_4.xaoi.xm1.
+                                            mosp               1.00 
+      704 xadder.xdotoperator_a_4.xaoi.xm2.
+                                            mosp               1.00 
+      705 xadder.xdotoperator_a_4.xaoi.xm5.
+                                            mosn               1.00 
+      706 xadder.xdotoperator_a_4.xaoi.xm7.
+                                            mosn               1.00 
+      707 xadder.xdotoperator_a_4.xaoi.xm6.
+                                            mosn               1.00 
+      708 xadder.xdotoperator_a_4.xnand.xm1.
+                                            mosn               1.00 
+      709 xadder.xdotoperator_a_4.xnand.xm2.
+                                            mosn               1.00 
+      710 xadder.xdotoperator_a_4.xnand.xm3.
+                                            mosp               1.00 
+      711 xadder.xdotoperator_a_4.xnand.xm4.
+                                            mosp               1.00 
+      712 xadder.xdotoperator_a_5.xaoi.xm3.
+                                            mosp               1.00 
+      713 xadder.xdotoperator_a_5.xaoi.xm1.
+                                            mosp               1.00 
+      714 xadder.xdotoperator_a_5.xaoi.xm2.
+                                            mosp               1.00 
+      715 xadder.xdotoperator_a_5.xaoi.xm5.
+                                            mosn               1.00 
+      716 xadder.xdotoperator_a_5.xaoi.xm7.
+                                            mosn               1.00 
+      717 xadder.xdotoperator_a_5.xaoi.xm6.
+                                            mosn               1.00 
+      718 xadder.xdotoperator_a_5.xnand.xm1.
+                                            mosn               1.00 
+      719 xadder.xdotoperator_a_5.xnand.xm2.
+                                            mosn               1.00 
+      720 xadder.xdotoperator_a_5.xnand.xm3.
+                                            mosp               1.00 
+      721 xadder.xdotoperator_a_5.xnand.xm4.
+                                            mosp               1.00 
+      722 xadder.xdotoperator_a_6.xaoi.xm3.
+                                            mosp               1.00 
+      723 xadder.xdotoperator_a_6.xaoi.xm1.
+                                            mosp               1.00 
+      724 xadder.xdotoperator_a_6.xaoi.xm2.
+                                            mosp               1.00 
+      725 xadder.xdotoperator_a_6.xaoi.xm5.
+                                            mosn               1.00 
+      726 xadder.xdotoperator_a_6.xaoi.xm7.
+                                            mosn               1.00 
+      727 xadder.xdotoperator_a_6.xaoi.xm6.
+                                            mosn               1.00 
+      728 xadder.xdotoperator_a_6.xnand.xm1.
+                                            mosn               1.00 
+      729 xadder.xdotoperator_a_6.xnand.xm2.
+                                            mosn               1.00 
+      730 xadder.xdotoperator_a_6.xnand.xm3.
+                                            mosp               1.00 
+      731 xadder.xdotoperator_a_6.xnand.xm4.
+                                            mosp               1.00 
+      732 xadder.xdotoperator_a_7.xaoi.xm3.
+                                            mosp               1.00 
+      733 xadder.xdotoperator_a_7.xaoi.xm1.
+                                            mosp               1.00 
+      734 xadder.xdotoperator_a_7.xaoi.xm2.
+                                            mosp               1.00 
+      735 xadder.xdotoperator_a_7.xaoi.xm5.
+                                            mosn               1.00 
+      736 xadder.xdotoperator_a_7.xaoi.xm7.
+                                            mosn               1.00 
+      737 xadder.xdotoperator_a_7.xaoi.xm6.
+                                            mosn               1.00 
+      738 xadder.xdotoperator_a_7.xnand.xm1.
+                                            mosn               1.00 
+      739 xadder.xdotoperator_a_7.xnand.xm2.
+                                            mosn               1.00 
+      740 xadder.xdotoperator_a_7.xnand.xm3.
+                                            mosp               1.00 
+      741 xadder.xdotoperator_a_7.xnand.xm4.
+                                            mosp               1.00 
+      742 xadder.xdotoperator_b_0.xoai.xm1.
+                                            mosp               1.00 
+      743 xadder.xdotoperator_b_0.xoai.xm2.
+                                            mosp               1.00 
+      744 xadder.xdotoperator_b_0.xoai.xm3.
+                                            mosp               1.00 
+      745 xadder.xdotoperator_b_0.xoai.xm5.
+                                            mosn               1.00 
+      746 xadder.xdotoperator_b_0.xoai.xm6.
+                                            mosn               1.00 
+      747 xadder.xdotoperator_b_0.xoai.xm7.
+                                            mosn               1.00 
+      748 xadder.xdotoperator_b_1.xoai.xm1.
+                                            mosp               1.00 
+      749 xadder.xdotoperator_b_1.xoai.xm2.
+                                            mosp               1.00 
+      750 xadder.xdotoperator_b_1.xoai.xm3.
+                                            mosp               1.00 
+      751 xadder.xdotoperator_b_1.xoai.xm5.
+                                            mosn               1.00 
+      752 xadder.xdotoperator_b_1.xoai.xm6.
+                                            mosn               1.00 
+      753 xadder.xdotoperator_b_1.xoai.xm7.
+                                            mosn               1.00 
+      754 xadder.xdotoperator_b_1.xnor.xmn1.
+                                            mosn               1.00 
+      755 xadder.xdotoperator_b_1.xnor.xmn2.
+                                            mosn               1.00 
+      756 xadder.xdotoperator_b_1.xnor.xmp1.
+                                            mosp               1.00 
+      757 xadder.xdotoperator_b_1.xnor.xmp2.
+                                            mosp               1.00 
+      758 xadder.xdotoperator_b_2.xoai.xm1.
+                                            mosp               1.00 
+      759 xadder.xdotoperator_b_2.xoai.xm2.
+                                            mosp               1.00 
+      760 xadder.xdotoperator_b_2.xoai.xm3.
+                                            mosp               1.00 
+      761 xadder.xdotoperator_b_2.xoai.xm5.
+                                            mosn               1.00 
+      762 xadder.xdotoperator_b_2.xoai.xm6.
+                                            mosn               1.00 
+      763 xadder.xdotoperator_b_2.xoai.xm7.
+                                            mosn               1.00 
+      764 xadder.xdotoperator_b_2.xnor.xmn1.
+                                            mosn               1.00 
+      765 xadder.xdotoperator_b_2.xnor.xmn2.
+                                            mosn               1.00 
+      766 xadder.xdotoperator_b_2.xnor.xmp1.
+                                            mosp               1.00 
+      767 xadder.xdotoperator_b_2.xnor.xmp2.
+                                            mosp               1.00 
+      768 xadder.xdotoperator_b_3.xoai.xm1.
+                                            mosp               1.00 
+      769 xadder.xdotoperator_b_3.xoai.xm2.
+                                            mosp               1.00 
+      770 xadder.xdotoperator_b_3.xoai.xm3.
+                                            mosp               1.00 
+      771 xadder.xdotoperator_b_3.xoai.xm5.
+                                            mosn               1.00 
+      772 xadder.xdotoperator_b_3.xoai.xm6.
+                                            mosn               1.00 
+      773 xadder.xdotoperator_b_3.xoai.xm7.
+                                            mosn               1.00 
+      774 xadder.xdotoperator_b_3.xnor.xmn1.
+                                            mosn               1.00 
+      775 xadder.xdotoperator_b_3.xnor.xmn2.
+                                            mosn               1.00 
+      776 xadder.xdotoperator_b_3.xnor.xmp1.
+                                            mosp               1.00 
+      777 xadder.xdotoperator_b_3.xnor.xmp2.
+                                            mosp               1.00 
+      778 xadder.xdotoperator_c_0.xaoi.xm3.
+                                            mosp               1.00 
+      779 xadder.xdotoperator_c_0.xaoi.xm1.
+                                            mosp               1.00 
+      780 xadder.xdotoperator_c_0.xaoi.xm2.
+                                            mosp               1.00 
+      781 xadder.xdotoperator_c_0.xaoi.xm5.
+                                            mosn               1.00 
+      782 xadder.xdotoperator_c_0.xaoi.xm7.
+                                            mosn               1.00 
+      783 xadder.xdotoperator_c_0.xaoi.xm6.
+                                            mosn               1.00 
+      784 xadder.xdotoperator_c_1.xaoi.xm3.
+                                            mosp               1.00 
+      785 xadder.xdotoperator_c_1.xaoi.xm1.
+                                            mosp               1.00 
+      786 xadder.xdotoperator_c_1.xaoi.xm2.
+                                            mosp               1.00 
+      787 xadder.xdotoperator_c_1.xaoi.xm5.
+                                            mosn               1.00 
+      788 xadder.xdotoperator_c_1.xaoi.xm7.
+                                            mosn               1.00 
+      789 xadder.xdotoperator_c_1.xaoi.xm6.
+                                            mosn               1.00 
+      790 xadder.xdotoperator_c_1.xnand.xm1.
+                                            mosn               1.00 
+      791 xadder.xdotoperator_c_1.xnand.xm2.
+                                            mosn               1.00 
+      792 xadder.xdotoperator_c_1.xnand.xm3.
+                                            mosp               1.00 
+      793 xadder.xdotoperator_c_1.xnand.xm4.
+                                            mosp               1.00 
+      794 xadder.xdotoperator_d_0.xoai.xm1.
+                                            mosp               1.00 
+      795 xadder.xdotoperator_d_0.xoai.xm2.
+                                            mosp               1.00 
+      796 xadder.xdotoperator_d_0.xoai.xm3.
+                                            mosp               1.00 
+      797 xadder.xdotoperator_d_0.xoai.xm5.
+                                            mosn               1.00 
+      798 xadder.xdotoperator_d_0.xoai.xm6.
+                                            mosn               1.00 
+      799 xadder.xdotoperator_d_0.xoai.xm7.
+                                            mosn               1.00 
+      800 xadder.xdotoperator_l_1.xnot1.xm1.
+                                            mosn               1.00 
+      801 xadder.xdotoperator_l_1.xnot1.xm2.
+                                            mosp               1.00 
+      802 xadder.xdotoperator_l_1.xnot2.xm1.
+                                            mosn               1.00 
+      803 xadder.xdotoperator_l_1.xnot2.xm2.
+                                            mosp               1.00 
+      804 xadder.xdotoperator_l_1.xoai.xm1.
+                                            mosp               1.00 
+      805 xadder.xdotoperator_l_1.xoai.xm2.
+                                            mosp               1.00 
+      806 xadder.xdotoperator_l_1.xoai.xm3.
+                                            mosp               1.00 
+      807 xadder.xdotoperator_l_1.xoai.xm5.
+                                            mosn               1.00 
+      808 xadder.xdotoperator_l_1.xoai.xm6.
+                                            mosn               1.00 
+      809 xadder.xdotoperator_l_1.xoai.xm7.
+                                            mosn               1.00 
+      810 xadder.xdotoperator_m_1.xnot1.xm1.
+                                            mosn               1.00 
+      811 xadder.xdotoperator_m_1.xnot1.xm2.
+                                            mosp               1.00 
+      812 xadder.xdotoperator_m_1.xnot2.xm1.
+                                            mosn               1.00 
+      813 xadder.xdotoperator_m_1.xnot2.xm2.
+                                            mosp               1.00 
+      814 xadder.xdotoperator_m_1.xaoi.xm3.
+                                            mosp               1.00 
+      815 xadder.xdotoperator_m_1.xaoi.xm1.
+                                            mosp               1.00 
+      816 xadder.xdotoperator_m_1.xaoi.xm2.
+                                            mosp               1.00 
+      817 xadder.xdotoperator_m_1.xaoi.xm5.
+                                            mosn               1.00 
+      818 xadder.xdotoperator_m_1.xaoi.xm7.
+                                            mosn               1.00 
+      819 xadder.xdotoperator_m_1.xaoi.xm6.
+                                            mosn               1.00 
+      820 xadder.xdotoperator_m_2.xoai.xm1.
+                                            mosp               1.00 
+      821 xadder.xdotoperator_m_2.xoai.xm2.
+                                            mosp               1.00 
+      822 xadder.xdotoperator_m_2.xoai.xm3.
+                                            mosp               1.00 
+      823 xadder.xdotoperator_m_2.xoai.xm5.
+                                            mosn               1.00 
+      824 xadder.xdotoperator_m_2.xoai.xm6.
+                                            mosn               1.00 
+      825 xadder.xdotoperator_m_2.xoai.xm7.
+                                            mosn               1.00 
+      826 xadder.xdotoperator_m_3.xnot1.xm1.
+                                            mosn               1.00 
+      827 xadder.xdotoperator_m_3.xnot1.xm2.
+                                            mosp               1.00 
+      828 xadder.xdotoperator_m_3.xnot2.xm1.
+                                            mosn               1.00 
+      829 xadder.xdotoperator_m_3.xnot2.xm2.
+                                            mosp               1.00 
+      830 xadder.xdotoperator_m_3.xaoi.xm3.
+                                            mosp               1.00 
+      831 xadder.xdotoperator_m_3.xaoi.xm1.
+                                            mosp               1.00 
+      832 xadder.xdotoperator_m_3.xaoi.xm2.
+                                            mosp               1.00 
+      833 xadder.xdotoperator_m_3.xaoi.xm5.
+                                            mosn               1.00 
+      834 xadder.xdotoperator_m_3.xaoi.xm7.
+                                            mosn               1.00 
+      835 xadder.xdotoperator_m_3.xaoi.xm6.
+                                            mosn               1.00 
+      836 xadder.xdotoperator_n_1.xnot1.xm1.
+                                            mosn               1.00 
+      837 xadder.xdotoperator_n_1.xnot1.xm2.
+                                            mosp               1.00 
+      838 xadder.xdotoperator_n_1.xnot2.xm1.
+                                            mosn               1.00 
+      839 xadder.xdotoperator_n_1.xnot2.xm2.
+                                            mosp               1.00 
+      840 xadder.xdotoperator_n_1.xoai.xm1.
+                                            mosp               1.00 
+      841 xadder.xdotoperator_n_1.xoai.xm2.
+                                            mosp               1.00 
+      842 xadder.xdotoperator_n_1.xoai.xm3.
+                                            mosp               1.00 
+      843 xadder.xdotoperator_n_1.xoai.xm5.
+                                            mosn               1.00 
+      844 xadder.xdotoperator_n_1.xoai.xm6.
+                                            mosn               1.00 
+      845 xadder.xdotoperator_n_1.xoai.xm7.
+                                            mosn               1.00 
+      846 xadder.xdotoperator_n_2.xaoi.xm3.
+                                            mosp               1.00 
+      847 xadder.xdotoperator_n_2.xaoi.xm1.
+                                            mosp               1.00 
+      848 xadder.xdotoperator_n_2.xaoi.xm2.
+                                            mosp               1.00 
+      849 xadder.xdotoperator_n_2.xaoi.xm5.
+                                            mosn               1.00 
+      850 xadder.xdotoperator_n_2.xaoi.xm7.
+                                            mosn               1.00 
+      851 xadder.xdotoperator_n_2.xaoi.xm6.
+                                            mosn               1.00 
+      852 xadder.xdotoperator_n_3.xnot1.xm1.
+                                            mosn               1.00 
+      853 xadder.xdotoperator_n_3.xnot1.xm2.
+                                            mosp               1.00 
+      854 xadder.xdotoperator_n_3.xnot2.xm1.
+                                            mosn               1.00 
+      855 xadder.xdotoperator_n_3.xnot2.xm2.
+                                            mosp               1.00 
+      856 xadder.xdotoperator_n_3.xoai.xm1.
+                                            mosp               1.00 
+      857 xadder.xdotoperator_n_3.xoai.xm2.
+                                            mosp               1.00 
+      858 xadder.xdotoperator_n_3.xoai.xm3.
+                                            mosp               1.00 
+      859 xadder.xdotoperator_n_3.xoai.xm5.
+                                            mosn               1.00 
+      860 xadder.xdotoperator_n_3.xoai.xm6.
+                                            mosn               1.00 
+      861 xadder.xdotoperator_n_3.xoai.xm7.
+                                            mosn               1.00 
+      862 xadder.xdotoperator_n_4.xnot1.xm1.
+                                            mosn               1.00 
+      863 xadder.xdotoperator_n_4.xnot1.xm2.
+                                            mosp               1.00 
+      864 xadder.xdotoperator_n_4.xnot2.xm1.
+                                            mosn               1.00 
+      865 xadder.xdotoperator_n_4.xnot2.xm2.
+                                            mosp               1.00 
+      866 xadder.xdotoperator_n_4.xoai.xm1.
+                                            mosp               1.00 
+      867 xadder.xdotoperator_n_4.xoai.xm2.
+                                            mosp               1.00 
+      868 xadder.xdotoperator_n_4.xoai.xm3.
+                                            mosp               1.00 
+      869 xadder.xdotoperator_n_4.xoai.xm5.
+                                            mosn               1.00 
+      870 xadder.xdotoperator_n_4.xoai.xm6.
+                                            mosn               1.00 
+      871 xadder.xdotoperator_n_4.xoai.xm7.
+                                            mosn               1.00 
+      872 xadder.xdotoperator_n_5.xaoi.xm3.
+                                            mosp               1.00 
+      873 xadder.xdotoperator_n_5.xaoi.xm1.
+                                            mosp               1.00 
+      874 xadder.xdotoperator_n_5.xaoi.xm2.
+                                            mosp               1.00 
+      875 xadder.xdotoperator_n_5.xaoi.xm5.
+                                            mosn               1.00 
+      876 xadder.xdotoperator_n_5.xaoi.xm7.
+                                            mosn               1.00 
+      877 xadder.xdotoperator_n_5.xaoi.xm6.
+                                            mosn               1.00 
+      878 xadder.xdotoperator_n_6.xaoi.xm3.
+                                            mosp               1.00 
+      879 xadder.xdotoperator_n_6.xaoi.xm1.
+                                            mosp               1.00 
+      880 xadder.xdotoperator_n_6.xaoi.xm2.
+                                            mosp               1.00 
+      881 xadder.xdotoperator_n_6.xaoi.xm5.
+                                            mosn               1.00 
+      882 xadder.xdotoperator_n_6.xaoi.xm7.
+                                            mosn               1.00 
+      883 xadder.xdotoperator_n_6.xaoi.xm6.
+                                            mosn               1.00 
+      884 xadder.xdotoperator_n_7.xnot1.xm1.
+                                            mosn               1.00 
+      885 xadder.xdotoperator_n_7.xnot1.xm2.
+                                            mosp               1.00 
+      886 xadder.xdotoperator_n_7.xnot2.xm1.
+                                            mosn               1.00 
+      887 xadder.xdotoperator_n_7.xnot2.xm2.
+                                            mosp               1.00 
+      888 xadder.xdotoperator_n_7.xoai.xm1.
+                                            mosp               1.00 
+      889 xadder.xdotoperator_n_7.xoai.xm2.
+                                            mosp               1.00 
+      890 xadder.xdotoperator_n_7.xoai.xm3.
+                                            mosp               1.00 
+      891 xadder.xdotoperator_n_7.xoai.xm5.
+                                            mosn               1.00 
+      892 xadder.xdotoperator_n_7.xoai.xm6.
+                                            mosn               1.00 
+      893 xadder.xdotoperator_n_7.xoai.xm7.
+                                            mosn               1.00 
+      894 xadder.xxor_2.xnot_1.xm1.       mosn               1.00 
+      895 xadder.xxor_2.xnot_1.xm2.       mosp               1.00 
+      896 xadder.xxor_2.xxor_0.xmna.      mosn               1.00 
+      897 xadder.xxor_2.xxor_0.xmpa.      mosp               1.00 
+      898 xadder.xxor_2.xxor_0.xmnb.      mosn               1.00 
+      899 xadder.xxor_2.xxor_0.xmpb.      mosp               1.00 
+      900 xadder.xxor_2.xxor_0.xmntrans.  mosn               1.00 
+      901 xadder.xxor_2.xxor_0.xmptrans.  mosp               1.00 
+      902 xadder.xxor_5.xnot_1.xm1.       mosn               1.00 
+      903 xadder.xxor_5.xnot_1.xm2.       mosp               1.00 
+      904 xadder.xxor_5.xxor_0.xmna.      mosn               1.00 
+      905 xadder.xxor_5.xxor_0.xmpa.      mosp               1.00 
+      906 xadder.xxor_5.xxor_0.xmnb.      mosn               1.00 
+      907 xadder.xxor_5.xxor_0.xmpb.      mosp               1.00 
+      908 xadder.xxor_5.xxor_0.xmntrans.  mosn               1.00 
+      909 xadder.xxor_5.xxor_0.xmptrans.  mosp               1.00 
+      910 xadder.xxor_6.xnot_1.xm1.       mosn               1.00 
+      911 xadder.xxor_6.xnot_1.xm2.       mosp               1.00 
+      912 xadder.xxor_6.xxor_0.xmna.      mosn               1.00 
+      913 xadder.xxor_6.xxor_0.xmpa.      mosp               1.00 
+      914 xadder.xxor_6.xxor_0.xmnb.      mosn               1.00 
+      915 xadder.xxor_6.xxor_0.xmpb.      mosp               1.00 
+      916 xadder.xxor_6.xxor_0.xmntrans.  mosn               1.00 
+      917 xadder.xxor_6.xxor_0.xmptrans.  mosp               1.00 
+      918 xadder.xxor_8.xnot_1.xm1.       mosn               1.00 
+      919 xadder.xxor_8.xnot_1.xm2.       mosp               1.00 
+      920 xadder.xxor_8.xxor_0.xmna.      mosn               1.00 
+      921 xadder.xxor_8.xxor_0.xmpa.      mosp               1.00 
+      922 xadder.xxor_8.xxor_0.xmnb.      mosn               1.00 
+      923 xadder.xxor_8.xxor_0.xmpb.      mosp               1.00 
+      924 xadder.xxor_8.xxor_0.xmntrans.  mosn               1.00 
+      925 xadder.xxor_8.xxor_0.xmptrans.  mosp               1.00 
+      926 xadder.xxor_11.xnot_1.xm1.      mosn               1.00 
+      927 xadder.xxor_11.xnot_1.xm2.      mosp               1.00 
+      928 xadder.xxor_11.xxor_0.xmna.     mosn               1.00 
+      929 xadder.xxor_11.xxor_0.xmpa.     mosp               1.00 
+      930 xadder.xxor_11.xxor_0.xmnb.     mosn               1.00 
+      931 xadder.xxor_11.xxor_0.xmpb.     mosp               1.00 
+      932 xadder.xxor_11.xxor_0.xmntrans. mosn               1.00 
+      933 xadder.xxor_11.xxor_0.xmptrans. mosp               1.00 
+      934 xadder.xxor_13.xnot_1.xm1.      mosn               1.00 
+      935 xadder.xxor_13.xnot_1.xm2.      mosp               1.00 
+      936 xadder.xxor_13.xxor_0.xmna.     mosn               1.00 
+      937 xadder.xxor_13.xxor_0.xmpa.     mosp               1.00 
+      938 xadder.xxor_13.xxor_0.xmnb.     mosn               1.00 
+      939 xadder.xxor_13.xxor_0.xmpb.     mosp               1.00 
+      940 xadder.xxor_13.xxor_0.xmntrans. mosn               1.00 
+      941 xadder.xxor_13.xxor_0.xmptrans. mosp               1.00 
+      942 xadder.xxor_14.xnot_1.xm1.      mosn               1.00 
+      943 xadder.xxor_14.xnot_1.xm2.      mosp               1.00 
+      944 xadder.xxor_14.xxor_0.xmna.     mosn               1.00 
+      945 xadder.xxor_14.xxor_0.xmpa.     mosp               1.00 
+      946 xadder.xxor_14.xxor_0.xmnb.     mosn               1.00 
+      947 xadder.xxor_14.xxor_0.xmpb.     mosp               1.00 
+      948 xadder.xxor_14.xxor_0.xmntrans. mosn               1.00 
+      949 xadder.xxor_14.xxor_0.xmptrans. mosp               1.00 
+ **warning**(nmos:m1)Warning:  Acde = 0.280299 may be too small in BSIM4 model with w=1.2e-07 l=4.5e-08.
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ absh    = 0         absin   = 0         absmos  = 1.00000u  abstol  = 1.00000n  
+ absvar  = 500.000m  absvdc  = 50.0000u  accurate= 0         acout   = 0         
+ altcc   = 0         altchk  = 0         appendall= 0         artist  = 0         
+ aspec   = 0         auto_inc_off= 0         autost  = 0         ba_activehier= 0         
+ ba_coupling= 0         ba_error= 0         ba_geoshrink= 1.00000   ba_mergeport= 0         
+ ba_netfmt= 0         ba_print= ideal     ba_scale= 1.00000   badchr  = 0         
+ bdfatolset= 1.00000m  bdfrtol = 1.00000m  biasinte= 0         biasnode= 0         
+ biaspara= 0         biawarn = 0         binprnt = 0         bkpsiz  = 50000     
+ block_name= 1         bsim4pds= 0         bypass  = 2.00000   bytol   = 100.000u  
+ captab  = 0         cflflag = 0         chgtol  = 1.00000f  cmi00opt= -1.23457e-29 
+ cmi01opt= -1.23457e-29 cmi02opt= -1.23457e-29 cmi03opt= -1.23457e-29 cmi04opt= -1.23457e-29 
+ cmi05opt= -1.23457e-29 cmi06opt= -1.23457e-29 cmi07opt= -1.23457e-29 cmi08opt= -1.23457e-29 
+ cmi09opt= -1.23457e-29 cmifla  = 0         cmimcflag= 0         cmivth  = 0         
+ co      = 78        cptime  = 10.0000x  cscal   = 1.00000t  csdf    = 0         
+ cshdc   = 1.00000p  cshunt  = 0         custcmi = 0         cvtol   = 200.000m  
+ dcap    = 2         dccap   = 0         dcfor   = 0         dchold  = 1         
+ dcic    = 1         dcon    = 0         dcstep  = 0         dctran  = 0         
+ defad   = 0         defas   = 0         defl    = 100.000u  defnrd  = 0         
+ defnrs  = 0         defpd   = 0         defps   = 0         defsa   = 0         
+ defsb   = 0         defsd   = 0         defw    = 100.000u  degf    = 100.000m  
+ degfn   = 100.000m  degfp   = 100.000m  delmax  = 0         di      = 100.000   
+ diagno  = 0         dlencsdf= 5         dv      = 1.00000k  dvdt    = 3         
+ dvtr    = 1.00000k  dynacc  = 0         em_recovery= 1.00000   epsmin  = 1e-28     
+ expli   = 0         expmax  = 80.0000   fast    = 1         fft_accu= 0         
+ fftout  = 0         fmax    = 1.00000t  fs      = 250.000m  fscal   = 1.00000n  
+ ft      = 250.000m  gdcpath = 1.00000p  gen_cur_pol= 0         genk    = 1         
+ geocheck= 0         geoshrink= 1.00000   gmax    = 100.000   gmb_clamp= 1         
+ gmin    = 1.00000p  gmindc  = 1.00000p  gramp   = 0         gscal   = 1.00000k  
+ gshdc   = 0         gshunt  = 0         h9007   = 0         hier_delim= 0         
+ hier_sca= 0         ic_accurate= 0         icsweep = 1         ingold  = 0         
+ interp  = 0         iprop   = 0         itl1    = 200       itl2    = 50        
+ itl3    = 3         itl4    = 8         itl5    = 0         itlptran= 30        
+ itlpz   = 100       itrprt  = 0         ivdmargin= 0         ivth    = 0         
+ ivthn   = 0         ivthp   = 0         kcltes  = 0         klim    = 10.0000m  
+ la_freq = 1.00000g  la_maxr = 1.00000y  la_minc = 100.000a  la_time = 1.00000n  
+ la_tol  = 50.0000m  lennam  = 8         limtim  = 2         lis_new = 0         
+ lislvl  = 0         list    = 0         lscal   = 1.00000x  lvltim  = 4         
+ macmod  = 0         maxamp  = 0         maxord  = 2         maxwarns= 5         
+ mbypas  = 2.00000   mcbrief = 0         measdg  = 4         measfail= 1         
+ measfile= 0         measform= 0         measou  = 1         method  = 1         
+ minval  = 1.00000p  mixed_num_format= 0         modmon  = 0         modparchk= 1         
+ modprt  = 0         modsrh  = 1         module_def_rule= 0         montecon= 1         
+ mraapi  = 0         mraext  = 0         mrapaged= 0         mt_check= 0         
+ mtthresh= 0         mu      = 500.000m  ncfilter= -1.00000p ncwarn  = 0         
+ newtol  = 0         node    = 0         noelck  = 0         noisem  = 10.0000u  
+ noisum  = 0         nomod   = 1         nopiv   = 0         notop   = 0         
+ nowarn  = 0         numdgt  = 4         nxx     = 0         off     = 0         
+ opfile  = 0         optcon  = 0         optlst  = 0         optparhier= global    
+ opts    = 1         parhier = local     parse_module_netlist= 0         pathnu  = 0         
+ pcb_scale_format= 0         phd     = 0         pivot   = 0         pivtol  = 1.00000f  
+ plim    = 0         post    = binary    post_ver= 9601      postlvl = 0         
+ posttop = 0         probe   = 0         psf     = 0         puretp  = 0         
+ putmeas = 1         pzabs   = 10.0000m  pztol   = 1.00000u  radegoutput= 0         
+ randgen = 0         redefmodel= 0         redefsub= 0         relh    = 50.0000m  
+ reli    = 10.0000m  relin   = 1.00000m  relmos  = 50.0000m  relq    = 10.0000m  
+ reltol  = 1.00000m  relvar  = 300.000m  relvdc  = 1.00000m  replicates= 1         
+ resmin  = 10.0000u  risetime= 100.000p  ritol   = 1.00000u  rmax    = 5.00000   
+ rmin    = 1.00000n  runlvl  = 3         sampling_method= 1         scale   = 1.00000   
+ scalm   = 1.00000   sda     = 0         seed    = 1         set_missing_values= 1         
+ shrink  = 1.00000   si_scale_symbols= 0         sim_la  = 0         slopetol= 500.000m  
+ soiq0   = 0         spice   = 0         split_dp= 0         spmodel = 0         
+ sstamp  = 0         statfl  = 0         strict_check= 0         sx_factor= 1.00000   
+ symb    = 1         timeres = 1.00000p  tmiage  = 0         tmiba   = 0         
+ tmiflag = 0         tmisave = 0         tmplt_pol= 0         tnom    = 25.0000   
+ trcon   = 1         trtol   = 7.00000   unwrap  = 0         use_temp= 0         
+ vamodel = 0         vecbus  = 0         ver_control= 0         vfloor  = 500.000n  
+ vntol   = 50.0000u  wacc    = -1.00000  warn    = 1         warn_sep= 0         
+ warnli  = 1         wave_pop= 100.000m  wdelayopt= 0         wdf     = 0         
+ wdf_op  = 1         wincludegdimag= no        wl      = 0         wnflag  = 1         
+ x0i     = 0         x0r     = -123.456k x1i     = 0         x1r     = -1.23456x 
+ x2i     = 0         x2r     = 1.23456x  xdtemp  = 0         xmult_in_expr= 0         
+ zuken   = 0         
+ biasfile =                 
+ cmipath = 
+ tmipath = 
+ tmiinput = 
+ etmiusrinput = 
+ mra00path = 
+ mra01path = 
+ mra02path = 
+ mra03path = 
+ radegfile = 
+ tmisort = 
+ d_ibis = 
+ search = 
+  
+ search = /users/start2016/r0364010/temp_m2s
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/ad
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/ad
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/behave
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/bjt
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/burr_brn
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/comlinear
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/dio
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/fet
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/lin_tech
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/pci
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/signet
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/ti
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/tline
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts/xilinx
+  
+ search = /esat/micas-data/software/hspice_2012.06/hspice/parts
+  
+  Opening plot unit= 15
+ file=/users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_InvertorGone_ModifiedSizes.pa0
+
+ **info** dc convergence successful
+ you can increase the efficiency of the
+ operating point calculation by setting dcon= 1
+ in the .option statement
+1****** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******              
+ ******  
+ ******************************
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+      node    =voltage        node    =voltage        node    =voltage
+
+ +  0:a0      =   0.        0:a1      =   0.        0:a10     =   0.     
+ +  0:a11     =   0.        0:a12     =   0.        0:a13     =   0.     
+ +  0:a14     =   0.        0:a15     =   0.        0:a2      =   0.     
+ +  0:a3      =   0.        0:a4      =   0.        0:a5      =   0.     
+ +  0:a6      =   0.        0:a7      =   0.        0:a8      =   0.     
+ +  0:a9      =   0.        0:a_buff0 =  73.6570n   0:a_buff1 =  73.6570n
+ +  0:a_buff10=  65.4094n   0:a_buff11=  65.4094n   0:a_buff12=  65.4094n
+ +  0:a_buff13=  65.4094n   0:a_buff14=  65.4094n   0:a_buff15=  65.4094n
+ +  0:a_buff2 =  73.6570n   0:a_buff3 =  73.6570n   0:a_buff4 =  73.6570n
+ +  0:a_buff5 =  73.6570n   0:a_buff6 =  73.6570n   0:a_buff7 =  73.6570n
+ +  0:a_buff8 =  65.4094n   0:a_buff9 =  65.4094n   0:an0     = 999.9999m
+ +  0:an1     = 999.9999m   0:an10    = 999.9999m   0:an11    = 999.9999m
+ +  0:an12    = 999.9999m   0:an13    = 999.9999m   0:an14    = 999.9999m
+ +  0:an15    = 999.9999m   0:an2     = 999.9999m   0:an3     = 999.9999m
+ +  0:an4     = 999.9999m   0:an5     = 999.9999m   0:an6     = 999.9999m
+ +  0:an7     = 999.9999m   0:an8     = 999.9999m   0:an9     = 999.9999m
+ +  0:b0      =   0.        0:b1      =   0.        0:b10     =   0.     
+ +  0:b11     =   0.        0:b12     =   0.        0:b13     =   0.     
+ +  0:b14     =   0.        0:b15     =   0.        0:b2      =   0.     
+ +  0:b3      =   0.        0:b4      =   0.        0:b5      =   0.     
+ +  0:b6      =   0.        0:b7      =   0.        0:b8      =   0.     
+ +  0:b9      =   0.        0:b_buff0 = 132.0902n   0:b_buff1 = 150.6918n
+ +  0:b_buff10= 145.7817n   0:b_buff11= 145.7817n   0:b_buff12= 145.7817n
+ +  0:b_buff13= 145.7817n   0:b_buff14= 149.9055n   0:b_buff15= 145.7817n
+ +  0:b_buff2 = 165.1696n   0:b_buff3 = 169.2934n   0:b_buff4 = 165.1696n
+ +  0:b_buff5 = 169.2934n   0:b_buff6 = 165.1696n   0:b_buff7 = 169.2934n
+ +  0:b_buff8 = 145.7817n   0:b_buff9 = 145.7817n   0:bn0     = 999.9999m
+ +  0:bn1     = 999.9999m   0:bn10    = 999.9999m   0:bn11    = 999.9999m
+ +  0:bn12    = 999.9999m   0:bn13    = 999.9999m   0:bn14    = 999.9999m
+ +  0:bn15    = 999.9999m   0:bn2     = 999.9999m   0:bn3     = 999.9999m
+ +  0:bn4     = 999.9999m   0:bn5     = 999.9999m   0:bn6     = 999.9999m
+ +  0:bn7     = 999.9999m   0:bn8     = 999.9999m   0:bn9     = 999.9999m
+ +  0:s0      =  33.0825n   0:s1      = 551.8357n   0:s10     = 616.0248n
+ +  0:s11     = 603.6044n   0:s12     = 577.6925n   0:s13     = 603.6044n
+ +  0:s14     = 603.6044n   0:s15     = 560.1140n   0:s16     = 606.1666n
+ +  0:s2      = 603.6044n   0:s3      = 606.1666n   0:s4      = 583.1947n
+ +  0:s5      = 603.6044n   0:s6      = 603.6044n   0:s7      = 606.1666n
+ +  0:s8      = 603.6045n   0:s9      = 606.1666n   0:sn1     =   1.0000 
+ +  0:sn10    =   1.0000    0:sn11    =   1.0000    0:sn12    =   1.0000 
+ +  0:sn13    =   1.0000    0:sn14    =   1.0000    0:sn15    =   1.0000 
+ +  0:sn16    =   1.0000    0:sn2     =   1.0000    0:sn3     =   1.0000 
+ +  0:sn4     =   1.0000    0:sn5     =   1.0000    0:sn6     =   1.0000 
+ +  0:sn7     =   1.0000    0:sn8     =   1.0000    0:sn9     =   1.0000 
+ +  0:vdd     =   1.0000    0:vdd2    =   1.0000    0:vss     =   0.     
+ + 65:gen0    = 275.1763n  65:gen1    = 110.4651n  65:gen10   = 126.5825n
+ + 65:gen10_0 = 999.9999m  65:gen11   = 112.1046n  65:gen11_0 = 301.0331n
+ + 65:gen11_10= 999.9998m  65:gen11_8 = 151.1657n  65:gen12   = 126.5825n
+ + 65:gen12_0 = 999.9999m  65:gen13   = 112.1046n  65:gen13_0 = 999.9999m
+ + 65:gen13_12= 999.9998m  65:gen14   =  65.0311n  65:gen14_0 = 283.4546n
+ + 65:gen15   = 112.1046n  65:gen15_0 = 329.5073n  65:gen15_12= 183.2189n
+ + 65:gen15_14= 999.9998m  65:gen15_8 = 999.9998m  65:gen1_0  = 999.9998m
+ + 65:gen2    =  56.8062n  65:gen2_0  = 329.5073n  65:gen3    = 110.4651n
+ + 65:gen3_0  = 306.5353n  65:gen3_2  = 999.9998m  65:gen4    = 107.9317n
+ + 65:gen4_0  = 999.9999m  65:gen5    = 110.4651n  65:gen5_0  = 999.9999m
+ + 65:gen5_4  = 999.9999m  65:gen6    =  56.8062n  65:gen6_0  = 329.5073n
+ + 65:gen7    = 110.4651n  65:gen7_0  = 999.9998m  65:gen7_4  = 169.2876n
+ + 65:gen7_6  = 999.9998m  65:gen8    =  60.9073n  65:gen8_0  = 329.5073n
+ + 65:gen9    = 112.1046n  65:gen9_0  = 339.3654n  65:gen9_8  = 999.9997m
+ + 65:prop0   = 178.1194n  65:prop1   = 211.2016n  65:prop10  = 226.7997n
+ + 65:prop11  = 226.7997n  65:prop11_1= 999.9999m  65:prop11_8=  37.3573n
+ + 65:prop12  = 226.7997n  65:prop13  = 226.7997n  65:prop13_1= 999.9999m
+ + 65:prop14  = 235.0473n  65:prop15  = 226.7997n  65:prop15_1=  35.2954n
+ + 65:prop15_1= 999.9999m  65:prop15_8=   1.0000   65:prop2   = 236.9498n
+ + 65:prop3   = 244.2838n  65:prop3_2 =   1.0000   65:prop4   = 236.9498n
+ + 65:prop5   = 244.2838n  65:prop5_4 = 999.9999m  65:prop6   = 236.9498n
+ + 65:prop7   = 244.2838n  65:prop7_4 =  25.9629n  65:prop7_6 = 999.9999m
+ + 65:prop8   = 226.7997n  65:prop9   = 226.7997n  65:prop9_8 = 999.9999m
+ +210:ngen    =   1.0000  211:ngen    =   1.0000  212:ngen    =   1.0000 
+ +213:ngen    =   1.0000  214:ngen    =   1.0000  215:ngen    =   1.0000 
+ +216:ngen    =   1.0000  217:ngen    =   1.0000  218:ngen    =   1.0000 
+ +219:ngen    =   1.0000  220:ngen    =   1.0000  221:ngen    =   1.0000 
+ +222:ngen    =   1.0000  223:ngen    =   1.0000  224:ngen    =   1.0000 
+ +225:ngen    =   1.0000  241:gen2inv = 999.9998m 241:prop2inv= 999.9999m
+ +242:gen2inv = 112.1047n 242:prop2inv=  46.4295n 244:gen2inv = 110.4652n
+ +244:prop2inv=  45.5358n 245:gen2inv = 999.9998m 245:prop2inv= 999.9999m
+ +247:gen2inv = 999.9998m 247:prop2inv= 999.9999m 248:gen2inv = 999.9998m
+ +248:prop2inv= 999.9999m 251:gen2inv = 999.9998m 251:prop2inv= 999.9999m
+ +252:output1 = 999.9999m 253:output1 = 999.9999m 254:inputbin= 326.9451n
+ +255:output1 = 999.9999m 256:output1 = 999.9999m 257:inputbin= 326.9451n
+ +258:inputbin= 326.9451n 259:output1 = 999.9999m 260:inputbin= 326.9451n
+ +261:output1 = 999.9999m 262:output1 = 999.9999m 263:inputbin= 326.9451n
+ +264:output1 = 999.9999m 265:inputbin= 326.9451n 266:inputbin= 326.9451n
+ +267:output1 = 999.9999m 268:output1 = 999.9999m 301:int     =  49.4361m
+ +303:output1 = 999.9999m 304:int     =  49.4361m 306:output1 = 999.9999m
+ +307:int     =  49.4361m 309:output1 = 999.9999m 310:int     =  49.4361m
+ +312:output1 = 999.9999m 313:int     =  49.4361m 315:output1 = 999.9999m
+ +316:int     =  49.4361m 318:output1 = 999.9999m 319:int     =  49.4361m
+ +321:output1 = 999.9999m 322:int     =  49.4361m 324:output1 = 999.9999m
+ +325:int     =  49.1912m 327:output1 = 999.9999m 328:int     =  49.1912m
+ +330:output1 = 999.9999m 331:int     =  49.1912m 333:output1 = 999.9999m
+ +334:int     =  49.1912m 336:output1 = 999.9999m 337:int     =  49.1912m
+ +339:output1 = 999.9999m 340:int     =  49.1912m 342:output1 = 999.9999m
+ +343:int     =  49.1912m 345:output1 = 999.9999m 346:int     =  49.1912m
+ +348:output1 = 999.9999m 349:nn1     =  49.4362m 349:np1     = 999.9999m
+ +350:nn1     =  49.4360m 350:np1     = 999.9998m 351:int     =  49.4362m
+ +352:nn1     =  49.4361m 352:np1     = 999.9999m 353:int     =  49.4362m
+ +354:nn1     =  49.4360m 354:np1     = 999.9998m 355:int     =  49.4362m
+ +356:nn1     =  49.1911m 356:np1     = 999.9998m 357:int     =  49.1912m
+ +358:nn1     =  49.1912m 358:np1     = 999.9998m 359:int     =  49.1912m
+ +360:nn1     =  49.1912m 360:np1     = 999.9999m 361:int     =  49.1912m
+ +362:nn1     =  49.1911m 362:np1     = 999.9998m 363:int     =  49.1912m
+ +364:nn1     = 238.6990n 364:np1     = 942.7966m 365:nn1     = 138.1711n
+ +365:np1     = 942.7966m 366:sp1     = 942.7967m 367:nn1     = 125.1341n
+ +367:np1     = 943.0888m 368:sp1     = 943.0889m 369:nn1     = 148.6709n
+ +369:np1     = 943.0888m 370:sp1     = 943.0889m 371:nn1     =  49.1914m
+ +371:np1     = 999.9998m 372:nn1     =  49.1913m 372:np1     = 999.9998m
+ +373:int     =  49.1912m 374:nn1     = 256.0910n 374:np1     = 943.0888m
+ +377:nn1     = 234.6689n 377:np1     = 942.7966m 380:nn1     =  49.1914m
+ +380:np1     = 999.9999m 381:nn1     = 263.3299n 381:np1     = 943.0888m
+ +384:nn1     =  49.4363m 384:np1     = 999.9999m 387:nn1     = 256.0910n
+ +387:np1     = 943.0889m 388:nn1     =  49.1913m 388:np1     = 999.9999m
+ +391:nn1     = 256.0910n 391:np1     = 943.0889m 394:nn1     = 256.0910n
+ +394:np1     = 943.0888m 395:nn1     =  49.1913m 395:np1     = 999.9999m
+ +396:nn1     =  49.1913m 396:np1     = 999.9999m 399:nn1     = 221.7934n
+ +399:np1     = 942.7966m 413:output1 = 999.9999m 427:output1 = 999.9999m
+ +429:output1 = 999.9999m 437:output1 = 999.9999m 451:output1 = 999.9999m
+ +459:output1 = 999.9999m 461:output1 = 999.9999m
+
+
+          ***** job concluded
+1****** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******              
+ ******  
+ ******************************
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz
+ cpu MHz	: 3499.972
+  
+ OS:
+ Linux version 3.10.0-327.36.3.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) ) #1 SMP Mon Oct 24 16:09:20 UTC 2016
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =    3135 # elements   =     699
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     696 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =      49 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.25           1         100
+  transient          0.69        3201         535         179 rev=         5
+  readin             0.01
+  errchk             0.05
+  setup              0.36
+  output             0.00
+
+
+           peak memory used        116.24 megabytes
+           total cpu time            1.37 seconds
+           total elapsed time        2.29 seconds
+           job started at     19:28:23 11/08/2016
+           job ended   at     19:28:26 11/08/2016
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.25(s)

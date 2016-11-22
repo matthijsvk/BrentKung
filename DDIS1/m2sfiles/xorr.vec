@@ -1,0 +1,26 @@
+; Vector file for a simple XOR
+
+radix           1   1   1   ; Indicate whether signal is a bit, a hexa, or something else
+vname           in1 in2 out ; Show the spice names
+io              i   i   o   ; Indicate whether input or output
+tunit           ns          ; Indicate the time unit
+period          1           ; Indicate the time between the digital transitions in the list below
+tdelay    0.2   0   0   1   ; Indicate the delay on a signal. For inputs, the waveform will arrive later, for outputs its correctness will be checked later
+vih       1.0   1	1   0   ; The high value for inputs
+Vth       0.5   0	0   1   ; The threshold value for determining the logical value of the output
+vil       0.0   1	1   0   ; The low value for inputs
+trise     0.001 1   1   0   ; Rise time for the inputs
+tfall     0.001 1	1   0   ; Fall time for the inputs
+
+;Bit patterns that will be applied. Inputs will be applied as PWL voltage sources, outputs will be checked for correct behaviour
+                
+; pMOS in series creates some asmmetries when going to 1 1 0 b/c of cap @ series node that can be charged or discharged before going to 1 -> test all ways to go to 1
+                0   0   0
+                1   1   0  
+                0   1   1
+                1   1   0
+                1   0   1   
+                1   1   0  
+                0   0   0
+                1   0   1
+                0   0   0 
