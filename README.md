@@ -8,6 +8,8 @@ My circuit reduced the original circuit in terms of switching energy from 236.80
 
 This was done through chaning the architecture and sizing.
 
-See the folder m2sfiles/ for the SPICE circuits.
-For top-level testing of a circuit, use sweepCP.m, this does tests over all paths of te circuit to determine worst-case performance. 
-This file uses Adder16b.m, which calculates energy, delay etc for one test case.
+-  See the folder DDIS1/m2sfiles/ for the SPICE circuits. Matlab Test files for the circuit can be found in DDIS1/.
+-  For top-level testing of a circuit, use sweepCP.m, this does tests over all paths of te circuit to determine worst-case performance. 
+-  This file uses Adder16b.m, which calculates energy, delay etc for one test case.
+-  Use GenerateOverview.m to calculate the required supply voltage while still fulfilling the delay constraint of 650ps
+- You can find a report wit extensive explanations and a circuit image in DDIS1/Report
