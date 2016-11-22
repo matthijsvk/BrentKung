@@ -1,8 +1,8 @@
 ******************************
 **** 16b Brent-Kung adder ****
 ******************************
-.param supply = 1
-.param halfsupply = 0.5
+.param supply = 0.935
+.param halfsupply = 0.4675
 
 
 * Some simulation options
@@ -12,7 +12,8 @@
 
 .lib '/users/start2016/r0364010/Master2/DDIS/DDIS1/Resources/Technology/tech_wrapper.lib ' tt
 .tran 0.005n 16n
-.vec '/users/start2016/r0364010/Master2/DDIS/DDIS1/m2sfiles/Adder16boriginal.vec'
+.vec '/users/start2016/r0364010/Master2/DDIS/DDIS1/m2sfiles/Adder16b15.vec'
+
 
 .probe i
 

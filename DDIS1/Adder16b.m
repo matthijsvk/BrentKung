@@ -3,7 +3,7 @@
 % clear all;
 % close all;
 % clc;
-inputfile = 'Adder16b_BrentKung_EDP';
+inputfile = 'Adder16b_BrentKungStandard';
 clear transientsim
 clear acsim
 close all

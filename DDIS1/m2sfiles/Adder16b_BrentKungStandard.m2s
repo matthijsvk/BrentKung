@@ -12,7 +12,8 @@
 
 .lib '$< strcat(pwd, '/Resources/Technology/tech_wrapper.lib') >$ ' tt
 .tran 0.005n 16n
-.vec '$< strcat(pwd, '/m2sfiles/Adder16boriginal.vec')>$'
+.vec '$< strcat(pwd, strcat('/m2sfiles/Adder16b',strcat(num2str(globals.pathIndex),'.vec')))>$'
+
 
 .probe i
 

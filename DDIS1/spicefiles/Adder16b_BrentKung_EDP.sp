@@ -1,8 +1,8 @@
 ******************************
 **** 16b Brent-Kung adder ****
 ******************************
-.param supply = 0.95
-.param halfsupply = 0.475
+.param supply = 0.935
+.param halfsupply = 0.4675
 
 
 * Some simulation options
@@ -18,7 +18,7 @@
 
 .probe i
 
-.param supply = 0.95
+.param supply = 0.935
 
 Vdd vdd vss supply
 Vdd2 vdd2 vss supply
