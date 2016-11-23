@@ -1,8 +1,8 @@
 ******************************
 **** 16b Brent-Kung adder ****
 ******************************
-.param supply = 0.93
-.param halfsupply = 0.465
+.param supply = 1
+.param halfsupply = 0.5
 
 
 * Some simulation options
@@ -13,14 +13,14 @@
 .lib '/users/start2016/r0364010/Master2/DDIS/DDIS1/Resources/Technology/tech_wrapper.lib ' tt
 .tran 0.005n 16n
 * .vec '/users/start2016/r0364010/Master2/DDIS/DDIS1/m2sfiles/Adder16b.vec'
-.vec '/users/start2016/r0364010/Master2/DDIS/DDIS1/m2sfiles/Adder16b15.vec'
+.vec '/users/start2016/r0364010/Master2/DDIS/DDIS1/m2sfiles/Adder16b9.vec'
 
 
 .probe i
 
-.param supply = 0.93
+.param supply = 1  %should be 0.93V for power@650ps
 
-Vdd vdd vss supply
+Vdd vdd vss supply 
 Vdd2 vdd2 vss supply
 Vss vss 0 0 
 

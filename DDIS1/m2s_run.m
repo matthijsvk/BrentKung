@@ -1,6 +1,6 @@
 function m2s = m2s_run(m2s,globals);function m2s_outstr = m2s_arg2str(m2s_instr);m2s_outstr = m2s_instr;for m2s_I=1:length(m2s_instr);if isnumeric(m2s_instr{m2s_I});if length(m2s_instr{m2s_I})>1m2s_outstr{m2s_I} = mat2str(m2s_instr{m2s_I},8);m2s_outstr{m2s_I} = m2s_outstr{m2s_I}(2:end-1);else;m2s_outstr{m2s_I} = num2str(m2s_instr{m2s_I},8);end;elseif islogical(m2s_instr{m2s_I});m2s_outstr{m2s_I} = num2str(m2s_instr{m2s_I});end;end;end;function m2s_outstr=m2s_cell2str(m2s_instr);m2s_outstr=cell2mat(cellfun(@(m2s_x) [m2s_x sprintf('\n')],m2s_instr,'UniformOutput',0));m2s_outstr=m2s_outstr(1:end-1);end;function varargout = m2s_emptyfn(varargin);throwAsCaller(MException('M2S:FnErr','function called before it has been initialized with $include, $insert or $import'));end;
-m2s_file_Adder16b_BrentKung_648ps();
-function m2s_file_Adder16b_BrentKung_648ps(); m2s.Adder16b_BrentKung_648ps.currentline = 0;function m2s_write(m2s_format,m2s_args);m2s_args=m2s_arg2str(m2s_args);if iscell(m2s_format);m2s_format=m2s_cell2str(m2s_format);end;m2s.Adder16b_BrentKung_648ps.currentline=m2s.Adder16b_BrentKung_648ps.currentline+1;m2s.Adder16b_BrentKung_648ps.outstr{m2s.Adder16b_BrentKung_648ps.currentline}=sprintf(m2s_format,m2s_args{:});end;
+m2s_file_Adder16b_BrentKung_Speed511ps();
+function m2s_file_Adder16b_BrentKung_Speed511ps(); m2s.Adder16b_BrentKung_Speed511ps.currentline = 0;function m2s_write(m2s_format,m2s_args);m2s_args=m2s_arg2str(m2s_args);if iscell(m2s_format);m2s_format=m2s_cell2str(m2s_format);end;m2s.Adder16b_BrentKung_Speed511ps.currentline=m2s.Adder16b_BrentKung_Speed511ps.currentline+1;m2s.Adder16b_BrentKung_Speed511ps.outstr{m2s.Adder16b_BrentKung_Speed511ps.currentline}=sprintf(m2s_format,m2s_args{:});end;
 m2s_write('******************************',{});
 m2s_write('**** 16b Brent-Kung adder ****',{});
 m2s_write('******************************',{});
@@ -36,7 +36,7 @@ pMosFactor=1.6;                  %1.6 speed, 1.0 power, 1.0 balance       % size
 seriesFactor=2.6;                %5.3 speed, 1.8 power, 2.5 balance               
 m2s_write('',{});
 criticalPathBaseFactor=1;      %1.27 speed, 1.3 power, 1.5 balance
-criticalPath1Factor=1.89;         %1.27 speed, 1.3 power, 1.5 balance
+criticalPath1Factor=1.7;         %1.27 speed, 1.3 power, 1.5 balance
 criticalPath2Factor=1;
 bufFactor=1; 
 m2s_write('',{});
@@ -146,12 +146,12 @@ m2s_write('    xXOR_5 prop5 gen4_0 s5 vdd vss MYNOTXOR     multfac=%s ',{XORFact
 m2s_write('    xXOR_6 prop6 gen5_0 s6 vdd vss MYNOTXOR     multfac=%s ',{XORFactor});
 m2s_write('    xXOR_7 prop7 gen6_0 s7 vdd vss MYXOR        multfac=%s ',{XORFactor});
 m2s_write('    xXOR_8 prop8 gen7_0buf s8 vdd vss MYNOTXOR     multfac=%s',{XORFactor});
-m2s_write('    xXOR_9 prop9 gen8_0 s9 vdd vss MYXOR        multfac=%s',{XORFactor*1.5});
+m2s_write('    xXOR_9 prop9 gen8_0 s9 vdd vss MYXOR        multfac=%s',{XORFactor*1.6});
 m2s_write('    xXOR_10 prop10 gen9_0 s10 vdd vss MYXOR     multfac=%s',{XORFactor});
-m2s_write('    xXOR_11 prop11 gen10_0 s11 vdd vss MYNOTXOR multfac=%s',{XORFactor});
+m2s_write('    xXOR_11 prop11 gen10_0 s11 vdd vss MYNOTXOR multfac=%s',{XORFactor*1.1});
 m2s_write('    xXOR_12 prop12 gen11_0 s12 vdd vss MYXOR    multfac=%s',{XORFactor});
-m2s_write('    xXOR_13 prop13 gen12_0 s13 vdd vss MYNOTXOR multfac=%s',{XORFactor});
-m2s_write('    xXOR_14 prop14 gen13_0 s14 vdd vss MYNOTXOR multfac=%s',{XORFactor});
+m2s_write('    xXOR_13 prop13 gen12_0 s13 vdd vss MYNOTXOR multfac=%s',{XORFactor*1.2});
+m2s_write('    xXOR_14 prop14 gen13_0 s14 vdd vss MYNOTXOR multfac=%s',{XORFactor*1.2});
 m2s_write('    xXOR_15 prop15 gen14_0 s15 vdd vss MYXOR    multfac=%s',{XORFactor*2});
 m2s_write('    xXOR_16 vss   gen15_0 s16 vdd vss MYXOR     multfac=%s',{XORFactor});
 m2s_write('    ',{});

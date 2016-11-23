@@ -18,9 +18,9 @@
 
 .probe i
 
-.param supply = $globals.supply
+.param supply = $globals.supply  %should be 0.93V for power@650ps
 
-Vdd vdd vss supply
+Vdd vdd vss supply 
 Vdd2 vdd2 vss supply
 Vss vss 0 0 
 

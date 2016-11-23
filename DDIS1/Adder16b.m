@@ -3,7 +3,7 @@
 % clear all;
 % close all;
 % clc;
-inputfile = 'Adder16b_BrentKung_648ps';
+inputfile = 'Adder16b_BrentKung_Speed511ps';
 clear transientsim
 clear acsim
 close all

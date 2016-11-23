@@ -14,6 +14,10 @@
 \usepackage{hyperref}
 \usepackage{nameref}% Only if hyperref isn't loaded
 
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
 \usepackage{amsmath,amssymb}
 \makeatletter
 \newsavebox\myboxA
@@ -194,9 +198,9 @@ Worst Case EDP &              733578 ps*fJ \\
 \subsection{performance with pMOS width = 1.0}
 
 For the maximum speed circuit, the delay goes up when pMOSscalar is lowered too much, but this is not the case for the minimum power circuit (the only difference between the circuits is the sizing of the critical paths).
-For the minimum power circuit, it is very surprising that the extremely low width of pMOS transistors doesn't increase delay (since it introduces asymmetricalities), and seems to improve the circuit by a large margin (EDP of 55k while it was \textgreater 70k before). The reason the simulation gave these results might be because the test cases don't cover every possible switching event. 
-Therefore, the simulation above, with more conservative pMOS sizes obtined from the maximum speed optimizations is considered to show the actual performance of the circuit.
-In order to reach DC power \textlesser 1nW, a few parameters were tuned. See Adder16b_BrentKung_Power_Pmos1.m2s .
+For the minimum power circuit, it is very surprising that the extremely low width of pMOS transistors doesn't increase delay (since it introduces asymmetricalities), and seems to improve the circuit by a large margin (EDP of 55k while it was $>$ 70k before). The reason the simulation gave these results might be because the test cases don't cover every possible switching event. 
+Therefore, the simulation above, with more conservative pMOS sizes obtained from the maximum speed optimizations is considered to show the actual performance of the circuit.
+In order to reach DC power $<$ 1nW, a few parameters were tuned. See Adder16b\_BrentKung\_Power\_Pmos1.m2s .
 
 \begin{table}[h]
 \centering
@@ -217,6 +221,58 @@ Worst Case EDP &              55240 ps*fJ\*fJ \\
 
 
 \subsection{Schematic}
+
+\subsubsection{DotOperators}
+
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/do}
+\caption{Schematic of the Dot Operator}
+\label{DO}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/doi}
+\caption{Schematic of the Dot Operator with inverted inputs}
+\label{DOI}
+\end{subfigure}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/dos}
+\caption{Schematic of the Dot Operator Simple (without propagate generation)}
+\label{DOS}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+\includegraphics[width=0.9\textwidth]{figures/dosi}
+\caption{Schematic of the Dot Operator Simple, Inverted inputs}
+\label{DOI}
+\end{subfigure}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+\includegraphics[width=0.9\textwidth]{figures/dosnhil}
+\caption{Schematic of the Dot Operator Simple Normal High inputs, Inverted Low inputs}
+\label{DONHIL}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+\includegraphics[width=0.9\textwidth]{figures/dosihnl}
+\caption{Schematic of the Dot Operator Simple Inverted High inputs, Normal Low inputs}
+\label{DONHIL}
+\end{subfigure}
+\end{figure}
+
 
 \begin{figure}[H]
 \begin{centering}
