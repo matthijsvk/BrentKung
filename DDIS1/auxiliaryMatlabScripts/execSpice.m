@@ -15,7 +15,7 @@ system(['cp ',pwd, '/spicefiles/* ~/',name_tempfolder]);
 inputfilestring = strcat('~/',name_tempfolder,'/',inputfile,'.sp');
 outputdirectory = strcat('~/',name_tempfolder);
 
-hspicestring = ['export SNPSLMD_LICENSE_FILE=27020@saturn && source ~micasusr/design/scripts/hspice_2012.06.rc && hspice -i ' ...
+hspicestring = ['export SNPSLMD_LICENSE_FILE=27020@saturn && source ~micasusr/design/scripts/hspice.rc && hspice -i ' ...
     , inputfilestring, ' -o ', outputdirectory];
 
 % hspicestring = ['export SNPSLMD_LICENSE_FILE=27020@saturn && source ~micasusr/design/scripts/hspice.rc && hspice -i ', inputfilestring];

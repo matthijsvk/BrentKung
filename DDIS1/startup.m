@@ -1,4 +1,4 @@
-!source ~micasusr/design/scripts/hspice_2012.06.rc
+!source ~micasusr/design/scripts/hspice.rc
 
 clc
 clear all

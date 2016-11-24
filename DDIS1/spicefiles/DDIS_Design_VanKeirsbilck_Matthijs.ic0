@@ -1,8 +1,8 @@
 * "simulator" "HSPICE" 
 * "version" "G-2012.06-SP2 32-BIT"
 * "format" "HSP"
-* "rundate" "14:45:52 11/24/2016 "
-* "netlist" "/users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_optimal.sp "
+* "rundate" "14:57:47 11/24/2016 "
+* "netlist" "/users/start2016/r0364010/temp_m2s/DDIS_Design_VanKeirsbilck_Matthijs.sp "
 * "runtitle" "******************************"
 * time =    0.            
 * temperature =   25.0000        

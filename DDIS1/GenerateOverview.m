@@ -4,7 +4,7 @@ close all;
 clc;
 
 pathIndex = 15; %critical path (from sweepCP.m)
-supplyarray = 0.92:0.005:0.95;
+supplyarray = 0.85:0.01:1.0;
 delayarray = zeros(size(supplyarray));
 energyarray = zeros(size(supplyarray));
 DCpowerarray = zeros(size(supplyarray));
@@ -26,6 +26,7 @@ for j=1:numel(supplyarray)
     disp(['EDP:     ',num2str(EDParray(j))])
 end
 
+% delay/dynamic energy plot
 figure
 XY= [delayarray;energyarray]'
 plot(delayarray,energyarray);
@@ -33,12 +34,30 @@ xlabel('delay (ps)') % x-axis label
 ylabel('switching energy (fJ)') % y-axis label
 title('Delay vs energy at different supply voltages')
 % add labels to the points
-for K = 1 : numel(supplyarray)
+for K = 4 :4: numel(supplyarray)
   thisX = XY(K,1);
   thisY = XY(K,2);
-  labelstr = sprintf('%.2fps @ %.2f fJ', thisX, thisY);
+  thisVDD = supplyarray(K)
+  labelstr = sprintf('%.2fps, %.2f fJ @ %.2f V', thisX, thisY, thisVDD);
   text(thisX, thisY, labelstr);
 end
+
+% dynamic/static energy plot
+figure
+XY= [energyarray;DCpowerarray]'
+plot(energyarray,DCpowerarray);
+xlabel('DC power (nW)') % x-axis label
+ylabel('switching energy (fJ)') % y-axis label
+title('Switching energy vs DC power at different supply voltages')
+% add labels to the points
+for K = 1 :3: numel(supplyarray)
+  thisX = XY(K,1);
+  thisY = XY(K,2);
+  thisVDD = supplyarray(K)
+  labelstr = sprintf('%.2fnW, %.2f fJ @ %.2f V', thisX-0.2, thisY, thisVDD);
+  text(thisX, thisY, labelstr);
+end
+
 %% Generate LaTeX document
 
 % homepath = pwd;

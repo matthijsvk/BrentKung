@@ -10,15 +10,15 @@
 .options post nomod
 .option opts fast parhier=local
 
-.lib '/users/start2016/r0364010/Master2/DDIS/DefaultZips/DDIS1_extensiveTest/Resources/Technology/tech_wrapper.lib ' tt
+.lib '/users/start2016/r0364010/Master2/DDIS/final/DDIS1_extensiveTest/Resources/Technology/tech_wrapper.lib ' tt
 .tran 0.005n 36n
-* .vec '/users/start2016/r0364010/Master2/DDIS/DefaultZips/DDIS1_extensiveTest/m2sfiles/Adder16b.vec'
-.vec '/users/start2016/r0364010/Master2/DDIS/DefaultZips/DDIS1_extensiveTest/m2sfiles/Adder16b15.vec'
+* .vec '/users/start2016/r0364010/Master2/DDIS/final/DDIS1_extensiveTest/m2sfiles/Adder16b.vec'
+.vec '/users/start2016/r0364010/Master2/DDIS/final/DDIS1_extensiveTest/m2sfiles/Adder16b15.vec'
 
 
 .probe i
 
-.param supply = 0.933 * 0.932 for power@650ps, 1V for speed
+.param supply = 0.933 * 0.933 for power@650ps, 1V for speed
 
 Vdd vdd vss supply
 Vdd2 vdd2 vss supply

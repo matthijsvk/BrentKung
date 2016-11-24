@@ -5,20 +5,20 @@
   terms and conditions of the license agreement from Synopsys.
   Use of this program is your acceptance to be bound by the
   license agreement. HSPICE is the trademark of Synopsys, Inc.
-  Input File: /users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_optimal.sp  
-  Command line options: -i /users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_optimal.sp -o /users/start2016/r0364010/temp_m2s
+  Input File: /users/start2016/r0364010/temp_m2s/DDIS_Design_VanKeirsbilck_Matth
+  Command line options: -i /users/start2016/r0364010/temp_m2s/DDIS_Design_VanKeirsbilck_Matthijs.sp -o /users/start2016/r0364010/temp_m2s
  lic:  
  lic: FLEXlm: v10.9.8 
  lic: USER:   r0364010             HOSTNAME: pc-klas1-10.esat.kuleuven.be 
- lic: HOSTID:                      PID:      23678 
+ lic: HOSTID:                      PID:      25585 
  lic: Using FLEXlm license file: 
  lic: 27020@saturn 
  lic: Checkout 1 hspice 
  lic: License/Maintenance for hspice will expire on 15-sep-2017/2016.06 
- lic: 2(in_use)/50(total) FLOATING license(s) on SERVER saturn 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER saturn 
  lic:   
  Init: read install configuration file: /esat/micas-data/software/hspice_2012.06/hspice/meta.cfg
-  **warning** (/users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_optimal.sp:19) Syntax error for output type i, the left parenthese is expected. This output is ignored.
+  **warning** (/users/start2016/r0364010/temp_m2s/DDIS_Design_VanKeirsbilck_Matthijs.sp:19) Syntax error for output type i, the left parenthese is expected. This output is ignored.
 1****** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******              
  ******  
  ******************************
@@ -1382,7 +1382,7 @@
  search = /esat/micas-data/software/hspice_2012.06/hspice/parts
   
   Opening plot unit= 15
- file=/users/start2016/r0364010/temp_m2s/Adder16b_BrentKung_optimal.pa0
+ file=/users/start2016/r0364010/temp_m2s/DDIS_Design_VanKeirsbilck_Matthijs.pa0
 
  **info** dc convergence successful
  you can increase the efficiency of the
@@ -1527,7 +1527,7 @@
  ******  Machine Information  ******
  CPU:
  model name	: Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz
- cpu MHz	: 1599.769
+ cpu MHz	: 1757.312
   
  OS:
  Linux version 3.10.0-327.36.3.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) ) #1 SMP Mon Oct 24 16:09:20 UTC 2016
@@ -1556,18 +1556,18 @@
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.21           1          78
-  transient          2.50        7201        1938         625 rev=        15
-  readin             0.01
-  errchk             0.03
-  setup              0.22
+  transient          2.35        7201        1938         625 rev=        15
+  readin             0.02
+  errchk             0.04
+  setup              0.37
   output             0.00
 
 
            peak memory used        116.32 megabytes
-           total cpu time            2.98 seconds
-           total elapsed time        4.25 seconds
-           job started at     14:45:52 11/24/2016
-           job ended   at     14:45:56 11/24/2016
+           total cpu time            2.99 seconds
+           total elapsed time        5.02 seconds
+           job started at     14:57:47 11/24/2016
+           job ended   at     14:57:52 11/24/2016
 
 
  lic: Release hspice token(s) 
