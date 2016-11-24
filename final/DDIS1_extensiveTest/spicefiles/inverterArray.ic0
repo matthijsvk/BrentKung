@@ -1,0 +1,63 @@
+* "simulator" "HSPICE" 
+* "version" "K-2015.06-SP1 linux64"
+* "format" "HSP"
+* "rundate" "17:32:58 10/05/2016 "
+* "netlist" "/users/start2016/r0364010/temp_m2s/inverterArray.sp "
+* "runtitle" "**********************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in0 =   0.            
++ in1 =   0.            
++ in10 =   0.            
++ in11 =   0.            
++ in12 =   0.            
++ in13 =   0.            
++ in14 =   0.            
++ in15 =   0.            
++ in2 =   0.            
++ in3 =   0.            
++ in4 =   0.            
++ in5 =   0.            
++ in6 =   0.            
++ in7 =   0.            
++ in8 =   0.            
++ in9 =   0.            
++ out0 =  35.5324n       
++ out1 =  35.5324n       
++ out10 =  35.5324n       
++ out11 =  35.5324n       
++ out12 =  35.5324n       
++ out13 =  35.5324n       
++ out14 =  35.5324n       
++ out15 =  35.5324n       
++ out2 =  35.5324n       
++ out3 =  35.5324n       
++ out4 =  35.5324n       
++ out5 =  35.5324n       
++ out6 =  35.5324n       
++ out7 =  35.5324n       
++ out8 =  35.5324n       
++ out9 =  35.5324n       
++ vdd =   1.0000        
++ vss =   0.            
++ xnot0.out1 = 999.9999m       
++ xnot1.out1 = 999.9999m       
++ xnot2.out1 = 999.9999m       
++ xnot3.out1 = 999.9999m       
++ xnot4.out1 = 999.9999m       
++ xnot5.out1 = 999.9999m       
++ xnot6.out1 = 999.9999m       
++ xnot7.out1 = 999.9999m       
++ xnot8.out1 = 999.9999m       
++ xnot9.out1 = 999.9999m       
++ xnot10.out1 = 999.9999m       
++ xnot11.out1 = 999.9999m       
++ xnot12.out1 = 999.9999m       
++ xnot13.out1 = 999.9999m       
++ xnot14.out1 = 999.9999m       
++ xnot15.out1 = 999.9999m       
+***   END: Saved Operating Point ***                     

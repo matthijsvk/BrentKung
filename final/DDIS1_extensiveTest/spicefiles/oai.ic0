@@ -1,0 +1,21 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "13:45:37 11/04/2016 "
+* "netlist" "/users/start2016/r0364010/temp_m2s/oai.sp "
+* "runtitle" "**********************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in1 =   0.            
++ in2 =   0.            
++ in3 =   0.            
++ out =   1.0000        
++ vdd =   1.0000        
++ vss =   0.            
++ xxoai.nn1 =  48.4838m       
++ xxoai.np1 =   1.0000        
+***   END: Saved Operating Point ***                     

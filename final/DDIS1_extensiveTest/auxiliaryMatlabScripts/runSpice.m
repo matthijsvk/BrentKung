@@ -1,0 +1,3 @@
+convertToSpice;
+execSpice;
+loadHSpiceResults;

@@ -1,0 +1,78 @@
+\documentclass[12pt]{book}
+
+\usepackage{tikz}
+\usepackage[graphics,tightpage,active]{preview}
+\usepackage{pgfplots}
+\usepackage{circuitikz}
+\usepackage{xparse}
+\usetikzlibrary{arrows, positioning, calc,shapes}
+\usepackage[nomessages]{fp}% http://ctan.org/pkg/fp for calculations
+\usepackage{calc}
+
+\setlength{\PreviewBorder}{5pt}
+\PreviewEnvironment{tikzpicture}
+
+\newcommand*{\extraOffset}{0.1}
+\newcommand*{\columnWidth}{1.8}
+
+\tikzstyle{DO}=[circle,draw,fill=black]
+\tikzstyle{DOI}=[circle,draw, fill=blue!60]
+\tikzstyle{DOS}=[circle,draw,fill=black!40]
+\tikzstyle{DOSI}=[circle,draw,fill=blue!20]
+\tikzstyle{DOSIHNL}=[circle,draw,fill=green!40]
+\tikzstyle{DOSNHIL}=[circle,draw,fill=red!40]
+
+
+\tikzstyle{XOR}=[draw,diamond]
+\tikzstyle{NOTXOR}=[draw,diamond,fill=black!20]
+
+\tikzstyle{BUF}=[draw, regular polygon, regular polygon sides=3, border rotated,scale=0.8]
+
+\begin{document}
+
+\begin{tikzpicture}[triangle/.style = {fill=blue!20, regular polygon, regular polygon sides=3 },
+node rotated/.style = {rotate=180},
+border rotated/.style = {shape border rotate=180}]
+
+	\draw(0,0.25) rectangle (0.5,0.75);	
+		\node[right] at(0.5,0.5) {$= Initialize\_PropGen$};
+	
+	\node[XOR] at (6,0.5){};
+		\node[right] at(6.5,0.5) {$=$ XOR};
+		
+	\node[NOTXOR] at (9,0.5){};
+		\node[right] at(9.5,0.5) {$=$ NOT($G_l$)-XOR };
+		
+	\node[BUF] at (14,0.5){};
+		\node[right] at(14.5,0.5) {$=$ BUF};
+
+
+	% full DotOperators
+	\node[DO] at (0,3){};
+	%\draw [fill](6,3) circle [radius=0.2];
+		\node[right] at(0.5,3) {$=$ DotOperator};
+	\node[DOI] at (0,2){};
+		\node[right] at(0.5,2) {$=$ DotOperator} ;	
+		\node[right] at(1,1.5) {    InvertedIn};		
+	
+	% normal DotOperatorSimple
+	\node[DOS] at (6,3){}; 
+		\node[right] at(6.5,3) {$=$ DotOperatorSimple};
+	\node[DOSI] at (6,2){};
+		\node[right] at(6.5,2) {$=$ DotOperator };	
+		\node[right] at(7,1.5) {SimpleInvertedIn};	
+
+	% partly inverted DotOperatorSimple
+	\node[DOSNHIL] at (12,3){};
+		\node[right] at(12.5,3) {$=$ DotOperatorNHIL};
+		
+	\node[DOSIHNL] at (12,2){};
+		\node[right] at(12.5,2) {$=$ DotOperatorIHNL};	
+		
+
+	
+	
+\end{tikzpicture}
+
+
+\end{document}

@@ -1,0 +1,19 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "13:01:29 11/04/2016 "
+* "netlist" "/users/start2016/r0364010/temp_m2s/xorr.sp "
+* "runtitle" "**********************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in1 =   0.            
++ in2 =   0.            
++ out = 779.5742m       
++ vdd =   1.0000        
++ vss =   0.            
++ xxor1.outputxor = 485.9646m       
+***   END: Saved Operating Point ***                     

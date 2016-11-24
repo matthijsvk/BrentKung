@@ -1,0 +1,710 @@
+ ****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+  Copyright (c) 1986 - 2016 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: /users/start2016/r0364010/temp_m2s/switchableInverter.sp          
+  Command line options: /esat/micas-data/software/hspice_2015.06/hspice/linux64/hspice -i /users/start2016/r0364010/temp_m2s/switchableInverter.sp -o /users/start2016/r0364010/temp_m2s
+ lic:  
+ lic: FLEXlm: v11.2.1 
+ lic: USER:   r0364010             HOSTNAME: pc-klas5-3.esat.kuleuven.be 
+ lic: HOSTID: d4bed9e4ca61         PID:      24150 
+ lic: Using FLEXlm license file: 
+ lic: 27020@saturn 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 15-sep-2017/2016.06 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@saturn 
+ lic:   
+ Init: read install configuration file: /esat/micas-data/software/hspice_2015.06/hspice/meta.cfg
+  **warning** (/users/start2016/r0364010/temp_m2s/switchableInverter.sp:18) Syntax error for output type v, the left parenthese is expected. This output is ignored.
+1****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+ ******  
+ **********************************
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xnot0.                          myxor              1.00 
+        2 xnot1.                          myxor              1.00 
+        3 xnot2.                          myxor              1.00 
+        4 xnot3.                          myxor              1.00 
+        5 xnot4.                          myxor              1.00 
+        6 xnot5.                          myxor              1.00 
+        7 xnot6.                          myxor              1.00 
+        8 xnot7.                          myxor              1.00 
+        9 xnot8.                          myxor              1.00 
+       10 xnot9.                          myxor              1.00 
+       11 xnot10.                         myxor              1.00 
+       12 xnot11.                         myxor              1.00 
+       13 xnot12.                         myxor              1.00 
+       14 xnot13.                         myxor              1.00 
+       15 xnot14.                         myxor              1.00 
+       16 xnot15.                         myxor              1.00 
+       17 xnot0.xinva.                    mynand             1.00 
+       18 xnot0.xinvb.                    mynand             1.00 
+       19 xnot0.xnand1.                   mynand             1.00 
+       20 xnot0.xnand2.                   mynand             1.00 
+       21 xnot0.xnandout.                 mynand             1.00 
+       22 xnot1.xinva.                    mynand             1.00 
+       23 xnot1.xinvb.                    mynand             1.00 
+       24 xnot1.xnand1.                   mynand             1.00 
+       25 xnot1.xnand2.                   mynand             1.00 
+       26 xnot1.xnandout.                 mynand             1.00 
+       27 xnot2.xinva.                    mynand             1.00 
+       28 xnot2.xinvb.                    mynand             1.00 
+       29 xnot2.xnand1.                   mynand             1.00 
+       30 xnot2.xnand2.                   mynand             1.00 
+       31 xnot2.xnandout.                 mynand             1.00 
+       32 xnot3.xinva.                    mynand             1.00 
+       33 xnot3.xinvb.                    mynand             1.00 
+       34 xnot3.xnand1.                   mynand             1.00 
+       35 xnot3.xnand2.                   mynand             1.00 
+       36 xnot3.xnandout.                 mynand             1.00 
+       37 xnot4.xinva.                    mynand             1.00 
+       38 xnot4.xinvb.                    mynand             1.00 
+       39 xnot4.xnand1.                   mynand             1.00 
+       40 xnot4.xnand2.                   mynand             1.00 
+       41 xnot4.xnandout.                 mynand             1.00 
+       42 xnot5.xinva.                    mynand             1.00 
+       43 xnot5.xinvb.                    mynand             1.00 
+       44 xnot5.xnand1.                   mynand             1.00 
+       45 xnot5.xnand2.                   mynand             1.00 
+       46 xnot5.xnandout.                 mynand             1.00 
+       47 xnot6.xinva.                    mynand             1.00 
+       48 xnot6.xinvb.                    mynand             1.00 
+       49 xnot6.xnand1.                   mynand             1.00 
+       50 xnot6.xnand2.                   mynand             1.00 
+       51 xnot6.xnandout.                 mynand             1.00 
+       52 xnot7.xinva.                    mynand             1.00 
+       53 xnot7.xinvb.                    mynand             1.00 
+       54 xnot7.xnand1.                   mynand             1.00 
+       55 xnot7.xnand2.                   mynand             1.00 
+       56 xnot7.xnandout.                 mynand             1.00 
+       57 xnot8.xinva.                    mynand             1.00 
+       58 xnot8.xinvb.                    mynand             1.00 
+       59 xnot8.xnand1.                   mynand             1.00 
+       60 xnot8.xnand2.                   mynand             1.00 
+       61 xnot8.xnandout.                 mynand             1.00 
+       62 xnot9.xinva.                    mynand             1.00 
+       63 xnot9.xinvb.                    mynand             1.00 
+       64 xnot9.xnand1.                   mynand             1.00 
+       65 xnot9.xnand2.                   mynand             1.00 
+       66 xnot9.xnandout.                 mynand             1.00 
+       67 xnot10.xinva.                   mynand             1.00 
+       68 xnot10.xinvb.                   mynand             1.00 
+       69 xnot10.xnand1.                  mynand             1.00 
+       70 xnot10.xnand2.                  mynand             1.00 
+       71 xnot10.xnandout.                mynand             1.00 
+       72 xnot11.xinva.                   mynand             1.00 
+       73 xnot11.xinvb.                   mynand             1.00 
+       74 xnot11.xnand1.                  mynand             1.00 
+       75 xnot11.xnand2.                  mynand             1.00 
+       76 xnot11.xnandout.                mynand             1.00 
+       77 xnot12.xinva.                   mynand             1.00 
+       78 xnot12.xinvb.                   mynand             1.00 
+       79 xnot12.xnand1.                  mynand             1.00 
+       80 xnot12.xnand2.                  mynand             1.00 
+       81 xnot12.xnandout.                mynand             1.00 
+       82 xnot13.xinva.                   mynand             1.00 
+       83 xnot13.xinvb.                   mynand             1.00 
+       84 xnot13.xnand1.                  mynand             1.00 
+       85 xnot13.xnand2.                  mynand             1.00 
+       86 xnot13.xnandout.                mynand             1.00 
+       87 xnot14.xinva.                   mynand             1.00 
+       88 xnot14.xinvb.                   mynand             1.00 
+       89 xnot14.xnand1.                  mynand             1.00 
+       90 xnot14.xnand2.                  mynand             1.00 
+       91 xnot14.xnandout.                mynand             1.00 
+       92 xnot15.xinva.                   mynand             1.00 
+       93 xnot15.xinvb.                   mynand             1.00 
+       94 xnot15.xnand1.                  mynand             1.00 
+       95 xnot15.xnand2.                  mynand             1.00 
+       96 xnot15.xnandout.                mynand             1.00 
+       97 xnot0.xinva.xmn1.               mosn               1.00 
+       98 xnot0.xinva.xmn2.               mosn               1.00 
+       99 xnot0.xinva.xmp1.               mosp               1.00 
+      100 xnot0.xinva.xmp2.               mosp               1.00 
+      101 xnot0.xinvb.xmn1.               mosn               1.00 
+      102 xnot0.xinvb.xmn2.               mosn               1.00 
+      103 xnot0.xinvb.xmp1.               mosp               1.00 
+      104 xnot0.xinvb.xmp2.               mosp               1.00 
+      105 xnot0.xnand1.xmn1.              mosn               1.00 
+      106 xnot0.xnand1.xmn2.              mosn               1.00 
+      107 xnot0.xnand1.xmp1.              mosp               1.00 
+      108 xnot0.xnand1.xmp2.              mosp               1.00 
+      109 xnot0.xnand2.xmn1.              mosn               1.00 
+      110 xnot0.xnand2.xmn2.              mosn               1.00 
+      111 xnot0.xnand2.xmp1.              mosp               1.00 
+      112 xnot0.xnand2.xmp2.              mosp               1.00 
+      113 xnot0.xnandout.xmn1.            mosn               1.00 
+      114 xnot0.xnandout.xmn2.            mosn               1.00 
+      115 xnot0.xnandout.xmp1.            mosp               1.00 
+      116 xnot0.xnandout.xmp2.            mosp               1.00 
+      117 xnot1.xinva.xmn1.               mosn               1.00 
+      118 xnot1.xinva.xmn2.               mosn               1.00 
+      119 xnot1.xinva.xmp1.               mosp               1.00 
+      120 xnot1.xinva.xmp2.               mosp               1.00 
+      121 xnot1.xinvb.xmn1.               mosn               1.00 
+      122 xnot1.xinvb.xmn2.               mosn               1.00 
+      123 xnot1.xinvb.xmp1.               mosp               1.00 
+      124 xnot1.xinvb.xmp2.               mosp               1.00 
+      125 xnot1.xnand1.xmn1.              mosn               1.00 
+      126 xnot1.xnand1.xmn2.              mosn               1.00 
+      127 xnot1.xnand1.xmp1.              mosp               1.00 
+      128 xnot1.xnand1.xmp2.              mosp               1.00 
+      129 xnot1.xnand2.xmn1.              mosn               1.00 
+      130 xnot1.xnand2.xmn2.              mosn               1.00 
+      131 xnot1.xnand2.xmp1.              mosp               1.00 
+      132 xnot1.xnand2.xmp2.              mosp               1.00 
+      133 xnot1.xnandout.xmn1.            mosn               1.00 
+      134 xnot1.xnandout.xmn2.            mosn               1.00 
+      135 xnot1.xnandout.xmp1.            mosp               1.00 
+      136 xnot1.xnandout.xmp2.            mosp               1.00 
+      137 xnot2.xinva.xmn1.               mosn               1.00 
+      138 xnot2.xinva.xmn2.               mosn               1.00 
+      139 xnot2.xinva.xmp1.               mosp               1.00 
+      140 xnot2.xinva.xmp2.               mosp               1.00 
+      141 xnot2.xinvb.xmn1.               mosn               1.00 
+      142 xnot2.xinvb.xmn2.               mosn               1.00 
+      143 xnot2.xinvb.xmp1.               mosp               1.00 
+      144 xnot2.xinvb.xmp2.               mosp               1.00 
+      145 xnot2.xnand1.xmn1.              mosn               1.00 
+      146 xnot2.xnand1.xmn2.              mosn               1.00 
+      147 xnot2.xnand1.xmp1.              mosp               1.00 
+      148 xnot2.xnand1.xmp2.              mosp               1.00 
+      149 xnot2.xnand2.xmn1.              mosn               1.00 
+      150 xnot2.xnand2.xmn2.              mosn               1.00 
+      151 xnot2.xnand2.xmp1.              mosp               1.00 
+      152 xnot2.xnand2.xmp2.              mosp               1.00 
+      153 xnot2.xnandout.xmn1.            mosn               1.00 
+      154 xnot2.xnandout.xmn2.            mosn               1.00 
+      155 xnot2.xnandout.xmp1.            mosp               1.00 
+      156 xnot2.xnandout.xmp2.            mosp               1.00 
+      157 xnot3.xinva.xmn1.               mosn               1.00 
+      158 xnot3.xinva.xmn2.               mosn               1.00 
+      159 xnot3.xinva.xmp1.               mosp               1.00 
+      160 xnot3.xinva.xmp2.               mosp               1.00 
+      161 xnot3.xinvb.xmn1.               mosn               1.00 
+      162 xnot3.xinvb.xmn2.               mosn               1.00 
+      163 xnot3.xinvb.xmp1.               mosp               1.00 
+      164 xnot3.xinvb.xmp2.               mosp               1.00 
+      165 xnot3.xnand1.xmn1.              mosn               1.00 
+      166 xnot3.xnand1.xmn2.              mosn               1.00 
+      167 xnot3.xnand1.xmp1.              mosp               1.00 
+      168 xnot3.xnand1.xmp2.              mosp               1.00 
+      169 xnot3.xnand2.xmn1.              mosn               1.00 
+      170 xnot3.xnand2.xmn2.              mosn               1.00 
+      171 xnot3.xnand2.xmp1.              mosp               1.00 
+      172 xnot3.xnand2.xmp2.              mosp               1.00 
+      173 xnot3.xnandout.xmn1.            mosn               1.00 
+      174 xnot3.xnandout.xmn2.            mosn               1.00 
+      175 xnot3.xnandout.xmp1.            mosp               1.00 
+      176 xnot3.xnandout.xmp2.            mosp               1.00 
+      177 xnot4.xinva.xmn1.               mosn               1.00 
+      178 xnot4.xinva.xmn2.               mosn               1.00 
+      179 xnot4.xinva.xmp1.               mosp               1.00 
+      180 xnot4.xinva.xmp2.               mosp               1.00 
+      181 xnot4.xinvb.xmn1.               mosn               1.00 
+      182 xnot4.xinvb.xmn2.               mosn               1.00 
+      183 xnot4.xinvb.xmp1.               mosp               1.00 
+      184 xnot4.xinvb.xmp2.               mosp               1.00 
+      185 xnot4.xnand1.xmn1.              mosn               1.00 
+      186 xnot4.xnand1.xmn2.              mosn               1.00 
+      187 xnot4.xnand1.xmp1.              mosp               1.00 
+      188 xnot4.xnand1.xmp2.              mosp               1.00 
+      189 xnot4.xnand2.xmn1.              mosn               1.00 
+      190 xnot4.xnand2.xmn2.              mosn               1.00 
+      191 xnot4.xnand2.xmp1.              mosp               1.00 
+      192 xnot4.xnand2.xmp2.              mosp               1.00 
+      193 xnot4.xnandout.xmn1.            mosn               1.00 
+      194 xnot4.xnandout.xmn2.            mosn               1.00 
+      195 xnot4.xnandout.xmp1.            mosp               1.00 
+      196 xnot4.xnandout.xmp2.            mosp               1.00 
+      197 xnot5.xinva.xmn1.               mosn               1.00 
+      198 xnot5.xinva.xmn2.               mosn               1.00 
+      199 xnot5.xinva.xmp1.               mosp               1.00 
+      200 xnot5.xinva.xmp2.               mosp               1.00 
+      201 xnot5.xinvb.xmn1.               mosn               1.00 
+      202 xnot5.xinvb.xmn2.               mosn               1.00 
+      203 xnot5.xinvb.xmp1.               mosp               1.00 
+      204 xnot5.xinvb.xmp2.               mosp               1.00 
+      205 xnot5.xnand1.xmn1.              mosn               1.00 
+      206 xnot5.xnand1.xmn2.              mosn               1.00 
+      207 xnot5.xnand1.xmp1.              mosp               1.00 
+      208 xnot5.xnand1.xmp2.              mosp               1.00 
+      209 xnot5.xnand2.xmn1.              mosn               1.00 
+      210 xnot5.xnand2.xmn2.              mosn               1.00 
+      211 xnot5.xnand2.xmp1.              mosp               1.00 
+      212 xnot5.xnand2.xmp2.              mosp               1.00 
+      213 xnot5.xnandout.xmn1.            mosn               1.00 
+      214 xnot5.xnandout.xmn2.            mosn               1.00 
+      215 xnot5.xnandout.xmp1.            mosp               1.00 
+      216 xnot5.xnandout.xmp2.            mosp               1.00 
+      217 xnot6.xinva.xmn1.               mosn               1.00 
+      218 xnot6.xinva.xmn2.               mosn               1.00 
+      219 xnot6.xinva.xmp1.               mosp               1.00 
+      220 xnot6.xinva.xmp2.               mosp               1.00 
+      221 xnot6.xinvb.xmn1.               mosn               1.00 
+      222 xnot6.xinvb.xmn2.               mosn               1.00 
+      223 xnot6.xinvb.xmp1.               mosp               1.00 
+      224 xnot6.xinvb.xmp2.               mosp               1.00 
+      225 xnot6.xnand1.xmn1.              mosn               1.00 
+      226 xnot6.xnand1.xmn2.              mosn               1.00 
+      227 xnot6.xnand1.xmp1.              mosp               1.00 
+      228 xnot6.xnand1.xmp2.              mosp               1.00 
+      229 xnot6.xnand2.xmn1.              mosn               1.00 
+      230 xnot6.xnand2.xmn2.              mosn               1.00 
+      231 xnot6.xnand2.xmp1.              mosp               1.00 
+      232 xnot6.xnand2.xmp2.              mosp               1.00 
+      233 xnot6.xnandout.xmn1.            mosn               1.00 
+      234 xnot6.xnandout.xmn2.            mosn               1.00 
+      235 xnot6.xnandout.xmp1.            mosp               1.00 
+      236 xnot6.xnandout.xmp2.            mosp               1.00 
+      237 xnot7.xinva.xmn1.               mosn               1.00 
+      238 xnot7.xinva.xmn2.               mosn               1.00 
+      239 xnot7.xinva.xmp1.               mosp               1.00 
+      240 xnot7.xinva.xmp2.               mosp               1.00 
+      241 xnot7.xinvb.xmn1.               mosn               1.00 
+      242 xnot7.xinvb.xmn2.               mosn               1.00 
+      243 xnot7.xinvb.xmp1.               mosp               1.00 
+      244 xnot7.xinvb.xmp2.               mosp               1.00 
+      245 xnot7.xnand1.xmn1.              mosn               1.00 
+      246 xnot7.xnand1.xmn2.              mosn               1.00 
+      247 xnot7.xnand1.xmp1.              mosp               1.00 
+      248 xnot7.xnand1.xmp2.              mosp               1.00 
+      249 xnot7.xnand2.xmn1.              mosn               1.00 
+      250 xnot7.xnand2.xmn2.              mosn               1.00 
+      251 xnot7.xnand2.xmp1.              mosp               1.00 
+      252 xnot7.xnand2.xmp2.              mosp               1.00 
+      253 xnot7.xnandout.xmn1.            mosn               1.00 
+      254 xnot7.xnandout.xmn2.            mosn               1.00 
+      255 xnot7.xnandout.xmp1.            mosp               1.00 
+      256 xnot7.xnandout.xmp2.            mosp               1.00 
+      257 xnot8.xinva.xmn1.               mosn               1.00 
+      258 xnot8.xinva.xmn2.               mosn               1.00 
+      259 xnot8.xinva.xmp1.               mosp               1.00 
+      260 xnot8.xinva.xmp2.               mosp               1.00 
+      261 xnot8.xinvb.xmn1.               mosn               1.00 
+      262 xnot8.xinvb.xmn2.               mosn               1.00 
+      263 xnot8.xinvb.xmp1.               mosp               1.00 
+      264 xnot8.xinvb.xmp2.               mosp               1.00 
+      265 xnot8.xnand1.xmn1.              mosn               1.00 
+      266 xnot8.xnand1.xmn2.              mosn               1.00 
+      267 xnot8.xnand1.xmp1.              mosp               1.00 
+      268 xnot8.xnand1.xmp2.              mosp               1.00 
+      269 xnot8.xnand2.xmn1.              mosn               1.00 
+      270 xnot8.xnand2.xmn2.              mosn               1.00 
+      271 xnot8.xnand2.xmp1.              mosp               1.00 
+      272 xnot8.xnand2.xmp2.              mosp               1.00 
+      273 xnot8.xnandout.xmn1.            mosn               1.00 
+      274 xnot8.xnandout.xmn2.            mosn               1.00 
+      275 xnot8.xnandout.xmp1.            mosp               1.00 
+      276 xnot8.xnandout.xmp2.            mosp               1.00 
+      277 xnot9.xinva.xmn1.               mosn               1.00 
+      278 xnot9.xinva.xmn2.               mosn               1.00 
+      279 xnot9.xinva.xmp1.               mosp               1.00 
+      280 xnot9.xinva.xmp2.               mosp               1.00 
+      281 xnot9.xinvb.xmn1.               mosn               1.00 
+      282 xnot9.xinvb.xmn2.               mosn               1.00 
+      283 xnot9.xinvb.xmp1.               mosp               1.00 
+      284 xnot9.xinvb.xmp2.               mosp               1.00 
+      285 xnot9.xnand1.xmn1.              mosn               1.00 
+      286 xnot9.xnand1.xmn2.              mosn               1.00 
+      287 xnot9.xnand1.xmp1.              mosp               1.00 
+      288 xnot9.xnand1.xmp2.              mosp               1.00 
+      289 xnot9.xnand2.xmn1.              mosn               1.00 
+      290 xnot9.xnand2.xmn2.              mosn               1.00 
+      291 xnot9.xnand2.xmp1.              mosp               1.00 
+      292 xnot9.xnand2.xmp2.              mosp               1.00 
+      293 xnot9.xnandout.xmn1.            mosn               1.00 
+      294 xnot9.xnandout.xmn2.            mosn               1.00 
+      295 xnot9.xnandout.xmp1.            mosp               1.00 
+      296 xnot9.xnandout.xmp2.            mosp               1.00 
+      297 xnot10.xinva.xmn1.              mosn               1.00 
+      298 xnot10.xinva.xmn2.              mosn               1.00 
+      299 xnot10.xinva.xmp1.              mosp               1.00 
+      300 xnot10.xinva.xmp2.              mosp               1.00 
+      301 xnot10.xinvb.xmn1.              mosn               1.00 
+      302 xnot10.xinvb.xmn2.              mosn               1.00 
+      303 xnot10.xinvb.xmp1.              mosp               1.00 
+      304 xnot10.xinvb.xmp2.              mosp               1.00 
+      305 xnot10.xnand1.xmn1.             mosn               1.00 
+      306 xnot10.xnand1.xmn2.             mosn               1.00 
+      307 xnot10.xnand1.xmp1.             mosp               1.00 
+      308 xnot10.xnand1.xmp2.             mosp               1.00 
+      309 xnot10.xnand2.xmn1.             mosn               1.00 
+      310 xnot10.xnand2.xmn2.             mosn               1.00 
+      311 xnot10.xnand2.xmp1.             mosp               1.00 
+      312 xnot10.xnand2.xmp2.             mosp               1.00 
+      313 xnot10.xnandout.xmn1.           mosn               1.00 
+      314 xnot10.xnandout.xmn2.           mosn               1.00 
+      315 xnot10.xnandout.xmp1.           mosp               1.00 
+      316 xnot10.xnandout.xmp2.           mosp               1.00 
+      317 xnot11.xinva.xmn1.              mosn               1.00 
+      318 xnot11.xinva.xmn2.              mosn               1.00 
+      319 xnot11.xinva.xmp1.              mosp               1.00 
+      320 xnot11.xinva.xmp2.              mosp               1.00 
+      321 xnot11.xinvb.xmn1.              mosn               1.00 
+      322 xnot11.xinvb.xmn2.              mosn               1.00 
+      323 xnot11.xinvb.xmp1.              mosp               1.00 
+      324 xnot11.xinvb.xmp2.              mosp               1.00 
+      325 xnot11.xnand1.xmn1.             mosn               1.00 
+      326 xnot11.xnand1.xmn2.             mosn               1.00 
+      327 xnot11.xnand1.xmp1.             mosp               1.00 
+      328 xnot11.xnand1.xmp2.             mosp               1.00 
+      329 xnot11.xnand2.xmn1.             mosn               1.00 
+      330 xnot11.xnand2.xmn2.             mosn               1.00 
+      331 xnot11.xnand2.xmp1.             mosp               1.00 
+      332 xnot11.xnand2.xmp2.             mosp               1.00 
+      333 xnot11.xnandout.xmn1.           mosn               1.00 
+      334 xnot11.xnandout.xmn2.           mosn               1.00 
+      335 xnot11.xnandout.xmp1.           mosp               1.00 
+      336 xnot11.xnandout.xmp2.           mosp               1.00 
+      337 xnot12.xinva.xmn1.              mosn               1.00 
+      338 xnot12.xinva.xmn2.              mosn               1.00 
+      339 xnot12.xinva.xmp1.              mosp               1.00 
+      340 xnot12.xinva.xmp2.              mosp               1.00 
+      341 xnot12.xinvb.xmn1.              mosn               1.00 
+      342 xnot12.xinvb.xmn2.              mosn               1.00 
+      343 xnot12.xinvb.xmp1.              mosp               1.00 
+      344 xnot12.xinvb.xmp2.              mosp               1.00 
+      345 xnot12.xnand1.xmn1.             mosn               1.00 
+      346 xnot12.xnand1.xmn2.             mosn               1.00 
+      347 xnot12.xnand1.xmp1.             mosp               1.00 
+      348 xnot12.xnand1.xmp2.             mosp               1.00 
+      349 xnot12.xnand2.xmn1.             mosn               1.00 
+      350 xnot12.xnand2.xmn2.             mosn               1.00 
+      351 xnot12.xnand2.xmp1.             mosp               1.00 
+      352 xnot12.xnand2.xmp2.             mosp               1.00 
+      353 xnot12.xnandout.xmn1.           mosn               1.00 
+      354 xnot12.xnandout.xmn2.           mosn               1.00 
+      355 xnot12.xnandout.xmp1.           mosp               1.00 
+      356 xnot12.xnandout.xmp2.           mosp               1.00 
+      357 xnot13.xinva.xmn1.              mosn               1.00 
+      358 xnot13.xinva.xmn2.              mosn               1.00 
+      359 xnot13.xinva.xmp1.              mosp               1.00 
+      360 xnot13.xinva.xmp2.              mosp               1.00 
+      361 xnot13.xinvb.xmn1.              mosn               1.00 
+      362 xnot13.xinvb.xmn2.              mosn               1.00 
+      363 xnot13.xinvb.xmp1.              mosp               1.00 
+      364 xnot13.xinvb.xmp2.              mosp               1.00 
+      365 xnot13.xnand1.xmn1.             mosn               1.00 
+      366 xnot13.xnand1.xmn2.             mosn               1.00 
+      367 xnot13.xnand1.xmp1.             mosp               1.00 
+      368 xnot13.xnand1.xmp2.             mosp               1.00 
+      369 xnot13.xnand2.xmn1.             mosn               1.00 
+      370 xnot13.xnand2.xmn2.             mosn               1.00 
+      371 xnot13.xnand2.xmp1.             mosp               1.00 
+      372 xnot13.xnand2.xmp2.             mosp               1.00 
+      373 xnot13.xnandout.xmn1.           mosn               1.00 
+      374 xnot13.xnandout.xmn2.           mosn               1.00 
+      375 xnot13.xnandout.xmp1.           mosp               1.00 
+      376 xnot13.xnandout.xmp2.           mosp               1.00 
+      377 xnot14.xinva.xmn1.              mosn               1.00 
+      378 xnot14.xinva.xmn2.              mosn               1.00 
+      379 xnot14.xinva.xmp1.              mosp               1.00 
+      380 xnot14.xinva.xmp2.              mosp               1.00 
+      381 xnot14.xinvb.xmn1.              mosn               1.00 
+      382 xnot14.xinvb.xmn2.              mosn               1.00 
+      383 xnot14.xinvb.xmp1.              mosp               1.00 
+      384 xnot14.xinvb.xmp2.              mosp               1.00 
+      385 xnot14.xnand1.xmn1.             mosn               1.00 
+      386 xnot14.xnand1.xmn2.             mosn               1.00 
+      387 xnot14.xnand1.xmp1.             mosp               1.00 
+      388 xnot14.xnand1.xmp2.             mosp               1.00 
+      389 xnot14.xnand2.xmn1.             mosn               1.00 
+      390 xnot14.xnand2.xmn2.             mosn               1.00 
+      391 xnot14.xnand2.xmp1.             mosp               1.00 
+      392 xnot14.xnand2.xmp2.             mosp               1.00 
+      393 xnot14.xnandout.xmn1.           mosn               1.00 
+      394 xnot14.xnandout.xmn2.           mosn               1.00 
+      395 xnot14.xnandout.xmp1.           mosp               1.00 
+      396 xnot14.xnandout.xmp2.           mosp               1.00 
+      397 xnot15.xinva.xmn1.              mosn               1.00 
+      398 xnot15.xinva.xmn2.              mosn               1.00 
+      399 xnot15.xinva.xmp1.              mosp               1.00 
+      400 xnot15.xinva.xmp2.              mosp               1.00 
+      401 xnot15.xinvb.xmn1.              mosn               1.00 
+      402 xnot15.xinvb.xmn2.              mosn               1.00 
+      403 xnot15.xinvb.xmp1.              mosp               1.00 
+      404 xnot15.xinvb.xmp2.              mosp               1.00 
+      405 xnot15.xnand1.xmn1.             mosn               1.00 
+      406 xnot15.xnand1.xmn2.             mosn               1.00 
+      407 xnot15.xnand1.xmp1.             mosp               1.00 
+      408 xnot15.xnand1.xmp2.             mosp               1.00 
+      409 xnot15.xnand2.xmn1.             mosn               1.00 
+      410 xnot15.xnand2.xmn2.             mosn               1.00 
+      411 xnot15.xnand2.xmp1.             mosp               1.00 
+      412 xnot15.xnand2.xmp2.             mosp               1.00 
+      413 xnot15.xnandout.xmn1.           mosn               1.00 
+      414 xnot15.xnandout.xmn2.           mosn               1.00 
+      415 xnot15.xnandout.xmp1.           mosp               1.00 
+      416 xnot15.xnandout.xmp2.           mosp               1.00 
+  **warning** (nmos:m1 (/users/start2016/r0364010/Master2/DDIS/DDIS1/Resources/Technology/tech_wrapper.lib:8)) Warning:  Acde = 0.280299 may be too small in BSIM4 model with w=3.6e-07 l=4.5e-08.
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ absh    = 0         absin   = 0         absmos  = 1.00000u  abstol  = 1.00000n  
+ absvar  = 500.000m  absvdc  = 50.0000u  accurate= 0         acout   = 0         
+ add_variation= 0         altcc   = 0         altchk  = 0         appendall= 0         
+ artist  = 0         aspec   = 0         auto_inc_off= 0         autost  = 0         
+ ba_activehier= 0         ba_coupling= 0         ba_error= 0         ba_geoshrink= 1.00000   
+ ba_mergeport= 0         ba_netfmt= 0         ba_print= ideal     ba_scale= 1.00000   
+ badchr  = 0         bdfatolset= 1.00000m  bdfrtol = 1.00000m  biasfmt = 0         
+ biasinte= 3         biasnode= 0         biaspara= 0         biawarn = 0         
+ binprnt = 0         bkpsiz  = 50000     blkbytol= 10.0000u  block_name= 1         
+ bsim4pds= 0         bypass  = 2.00000   bytol   = 100.000u  captab  = 0         
+ cflflag = 0         chgtol  = 1.00000f  cmi00opt= -1.23457e-29 cmi01opt= -1.23457e-29 
+ cmi02opt= -1.23457e-29 cmi03opt= -1.23457e-29 cmi04opt= -1.23457e-29 cmi05opt= -1.23457e-29 
+ cmi06opt= -1.23457e-29 cmi07opt= -1.23457e-29 cmi08opt= -1.23457e-29 cmi09opt= -1.23457e-29 
+ cmiflag = 0         cmimcflag= 0         cmivth  = 0         co      = 78        
+ cptime  = 10.0000x  cscal   = 1.00000t  csdf    = 0         cshdc   = 1.00000p  
+ cshunt  = 0         custcmi = 0         cvtol   = 200.000m  dcap    = 2         
+ dccap   = 0         dcfor   = 0         dchold  = 1         dcic    = 1         
+ dcon    = 0         dcstep  = 0         dctran  = 0         defad   = 0         
+ defas   = 0         defl    = 100.000u  defnrd  = 0         defnrs  = 0         
+ defpd   = 0         defps   = 0         defsa   = 0         defsb   = 0         
+ defsd   = 0         defw    = 100.000u  degf    = 100.000m  degfn   = 100.000m  
+ degfp   = 100.000m  delmax  = 0         di      = 100.000   diagno  = 0         
+ dlencsdf= 5         do_not_vary= 0         dumpcfl = 0         dv      = 1.00000k  
+ dvdt    = 3         dvtr    = 1.00000k  dynacc  = 0         em_recovery= 1.00000   
+ epsmin  = 1e-28     etmiagechk= 1         etmif_sharemod= 1         expli   = 0         
+ expmax  = 80.0000   ext_op  = 0         extend_bisection_window= 0         external_file= 0         
+ extmodparchk= 0         fast    = 1         fft_accu= -1        fftout  = 0         
+ fmax    = 1.00000t  fs      = 250.000m  fscal   = 1.00000n  ft      = 250.000m  
+ g_clamp = 1         gdcpath = 1.00000p  gen_cur_pol= 0         genk    = 1         
+ geocheck= 0         geoshrink= 1.00000   gmax    = 100.000   gmin    = 1.00000p  
+ gmindc  = 1.00000p  gramp   = 0         gscal   = 1.00000k  gshdc   = 0         
+ gshunt  = 0         h9007   = 0         hier_delim= 0         hier_sca= 0         
+ histogram_bins= 1         hpp_block_bypass= 1         ic_accurate= 0         icsweep = 1         
+ ignore_variation= 0         ingold  = 0         interp  = 0         intervals= 1         
+ iprop   = 0         itl1    = 200       itl2    = 50        itl3    = 3         
+ itl4    = 8         itl5    = 0         itlptran= 30        itlpz   = 100       
+ itrprt  = 0         ivdmargin= 0         ivth    = 0         ivth_model= 0         
+ ivthn   = 0         ivthp   = 0         kcltes  = 0         klim    = 10.0000m  
+ la_freq = 1.00000g  la_maxr = 1.00000y  la_minc = 100.000a  la_time = 1.00000n  
+ la_tol  = 50.0000m  large_scale_mc= 0         lennam  = 8         limtim  = 2         
+ lis_new = 0         lislvl  = 0         list    = 0         lscal   = 1.00000x  
+ lvltim  = 4         macmod  = 0         maxamp  = 0         maxord  = 2         
+ maxwarns= 5         mbypas  = 2.00000   mc_file_only= 0         mcbrief = 0         
+ measdg  = 4         measfail= 1         measfile= 0         measform= 0         
+ measou  = 1         measure_file= 0         method  = 1         min_ver_abort= 0         
+ minval  = 1.00000p  mirror_component= 0         mixed_num_format= 0         modmon  = 0         
+ modparchk= 1         modprt  = 0         modsrh  = 1         module_def_rule= 0         
+ montecon= 1         mraapi  = 0         mradtempba= 1         mraext  = 0         
+ mrapaged= 0         mt_check= 0         mtthresh= 0         mu      = 500.000m  
+ mult_less_1= 0         ncfilter= -1.00000p ncwarn  = 0         newtol  = 0         
+ node    = 0         noelck  = 0         noisem  = 10.0000u  noisum  = 0         
+ nomod   = 1         nopiv   = 0         notop   = 0         nowarn  = 0         
+ numdgt  = 4         nxx     = 0         off     = 0         off_output= 0         
+ opfile  = 0         optcon  = 0         optlst  = 0         optparhier= global    
+ opts    = 1         other_percentile= 0         output_sigma_value= 1         parhier = local     
+ parse_module_netlist= 0         pathnu  = 0         pcb_scale_format= 0         phd     = 0         
+ pivot   = 0         pivtol  = 1.00000f  plim    = 0         post    = binary    
+ post_ver= 9601      postlvl = 0         posttop = 0         probe   = 0         
+ psf     = 0         puretp  = 0         putmeas = 1         pz_method= muller    
+ pz_num  = 10        pzabs   = 10.0000m  pztol   = 1.00000u  qqnorm_file= 1         
+ radegoutput= 0         randgen = 0         random_generator= 0         redefmodel= 0         
+ redefsub= 0         relh    = 50.0000m  reli    = 10.0000m  relin   = 1.00000m  
+ relmos  = 50.0000m  relq    = 10.0000m  reltol  = 1.00000m  relvar  = 300.000m  
+ relvdc  = 1.00000m  replicates= 1         res_bits= 0         resmin  = 10.0000u  
+ risetime= 1.00000p  ritol   = 1.00000u  rm_rmin = 10.0000u  rmax    = 5.00000   
+ rmin    = 1.00000n  runlvl  = 3         sampling_method= 1         scale   = 1.00000   
+ scalm   = 1.00000   sda     = 0         seed    = 1         sensitivity_analysis= 1         
+ set_missing_values= 1         shrink  = 1.00000   si_scale_symbols= 0         sim_la  = 0         
+ slopetol= 500.000m  soiq0   = 0         spice   = 0         split_dp= 0         
+ splitma = 0         spmodel = 0         sstamp  = 0         statfl  = 0         
+ stream  = 1         strict_check= 0         sx_factor= 1.00000   symb    = 1         
+ tail_samples= 1         timeres = 1.00000p  tmevthmod= 0         tmiage  = 0         
+ tmiba   = 0         tmiflag = 0         tmisave = 0         tmplt_pol= 0         
+ tnom    = 25.0000   trcon   = 1         trtol   = 7.00000   unwrap  = 0         
+ use_agauss_format= 0         use_temp= 0         va_bypass= -1        vamodel = 0         
+ vary_only= 0         vcd     = 0         vecbus  = 0         ver_control= 0         
+ vfloor  = 500.000n  vntol   = 50.0000u  wacc    = -1.00000  warn    = 1         
+ warn_sep= 0         warnli  = 1         wave_pop= 100.000m  wdelayopt= 0         
+ wdf     = 0         wdf_op  = 1         wincludegdimag= no        wl      = 0         
+ wnflag  = 1         x0i     = 0         x0r     = -123.456k x1i     = 0         
+ x1r     = -1.23456x x2i     = 0         x2r     = 1.23456x  xdtemp  = 0         
+ xmult_in_expr= 0         zuken   = 0         
+ biasfile =                 
+ cmipath = 
+ tmipath = 
+ tmiinput = 
+ etmiusrinput = 
+ mra00path = 
+ mra01path = 
+ mra02path = 
+ mra03path = 
+ radegfile = 
+ tmisort = 
+ d_ibis = 
+ search = 
+  
+ search = /users/start2016/r0364010/temp_m2s
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/ad
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/ad
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/behave
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/bjt
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/burr_brn
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/comlinear
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/dio
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/fet
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/lin_tech
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/pci
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/signet
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/ti
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/tline
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts/xilinx
+  
+ search = /esat/micas-data/software/hspice_2015.06/hspice/parts
+  
+  Opening plot unit= 15
+ file=/users/start2016/r0364010/temp_m2s/switchableInverter.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+ ******  
+ **********************************
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+      node    =voltage        node    =voltage        node    =voltage
+
+ +  0:in0     =   0.        0:in1     =   0.        0:in10    =   0.     
+ +  0:in11    =   0.        0:in12    =   0.        0:in13    =   0.     
+ +  0:in14    =   0.        0:in15    =   0.        0:in2     =   0.     
+ +  0:in3     =   0.        0:in4     =   0.        0:in5     =   0.     
+ +  0:in6     =   0.        0:in7     =   0.        0:in8     =   0.     
+ +  0:in9     =   0.        0:out0    =   1.0000    0:out1    =   1.0000 
+ +  0:out10   =   1.0000    0:out11   =   1.0000    0:out12   =   1.0000 
+ +  0:out13   =   1.0000    0:out14   =   1.0000    0:out15   =   1.0000 
+ +  0:out2    =   1.0000    0:out3    =   1.0000    0:out4    =   1.0000 
+ +  0:out5    =   1.0000    0:out6    =   1.0000    0:out7    =   1.0000 
+ +  0:out8    =   1.0000    0:out9    =   1.0000    0:sw      =   1.0000 
+ +  0:vdd     =   1.0000    0:vss     =   0.        1:outinva = 999.9999m
+ +  1:outinvb =  96.3968n   1:outnand1=  96.3968n   1:outnand2=   1.0000 
+ +  2:outinva = 999.9999m   2:outinvb =  96.3968n   2:outnand1=  96.3968n
+ +  2:outnand2=   1.0000    3:outinva = 999.9999m   3:outinvb =  96.3968n
+ +  3:outnand1=  96.3968n   3:outnand2=   1.0000    4:outinva = 999.9999m
+ +  4:outinvb =  96.3968n   4:outnand1=  96.3968n   4:outnand2=   1.0000 
+ +  5:outinva = 999.9999m   5:outinvb =  96.3968n   5:outnand1=  96.3968n
+ +  5:outnand2=   1.0000    6:outinva = 999.9999m   6:outinvb =  96.3968n
+ +  6:outnand1=  96.3968n   6:outnand2=   1.0000    7:outinva = 999.9999m
+ +  7:outinvb =  96.3968n   7:outnand1=  96.3968n   7:outnand2=   1.0000 
+ +  8:outinva = 999.9999m   8:outinvb =  96.3968n   8:outnand1=  96.3968n
+ +  8:outnand2=   1.0000    9:outinva = 999.9999m   9:outinvb =  96.3968n
+ +  9:outnand1=  96.3968n   9:outnand2=   1.0000   10:outinva = 999.9999m
+ + 10:outinvb =  96.3968n  10:outnand1=  96.3968n  10:outnand2=   1.0000 
+ + 11:outinva = 999.9999m  11:outinvb =  96.3968n  11:outnand1=  96.3968n
+ + 11:outnand2=   1.0000   12:outinva = 999.9999m  12:outinvb =  96.3968n
+ + 12:outnand1=  96.3968n  12:outnand2=   1.0000   13:outinva = 999.9999m
+ + 13:outinvb =  96.3968n  13:outnand1=  96.3968n  13:outnand2=   1.0000 
+ + 14:outinva = 999.9999m  14:outinvb =  96.3968n  14:outnand1=  96.3968n
+ + 14:outnand2=   1.0000   15:outinva = 999.9999m  15:outinvb =  96.3968n
+ + 15:outnand1=  96.3968n  15:outnand2=   1.0000   16:outinva = 999.9999m
+ + 16:outinvb =  96.3968n  16:outnand1=  96.3968n  16:outnand2=   1.0000 
+ + 17:dn1     =  48.3302m  18:dn1     =  62.3667n  19:dn1     =  62.3667n
+ + 20:dn1     =  48.3301m  21:dn1     = 772.8254m  22:dn1     =  48.3302m
+ + 23:dn1     =  62.3667n  24:dn1     =  62.3667n  25:dn1     =  48.3301m
+ + 26:dn1     = 772.8254m  27:dn1     =  48.3302m  28:dn1     =  62.3667n
+ + 29:dn1     =  62.3667n  30:dn1     =  48.3301m  31:dn1     = 772.8254m
+ + 32:dn1     =  48.3302m  33:dn1     =  62.3667n  34:dn1     =  62.3667n
+ + 35:dn1     =  48.3301m  36:dn1     = 772.8254m  37:dn1     =  48.3302m
+ + 38:dn1     =  62.3667n  39:dn1     =  62.3667n  40:dn1     =  48.3301m
+ + 41:dn1     = 772.8254m  42:dn1     =  48.3302m  43:dn1     =  62.3667n
+ + 44:dn1     =  62.3667n  45:dn1     =  48.3301m  46:dn1     = 772.8254m
+ + 47:dn1     =  48.3302m  48:dn1     =  62.3667n  49:dn1     =  62.3667n
+ + 50:dn1     =  48.3301m  51:dn1     = 772.8254m  52:dn1     =  48.3302m
+ + 53:dn1     =  62.3667n  54:dn1     =  62.3667n  55:dn1     =  48.3301m
+ + 56:dn1     = 772.8254m  57:dn1     =  48.3302m  58:dn1     =  62.3667n
+ + 59:dn1     =  62.3667n  60:dn1     =  48.3301m  61:dn1     = 772.8254m
+ + 62:dn1     =  48.3302m  63:dn1     =  62.3667n  64:dn1     =  62.3667n
+ + 65:dn1     =  48.3301m  66:dn1     = 772.8254m  67:dn1     =  48.3302m
+ + 68:dn1     =  62.3667n  69:dn1     =  62.3667n  70:dn1     =  48.3301m
+ + 71:dn1     = 772.8254m  72:dn1     =  48.3302m  73:dn1     =  62.3667n
+ + 74:dn1     =  62.3667n  75:dn1     =  48.3301m  76:dn1     = 772.8254m
+ + 77:dn1     =  48.3302m  78:dn1     =  62.3667n  79:dn1     =  62.3667n
+ + 80:dn1     =  48.3301m  81:dn1     = 772.8254m  82:dn1     =  48.3302m
+ + 83:dn1     =  62.3667n  84:dn1     =  62.3667n  85:dn1     =  48.3301m
+ + 86:dn1     = 772.8254m  87:dn1     =  48.3302m  88:dn1     =  62.3667n
+ + 89:dn1     =  62.3667n  90:dn1     =  48.3301m  91:dn1     = 772.8254m
+ + 92:dn1     =  48.3302m  93:dn1     =  62.3667n  94:dn1     =  62.3667n
+ + 95:dn1     =  48.3301m  96:dn1     = 772.8254m
+
+
+          ***** job concluded
+1****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+ ******  
+ **********************************
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz
+ cpu MHz	: 3480.355
+  
+ OS:
+ Linux version 3.10.0-327.36.1.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) ) #1 SMP Sun Sep 18 13:04:29 UTC 2016
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =    1460 # elements   =     371
+  # resistors   =       0 # capacitors =      16 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     320 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =      33 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.27           1         124
+  transient          0.62       10001         664         232 rev=        26
+  readin             0.01
+  errchk             0.02
+  setup              0.03
+  output             0.00
+
+
+           peak memory used        225.64 megabytes
+           total cpu time            0.94 seconds
+           total elapsed time        0.86 seconds
+           job started at     18:31:59 10/05/2016
+           job ended   at     18:32:00 10/05/2016
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.12(s)

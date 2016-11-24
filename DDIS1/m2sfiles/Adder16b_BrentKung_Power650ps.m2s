@@ -18,7 +18,7 @@
 
 .probe i
 
-.param supply = $globals.supply  %should be 0.93V for power@650ps
+.param supply = $globals.supply  *should be 0.93V for power@650ps
 
 Vdd vdd vss supply 
 Vdd2 vdd2 vss supply
@@ -33,7 +33,7 @@ $pMosFactor=1.6;                  %1.6 speed, 1.0 power, 1.0 balance       % siz
 $seriesFactor=2.6;                %5.3 speed, 1.8 power, 2.5 balance               
 
 $criticalPathBaseFactor=1;      %1.27 speed, 1.3 power, 1.5 balance
-$criticalPath1Factor=1.5;         %1.27 speed, 1.3 power, 1.5 balance
+$criticalPath1Factor=1.8;         %1.27 speed, 1.3 power, 1.5 balance
 $criticalPath2Factor=1;
 $bufFactor=1; 
 

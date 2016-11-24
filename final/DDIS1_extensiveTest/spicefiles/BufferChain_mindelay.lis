@@ -1,0 +1,80 @@
+ ****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+  Copyright (c) 1986 - 2016 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: /users/start2016/r0364010/temp_m2s/BufferChain_mindelay.sp        
+  Command line options: /esat/micas-data/software/hspice_2015.06/hspice/linux64/hspice -i /users/start2016/r0364010/temp_m2s/BufferChain_mindelay.sp -o /users/start2016/r0364010/temp_m2s
+ lic:  
+ lic: FLEXlm: v11.2.1 
+ lic: USER:   r0364010             HOSTNAME: pc-klas1-10.esat.kuleuven.be 
+ lic: HOSTID: d4bed9e4ca88         PID:      8586 
+ lic: Using FLEXlm license file: 
+ lic: 27020@saturn 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 15-sep-2017/2016.06 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@saturn 
+ lic:   
+ Init: read install configuration file: /esat/micas-data/software/hspice_2015.06/hspice/meta.cfg
+  **warning** (/users/start2016/r0364010/temp_m2s/BufferChain_mindelay.sp:18) Syntax error for output type v, the left parenthese is expected. This output is ignored.
+ **error**  above line attempts to redefine xnotchain       
+
+  **error** (/users/start2016/r0364010/temp_m2s/BufferChain_mindelay.sp:37) difficulty in reading input
+
+          ***** job aborted
+1****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+ ******  
+ **********************************
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz
+ cpu MHz	: 3473.695
+  
+ OS:
+ Linux version 3.10.0-327.36.1.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) ) #1 SMP Sun Sep 18 13:04:29 UTC 2016
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       0 # elements   =       2
+  # resistors   =       0 # capacitors =       2 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       0
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  readin             0.03
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        221.48 megabytes
+           total cpu time            0.03 seconds
+           total elapsed time        0.19 seconds
+           job started at     11:59:27 10/06/2016
+           job ended   at     11:59:27 10/06/2016
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.12(s)

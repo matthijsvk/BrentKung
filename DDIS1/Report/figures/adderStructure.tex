@@ -1,0 +1,212 @@
+\documentclass[12pt]{book}
+
+\usepackage{tikz}
+\usepackage[graphics,tightpage,active]{preview}
+\usepackage{pgfplots}
+\usepackage{circuitikz}
+\usepackage{xparse}
+\usetikzlibrary{arrows, positioning, calc,shapes}
+\usepackage[nomessages]{fp}% http://ctan.org/pkg/fp for calculations
+\usepackage{calc}
+
+\tikzstyle{DO}=[circle,draw,fill=black]
+\tikzstyle{DOI}=[circle,draw, fill=blue!60]
+\tikzstyle{DOS}=[circle,draw,fill=black!40]
+\tikzstyle{DOSI}=[circle,draw,fill=blue!20]
+\tikzstyle{DOSIHNL}=[circle,draw,fill=green!40]
+\tikzstyle{DOSNHIL}=[circle,draw,fill=red!40]
+
+\tikzstyle{XOR}=[draw,diamond]
+\tikzstyle{NXOR}=[draw,diamond,fill=black!20]
+
+\tikzstyle{BUF}=[draw, regular polygon, regular polygon sides=3, border rotated,scale=0.8]
+
+
+   
+
+\setlength{\PreviewBorder}{5pt}
+\PreviewEnvironment{tikzpicture}
+
+\newcommand*{\extraOffset}{0.1}
+\newcommand*{\columnWidth}{1.8}
+
+\begin{document}
+
+\begin{tikzpicture}[triangle/.style = {fill=blue!20, regular polygon, regular polygon sides=3 },
+node rotated/.style = {rotate=180},
+border rotated/.style = {shape border rotate=180}]
+
+    % adder structure
+	% 0th level: GenProp
+	\foreach \i in {0,1,...,15}	
+	{
+		\pgfmathtruncatemacro\temp{15 - \i}
+		\node[font=\small] at (\i*\columnWidth,0){$a_{\temp}$,$b_{\temp}$};
+		\node[draw,rectangle,minimum height=0.5cm,minimum width=0.8cm] 
+				(propgen \i) at (\i*\columnWidth,-1){};
+		\draw (\i*\columnWidth,-0.2) -- (propgen \i);
+	}
+	% 1st level: all DO
+	\foreach \i in {0,2,...,12}
+	{
+		\pgfmathtruncatemacro\temp{\i + 1}
+		\node[DO] (klingel a \i) at (\i*\columnWidth, -2){};
+		\draw (propgen \i) -- (klingel a \i);
+		\draw ({(\i+1)*\columnWidth}, -1.4) -- (klingel a \i);
+		\draw ({(\i+1)*\columnWidth}, -1.4) -- (propgen \temp);
+	}
+	\foreach \i in {14}
+	{
+		\pgfmathtruncatemacro\temp{\i + 1}
+		\node[DOS] (klingel a \i) at (\i*\columnWidth, -2){};
+		\draw (propgen \i) -- (klingel a \i);
+		\draw ({(\i+1)*\columnWidth}, -1.4) -- (klingel a \i);
+		\draw ({(\i+1)*\columnWidth}, -1.4) -- (propgen \temp);
+	}
+	% 2nd level
+	\foreach \i in {0,4,...,8}
+	{
+		\pgfmathtruncatemacro\temp{\i + 2}
+		\node[DOI] (klingel b \i) at (\i*\columnWidth, -3.6){};
+		\draw (klingel a \i) -- (klingel b \i);
+		\draw ({(\i+2)*\columnWidth}, -2.4) -- (klingel b \i);
+		\draw ({(\i+2)*\columnWidth}, -2.4) -- (klingel a \temp);
+	}
+	\foreach \i in {12}
+	{
+		\pgfmathtruncatemacro\temp{\i + 2}
+		\node[DOSI] (klingel b \i) at (\i*\columnWidth, -3.6){};
+		\draw (klingel a \i) -- (klingel b \i);
+		\draw ({(\i+2)*\columnWidth}, -2.4) -- (klingel b \i);
+		\draw ({(\i+2)*\columnWidth}, -2.4) -- (klingel a \temp);
+	}
+	% 3rd level
+	\foreach \i in {0}
+	{
+		\pgfmathtruncatemacro\temp{\i + 4}
+		\node[DO] (klingel c \i) at (\i*\columnWidth, -6.4){};
+		\draw (klingel b \i) -- (klingel c \i);
+		\draw ({(\i+4)*\columnWidth}, -4) -- (klingel c \i);
+		\draw ({(\i+4)*\columnWidth}, -4) -- (klingel b \temp);
+	}
+	\foreach \i in {8}
+	{
+		\pgfmathtruncatemacro\temp{\i + 4}
+		\node[DOS] (klingel c \i) at (\i*\columnWidth, -6.4){};
+		\draw (klingel b \i) -- (klingel c \i);
+		\draw ({(\i+4)*\columnWidth}, -4) -- (klingel c \i);
+		\draw ({(\i+4)*\columnWidth}, -4) -- (klingel b \temp);
+	}
+	% 4th level(left)
+	\foreach \i in {0}
+	{
+		\pgfmathtruncatemacro\temp{\i + 8}
+		\node[DOSI] (klingel d \i) at (\i*\columnWidth, -11.6){};
+		\draw (klingel c \i) -- (klingel d \i);
+		\draw ({(\i+8)*\columnWidth}, -6.8) -- (klingel d \i);
+		\draw ({(\i+8)*\columnWidth}, -6.8) -- (klingel c \temp);
+	}
+
+	\node[DOSNHIL] (klingel k 4) at (4*\columnWidth, -11.6){};
+	\draw (klingel k 4) -- (4*\columnWidth, -4);
+	\draw (klingel k 4) -- (8*\columnWidth,-9.2);
+	\draw (klingel c 8) -- (8*\columnWidth,-9.2);
+	
+	
+	\node[DOSIHNL] (klingel l 2) at (2*\columnWidth, -13.2){};
+	\draw (klingel l 2) -- (klingel a 2);
+	\draw (klingel l 2) -- (4*\columnWidth,-12);
+	\draw (klingel k 4) -- (4*\columnWidth,-12);
+
+	\node[DOSI] (klingel l 6) at (6*\columnWidth, -13.2){};
+	\draw (klingel l 6) -- (klingel a 6);
+	\draw (klingel l 6) -- (8*\columnWidth,-12);
+	\draw (klingel c 8) -- (8*\columnWidth,-12);
+
+	\node[DOSIHNL] (klingel l 10) at (10*\columnWidth, -13.2){};
+	\draw (klingel l 10) -- (klingel a 10);
+	\draw (klingel l 10) -- (12*\columnWidth,-12);
+	\draw (klingel b 12) -- (12*\columnWidth,-12);
+
+	\node[DOSNHIL] (klingel m 1) at (1*\columnWidth, -14.2){};
+	\draw (klingel m 1) -- (propgen 1);
+	\draw (klingel m 1) -- (2*\columnWidth,-13.6);
+	\draw (klingel l 2) -- (2*\columnWidth,-13.6);
+
+	\node[DOS] (klingel m 3) at (3*\columnWidth, -14.2){};
+	\draw (klingel m 3) -- (propgen 3);
+	\draw (klingel m 3) -- (4*\columnWidth,-13.6);
+	\draw (klingel k 4) -- (4*\columnWidth,-13.6);
+
+	\node[DOS] (klingel m 5) at (5*\columnWidth, -14.2){};
+	\draw (klingel m 5) -- (propgen 5);
+	\draw (klingel m 5) -- (6*\columnWidth,-13.6);
+	\draw (klingel l 6) -- (6*\columnWidth,-13.6);
+
+	\node[DOSNHIL] (klingel m 7) at (7*\columnWidth, -14.2){};
+	\draw (klingel m 7) -- (propgen 7);
+	\draw (klingel m 7) -- (8*\columnWidth,-13.6);
+	\draw (klingel c 8) -- (8*\columnWidth,-13.6);
+	
+	\node[BUF] (klingel k 8) at (8*\columnWidth, -13){};
+
+
+	\node[DOSNHIL] (klingel m 9) at (9*\columnWidth, -14.2){};
+	\draw (klingel m 9) -- (propgen 9);
+	\draw (klingel m 9) -- (10*\columnWidth,-13.6);
+	\draw (klingel l 10) -- (10*\columnWidth,-13.6);
+
+	\node[DOS] (klingel m 11) at (11*\columnWidth, -14.2){};
+	\draw (klingel m 11) -- (propgen 11);
+	\draw (klingel m 11) -- (12*\columnWidth,-13.6);
+	\draw (klingel b 12) -- (12*\columnWidth,-13.6);
+
+	\node[BUF] (klingel k 12) at (12*\columnWidth, -9){};
+
+
+	\node[DOSNHIL] (klingel m 13) at (13*\columnWidth, -14.2){};
+	\draw (klingel m 13) -- (propgen 13);
+	\draw (klingel m 13) -- (14*\columnWidth,-13.6);
+	\draw (klingel a 14) -- (14*\columnWidth,-13.6);
+	
+	
+
+	% lowest level: XOR operators
+	\foreach \i in {0,1,4,6,7,9,12,13,15}
+	{
+		\node[XOR] (sumgen \i) at (\i*\columnWidth,-15.5){};
+		\pgfmathtruncatemacro\temp{15 - \i+1}
+		\node[] at (\i*\columnWidth,-16){$s_{\temp}$};
+	}
+	\foreach \i in {2,3,5,8,10,11,14}
+	{
+		\node[NXOR] (sumgen \i) at (\i*\columnWidth,-15.5){};
+		\pgfmathtruncatemacro\temp{15 - \i+1}
+		\node[] at (\i*\columnWidth,-16){$s_{\temp}$};
+	}
+
+	% propagate and structural lines
+	\foreach \i in {0,1,...,14}
+	{
+		\pgfmathtruncatemacro\j{\i+1}		
+		\draw[dashed] (propgen \i) -- (sumgen \j);
+	}
+
+ 	\foreach \i in {1,3,...,13}
+	{
+		\draw (sumgen \i) -- (klingel m \i);
+	}
+ 	\foreach \i in {2,6,10}
+	{
+		\draw (sumgen \i) -- (klingel l \i);
+	}
+	\draw (sumgen 0) -- (klingel d 0);
+	\draw (sumgen 4) -- (klingel k 4);
+	\draw (sumgen 8) -- (klingel c 8);
+	\draw (sumgen 12) -- (klingel b 12);
+	\draw (sumgen 14) -- (klingel a 14);
+	\draw (sumgen 15) -- (propgen 15);
+
+\end{tikzpicture}
+
+\end{document}

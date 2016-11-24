@@ -1,0 +1,71 @@
+****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******
+ Input File: /users/start2016/r0364010/temp_m2s/switchableInverter.sp
+ lic:
+ lic: FLEXlm: v11.2.1
+ lic: USER:   r0364010             HOSTNAME: pc-klas5-3.esat.kuleuven.be
+ lic: HOSTID: d4bed9e4ca61         PID:      24150
+ lic: Using FLEXlm license file:
+ lic: 27020@saturn
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 15-sep-2017/2016.06
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@saturn
+ lic:
+ init: begin read circuit files,  cpu clock=  1.50E-01
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/ad
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/ad
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/behave
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/bjt
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/burr_brn
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/comlinear
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/dio
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/fet
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/lin_tech
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/pci
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/signet
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/ti
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/tline
+       option search = /esat/micas-data/software/hspice_2015.06/hspice/
+                         parts/xilinx
+       option runlvl
+       option post
+       option nomod
+       option opts
+       option fast
+       option parhier = local
+ init: end read circuit files,  cpu clock=  1.50E-01 peak memory=       220 mb
+ init: begin check errors,  cpu clock=  1.50E-01
+ init: end check errors,  cpu clock=  1.70E-01 peak memory=       222 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.70E-01
+       establish matrix -- done,  cpu clock=  1.70E-01 peak memory=       223 mb
+       re-order matrix -- done,  cpu clock=  1.80E-01 peak memory=       224 mb
+ init: end setup matrix,  cpu clock=  2.00E-01 peak memory=       224 mb
+ dcop: begin dcop,  cpu clock=  2.00E-01
+ dcop: end dcop,  cpu clock=  4.50E-01 peak memory=       224 mb  tot_iter=     124
+ output: /users/start2016/r0364010/temp_m2s/switchableInverter.tr0
+ sweep: tran tran0    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock=  4.60E-01
+ tran: time= 1.0000E-09 tot_iter=      14 conv_iter=       7 cpu clock= 4.90E-01
+ tran: time= 2.0000E-09 tot_iter=     136 conv_iter=      49 cpu clock= 6.60E-01
+ tran: time= 3.0000E-09 tot_iter=     227 conv_iter=      82 cpu clock= 7.80E-01
+ tran: time= 4.0000E-09 tot_iter=     381 conv_iter=     136 cpu clock= 8.90E-01
+ tran: time= 5.0000E-09 tot_iter=     509 conv_iter=     178 cpu clock= 9.70E-01
+ tran: time= 6.1588E-09 tot_iter=     646 conv_iter=     223 cpu clock= 1.07E+00
+ tran: time= 7.0627E-09 tot_iter=     650 conv_iter=     225 cpu clock= 1.08E+00
+ tran: time= 8.0627E-09 tot_iter=     654 conv_iter=     227 cpu clock= 1.08E+00
+ tran: time= 9.0627E-09 tot_iter=     658 conv_iter=     229 cpu clock= 1.08E+00
+ tran: time= 1.0000E-08 tot_iter=     662 conv_iter=     231 cpu clock= 1.08E+00
+ sweep: tran tran0    end,  cpu clock=  1.08E+00 peak memory=       219 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

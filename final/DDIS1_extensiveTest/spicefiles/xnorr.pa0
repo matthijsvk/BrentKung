@@ -1,0 +1,11 @@
+       1 xxnor1.
+       2 xxnor1.xxor_0.
+       3 xxnor1.xnot_1.
+       4 xxnor1.xxor_0.xmna.
+       5 xxnor1.xxor_0.xmpa.
+       6 xxnor1.xxor_0.xmnb.
+       7 xxnor1.xxor_0.xmpb.
+       8 xxnor1.xxor_0.xmntrans.
+       9 xxnor1.xxor_0.xmptrans.
+      10 xxnor1.xnot_1.xm1.
+      11 xxnor1.xnot_1.xm2.

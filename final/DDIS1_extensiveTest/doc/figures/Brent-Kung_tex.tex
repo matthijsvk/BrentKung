@@ -1,0 +1,190 @@
+\documentclass[12pt]{book}
+
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usepackage[graphics,tightpage,active]{preview}
+\usepackage{pgfplots}
+\usepackage{circuitikz}
+\usetikzlibrary{arrows, positioning, calc,shapes}
+
+\setlength{\PreviewBorder}{5pt}
+\PreviewEnvironment{tikzpicture}
+
+\newcommand*{\extraOffset}{0.1}
+\newcommand*{\columnWidth}{1.8}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+	\node[draw,rectangle,minimum height=0.5cm,minimum width=0.8cm](propgen)at(0,2.5){};	
+	\draw (propgen) to[open] ++(1,0) node {$=$};
+
+	\node [and port] (genAND) at (5,3){};
+	\node [xor port] (propXOR) at (5,1.5){};
+
+	\node [right] (gen) at (genAND.out){$gen_i$};
+	\node [right] (prop) at (propXOR.out){$prop_i$};
+	\draw (genAND.in 1) -- ++(-0.4,0) node (gen1){} -- ++(-0.6,0) node[left]{$a_i$};
+	\draw (genAND.in 2) -- ++(-0.5,0) node (gen2){} -- ++(-0.5,0) node[left]{$b_i$};
+	\draw (gen1.center) |- (propXOR.in 1);	
+	\draw (gen2.center) |- (propXOR.in 2);
+
+
+	\node [draw,circle](klingel) at (8,2.5){};
+	\draw (klingel) to[open] ++(0.8,0) node {$=$};
+	
+	\node [or port] (klingelOR) at (15,3.7){};
+	\node [and port] (klingelAND2) at (13,1.5){};
+	\node [and port] (klingelAND1) at (13,3) {};
+
+	\draw (klingelAND1.in 1) -- ++(-1,0) node[left]{$g_{low}$};
+	\draw (klingelAND1.in 2)--++(-0.5,0)node(phigh){}--++(-0.5,0)node[left]{$p_{high}$};
+	\draw (phigh.center) |- (klingelAND2.in 1);
+	\draw (klingelAND2.in 2) -- ++(-1,0) node[left]{$p_{low}$};	
+	\draw (klingelOR.in 1) -- ++(-3,0) node[left]{$g_{high}$};
+	\draw (klingelOR.in 2) -- (klingelAND1.out);
+	\node [right] at (klingelOR.out){$g_{both}$};
+	\node [right] at (klingelAND2.out){$p_{both}$};
+
+	\node [draw,diamond](sumi) at (18,2.5){};
+	\draw (sumi) to[open] ++(0.8,0) node {$=$};
+
+	\node [xor port] (sum) at (23,2.5){};
+
+	\draw (sum.out)  -- ++( 0.5,0) node[right]{$s_i$};
+	\draw (sum.in 1) -- ++(-0.5,0) node[left]{$p_i$};
+	\draw (sum.in 2) -- ++(-0.5,0) node[left]{$g_{i-1:0}$};
+
+
+	\foreach \i in {0,1,...,15}	
+	{
+		\pgfmathtruncatemacro\temp{15 - \i}
+		\node[font=\small] at (\i*\columnWidth,0){$a_{\temp}$,$b_{\temp}$};
+		\node[draw,rectangle,minimum height=0.5cm,minimum width=0.8cm] 
+				(propgen \i) at (\i*\columnWidth,-1){};
+		\draw (\i*\columnWidth,-0.2) -- (propgen \i);
+	}
+	
+	\foreach \i in {0,2,...,14}
+	{
+		\pgfmathtruncatemacro\temp{\i + 1}
+		\node[draw,circle] (klingel a \i) at (\i*\columnWidth, -2){};
+		\draw (propgen \i) -- (klingel a \i);
+		\draw ({(\i+1)*\columnWidth}, -1.4) -- (klingel a \i);
+		\draw ({(\i+1)*\columnWidth}, -1.4) -- (propgen \temp);
+	}
+
+	\foreach \i in {0,4,...,12}
+	{
+		\pgfmathtruncatemacro\temp{\i + 2}
+		\node[draw,circle] (klingel b \i) at (\i*\columnWidth, -3.6){};
+		\draw (klingel a \i) -- (klingel b \i);
+		\draw ({(\i+2)*\columnWidth}, -2.4) -- (klingel b \i);
+		\draw ({(\i+2)*\columnWidth}, -2.4) -- (klingel a \temp);
+	}
+	\foreach \i in {0,8}
+	{
+		\pgfmathtruncatemacro\temp{\i + 4}
+		\node[draw,circle] (klingel c \i) at (\i*\columnWidth, -6.4){};
+		\draw (klingel b \i) -- (klingel c \i);
+		\draw ({(\i+4)*\columnWidth}, -4) -- (klingel c \i);
+		\draw ({(\i+4)*\columnWidth}, -4) -- (klingel b \temp);
+	}
+	\foreach \i in {0}
+	{
+		\pgfmathtruncatemacro\temp{\i + 8}
+		\node[draw,circle] (klingel d \i) at (\i*\columnWidth, -11.6){};
+		\draw (klingel c \i) -- (klingel d \i);
+		\draw ({(\i+8)*\columnWidth}, -6.8) -- (klingel d \i);
+		\draw ({(\i+8)*\columnWidth}, -6.8) -- (klingel c \temp);
+	}
+
+	\node[draw,circle] (klingel k 4) at (4*\columnWidth, -11.6){};
+	\draw (klingel k 4) -- (4*\columnWidth, -4);
+	\draw (klingel k 4) -- (8*\columnWidth,-9.2);
+	\draw (klingel c 8) -- (8*\columnWidth,-9.2);
+
+	\node[draw,circle] (klingel l 2) at (2*\columnWidth, -13.2){};
+	\draw (klingel l 2) -- (klingel a 2);
+	\draw (klingel l 2) -- (4*\columnWidth,-12);
+	\draw (klingel k 4) -- (4*\columnWidth,-12);
+
+	\node[draw,circle] (klingel l 6) at (6*\columnWidth, -13.2){};
+	\draw (klingel l 6) -- (klingel a 6);
+	\draw (klingel l 6) -- (8*\columnWidth,-12);
+	\draw (klingel c 8) -- (8*\columnWidth,-12);
+
+	\node[draw,circle] (klingel l 10) at (10*\columnWidth, -13.2){};
+	\draw (klingel l 10) -- (klingel a 10);
+	\draw (klingel l 10) -- (12*\columnWidth,-12);
+	\draw (klingel b 12) -- (12*\columnWidth,-12);
+
+	\node[draw,circle] (klingel m 1) at (1*\columnWidth, -14.2){};
+	\draw (klingel m 1) -- (propgen 1);
+	\draw (klingel m 1) -- (2*\columnWidth,-13.6);
+	\draw (klingel l 2) -- (2*\columnWidth,-13.6);
+
+	\node[draw,circle] (klingel m 3) at (3*\columnWidth, -14.2){};
+	\draw (klingel m 3) -- (propgen 3);
+	\draw (klingel m 3) -- (4*\columnWidth,-13.6);
+	\draw (klingel k 4) -- (4*\columnWidth,-13.6);
+
+	\node[draw,circle] (klingel m 5) at (5*\columnWidth, -14.2){};
+	\draw (klingel m 5) -- (propgen 5);
+	\draw (klingel m 5) -- (6*\columnWidth,-13.6);
+	\draw (klingel l 6) -- (6*\columnWidth,-13.6);
+
+	\node[draw,circle] (klingel m 7) at (7*\columnWidth, -14.2){};
+	\draw (klingel m 7) -- (propgen 7);
+	\draw (klingel m 7) -- (8*\columnWidth,-13.6);
+	\draw (klingel c 8) -- (8*\columnWidth,-13.6);
+
+	\node[draw,circle] (klingel m 9) at (9*\columnWidth, -14.2){};
+	\draw (klingel m 9) -- (propgen 9);
+	\draw (klingel m 9) -- (10*\columnWidth,-13.6);
+	\draw (klingel l 10) -- (10*\columnWidth,-13.6);
+
+	\node[draw,circle] (klingel m 11) at (11*\columnWidth, -14.2){};
+	\draw (klingel m 11) -- (propgen 11);
+	\draw (klingel m 11) -- (12*\columnWidth,-13.6);
+	\draw (klingel b 12) -- (12*\columnWidth,-13.6);
+
+	\node[draw,circle] (klingel m 13) at (13*\columnWidth, -14.2){};
+	\draw (klingel m 13) -- (propgen 13);
+	\draw (klingel m 13) -- (14*\columnWidth,-13.6);
+	\draw (klingel a 14) -- (14*\columnWidth,-13.6);
+
+	\foreach \i in {0,1,...,15}
+	{
+		\node[draw,diamond] (sumgen \i) at (\i*\columnWidth,-15.5){};
+		\pgfmathtruncatemacro\temp{15 - \i+1}
+		\node[] at (\i*\columnWidth,-16){$s_{\temp}$};
+	}
+
+	\foreach \i in {0,1,...,14}
+	{
+		\pgfmathtruncatemacro\j{\i+1}		
+		\draw[dashed] (propgen \i) -- (sumgen \j);
+	}
+
+ 	\foreach \i in {1,3,...,13}
+	{
+		\draw (sumgen \i) -- (klingel m \i);
+	}
+ 	\foreach \i in {2,6,10}
+	{
+		\draw (sumgen \i) -- (klingel l \i);
+	}
+	\draw (sumgen 0) -- (klingel d 0);
+	\draw (sumgen 4) -- (klingel k 4);
+	\draw (sumgen 8) -- (klingel c 8);
+	\draw (sumgen 12) -- (klingel b 12);
+	\draw (sumgen 14) -- (klingel a 14);
+	\draw (sumgen 15) -- (propgen 15);
+
+	
+
+\end{tikzpicture}
+
+\end{document}

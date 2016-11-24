@@ -1,0 +1,63 @@
+**********************************
+**** INVETER CHAIN
+**********************************
+.parhier=local
+.lib 'tech_wrapper.lib' mc
+
+.param freq = 1e9
+VIN 1 vss PULSE (1 0 0 1e-12 1e-12 '1/(2*freq)' '1/freq')
+VDD 10 vss 1
+vss vss 0 0 
+
+.SUBCKT MYNOT input output vdd vss multfac='1'
+xM1 output input vss vss MOSN w='multfac*120e-9' l='45e-9'
+xM2 output input vdd vdd MOSP w='multfac*2*120e-9' l='45e-9'
+.ENDS MYNOT
+
+.SUBCKT MYOR in1 in2 out vdd vss
+xM1 in2 in1 out out MOSP
+xM2 vdd in1 out out MOSN
+.ENDS MYOR
+
+.SUBCKT MYXOR in1 in2 vdd out vss 
+xM1 vdd in1 d1 d1 MOSN
+xM2 out in2 d1 d1 MOSP
+xM3 d2 in1 vdd vdd MOSP
+xM4 d2 in2 out out MOSN
+*
+xM5 d3 in1 out out MOSP
+xM7 vss in2 d3 d3 MOSP
+xM6 out in1 d4 d4 MOSN
+xM8 d4 in2 vss vss MOSN
+.ENDS MYXOR
+
+.SUBCKT MYXOR2 in1 in2 vdd out vss
+xM4 nin2 in2 vss vss MOSN
+xM3 nin2 in2 vdd vdd MOSP
+xM1 out in1 in2 in2 MOSP
+xM2 nin2 in1 out out MOSN
+.ENDS MYXOR2
+
+.param mfac=10
+Xn1 1 2 10 vss MYNOT multfac='mfac'
+Xn2 2 3 10 vss MYNOT multfac='mfac'
+Xn3 3 4 10 vss MYNOT multfac='mfac'
+Xn4 4 5 10 vss MYNOT multfac='mfac'
+Xn5 5 6 10 vss MYNOT multfac='mfac'
+Xn6 6 7 10 vss MYNOT multfac='mfac'
+*Xor1 1 6 8 10 vss MYOR
+*Xxor1 1 6 9 10 vss MYXOR
+*Xxor2 6 7 11 10 vss MYXOR2
+
+
+
+
+
+*uncomment for nominal simulation
+*.TRAN '1/(freq*1000)' '10*1/freq' uic
+*uncomment for monte carlo simulation
+.TRAN '1/(freq*1000)' '10*1/freq' sweep monte='30' uic 
+.option post=1
+
+.END
+

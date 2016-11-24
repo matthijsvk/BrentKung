@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.12.15)  23 NOV 2016 16:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.12.15)  24 NOV 2016 14:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -857,13 +857,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 
 (./reportMatthijsVanKeirsbilck.aux
 
-LaTeX Warning: Label `DOI' multiply defined.
-
-
-LaTeX Warning: Label `DONHIL' multiply defined.
-
-
 LaTeX Warning: Label `adderSchematic' multiply defined.
+
+
+LaTeX Warning: Label `adderEDP' multiply defined.
 
 )
 \openout1 = `reportMatthijsVanKeirsbilck.aux'.
@@ -972,147 +969,159 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
 
-<figures/efficientXOR.png, id=44, 158.84344pt x 114.4275pt>
+<figures/brentKungSimpleBlocksStructure.png, id=48, 1532.72626pt x 929.4725pt>
+File: figures/brentKungSimpleBlocksStructure.png Graphic file (type png)
+
+<use figures/brentKungSimpleBlocksStructure.png>
+Package pdftex.def Info: figures/brentKungSimpleBlocksStructure.png used on inp
+ut line 69.
+(pdftex.def)             Requested size: 212.4126pt x 128.80627pt.
+
+<figures/brentKungSimpleBlocks.png, id=52, 1324.95pt x 599.23875pt>
+File: figures/brentKungSimpleBlocks.png Graphic file (type png)
+
+<use figures/brentKungSimpleBlocks.png>
+Package pdftex.def Info: figures/brentKungSimpleBlocks.png used on input line 7
+5.
+(pdftex.def)             Requested size: 212.4126pt x 96.06302pt.
+ [1
+
+{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/brentK
+ungSimpleBlocksStructure.png> <./figures/brentKungSimpleBlocks.png>]
+<figures/efficientXOR.png, id=78, 158.84344pt x 114.4275pt>
 File: figures/efficientXOR.png Graphic file (type png)
 
 <use figures/efficientXOR.png>
-Package pdftex.def Info: figures/efficientXOR.png used on input line 90.
+Package pdftex.def Info: figures/efficientXOR.png used on input line 101.
 (pdftex.def)             Requested size: 158.84305pt x 114.42722pt.
- [1
-
-{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./figures/ef
-ficientXOR.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3] <figures/do.jpg, id=86, 4175.6pt x 3131.7pt>
+ [2 <./figures/efficientXOR.png>] [3] [4]
+<figures/do.jpg, id=106, 4175.6pt x 3131.7pt>
 File: figures/do.jpg Graphic file (type jpg)
  <use figures/do.jpg>
-Package pdftex.def Info: figures/do.jpg used on input line 232.
+Package pdftex.def Info: figures/do.jpg used on input line 245.
 (pdftex.def)             Requested size: 212.4126pt x 159.27017pt.
 
-<figures/doi.jpg, id=87, 4175.6pt x 3131.7pt>
+<figures/doi.jpg, id=107, 4175.6pt x 3131.7pt>
 File: figures/doi.jpg Graphic file (type jpg)
  <use figures/doi.jpg>
-Package pdftex.def Info: figures/doi.jpg used on input line 238.
+Package pdftex.def Info: figures/doi.jpg used on input line 251.
 (pdftex.def)             Requested size: 212.4126pt x 159.27017pt.
 
-<figures/dos.jpg, id=88, 4175.6pt x 3131.7pt>
+<figures/dos.jpg, id=108, 4175.6pt x 3131.7pt>
 File: figures/dos.jpg Graphic file (type jpg)
  <use figures/dos.jpg>
-Package pdftex.def Info: figures/dos.jpg used on input line 248.
+Package pdftex.def Info: figures/dos.jpg used on input line 261.
 (pdftex.def)             Requested size: 212.4126pt x 159.27017pt.
 
-<figures/dosi.jpg, id=89, 4175.6pt x 3131.7pt>
+<figures/dosi.jpg, id=109, 4175.6pt x 3131.7pt>
 File: figures/dosi.jpg Graphic file (type jpg)
  <use figures/dosi.jpg>
-Package pdftex.def Info: figures/dosi.jpg used on input line 254.
+Package pdftex.def Info: figures/dosi.jpg used on input line 267.
 (pdftex.def)             Requested size: 212.4126pt x 159.27017pt.
 
-<figures/dosnhil.jpg, id=90, 4175.6pt x 3131.7pt>
+<figures/dosnhil.jpg, id=110, 4175.6pt x 3131.7pt>
 File: figures/dosnhil.jpg Graphic file (type jpg)
  <use figures/dosnhil.jpg>
-Package pdftex.def Info: figures/dosnhil.jpg used on input line 264.
+Package pdftex.def Info: figures/dosnhil.jpg used on input line 277.
 (pdftex.def)             Requested size: 212.4126pt x 159.27017pt.
 
-<figures/dosihnl.jpg, id=91, 4175.6pt x 3131.7pt>
+<figures/dosihnl.jpg, id=111, 4175.6pt x 3131.7pt>
 File: figures/dosihnl.jpg Graphic file (type jpg)
  <use figures/dosihnl.jpg>
-Package pdftex.def Info: figures/dosihnl.jpg used on input line 270.
+Package pdftex.def Info: figures/dosihnl.jpg used on input line 283.
 (pdftex.def)             Requested size: 212.4126pt x 159.27017pt.
 
+<figures/adderLegend.pdf, id=112, 487.77432pt x 100.29771pt>
+File: figures/adderLegend.pdf Graphic file (type pdf)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<use figures/adderLegend.pdf>
+Package pdftex.def Info: figures/adderLegend.pdf used on input line 293.
+(pdftex.def)             Requested size: 424.84402pt x 79.50214pt.
+ [5 <./figures/do.jpg> <./figures/doi.jpg> <./figures/dos.jpg> <./figures/dosi.
+jpg> <./figures/dosnhil.jpg> <./figures/dosihnl.jpg>] <figures/adderStructure.p
+df, id=121, 813.3366pt x 481.42659pt>
+File: figures/adderStructure.pdf Graphic file (type pdf)
 
-<figures/modifiedBrentKung_tex.pdf, id=92, 813.3366pt x 594.2521pt>
-File: figures/modifiedBrentKung_tex.pdf Graphic file (type pdf)
+<use figures/adderStructure.pdf>
+Package pdftex.def Info: figures/adderStructure.pdf used on input line 300.
+(pdftex.def)             Requested size: 813.33461pt x 481.42542pt.
 
-<use figures/modifiedBrentKung_tex.pdf>
-Package pdftex.def Info: figures/modifiedBrentKung_tex.pdf used on input line 2
-79.
-(pdftex.def)             Requested size: 813.33461pt x 594.25066pt.
- [4 <./figures/do.jpg> <./figures/doi.jpg> <./figures/dos.jpg> <./figures/dosi.
-jpg>]
-Overfull \vbox (154.00833pt too high) has occurred while \output is active []
-
-
-[5 <./figures/dosnhil.jpg> <./figures/dosihnl.jpg> <./figures/modifiedBrentKung
-_tex.pdf>] <figures/EDPlabeled.png, id=145, 427.5975pt x 308.65312pt>
+<figures/EDPlabeled.png, id=122, 427.5975pt x 308.65312pt>
 File: figures/EDPlabeled.png Graphic file (type png)
 
 <use figures/EDPlabeled.png>
-Package pdftex.def Info: figures/EDPlabeled.png used on input line 287.
+Package pdftex.def Info: figures/EDPlabeled.png used on input line 309.
 (pdftex.def)             Requested size: 424.82523pt x 306.65074pt.
+ [6 <./figures/adderLegend.pdf> <./figures/adderStructure.pdf>]
+<figures/dynamicStaticEnergy.png, id=164, 1038.12843pt x 356.83313pt>
+File: figures/dynamicStaticEnergy.png Graphic file (type png)
 
-Overfull \hbox (68.51978pt too wide) in paragraph at lines 298--302
+<use figures/dynamicStaticEnergy.png>
+Package pdftex.def Info: figures/dynamicStaticEnergy.png used on input line 318
+.
+(pdftex.def)             Requested size: 424.82523pt x 146.0194pt.
+
+Overfull \hbox (68.51978pt too wide) in paragraph at lines 329--333
 \OT1/cmtt/m/n/10 https://tams-www.informatik.uni-hamburg.de/applets/hades/webde
 mos/05-switched/40-cmos/xor-tgate.html 
  []
 
 
-Overfull \hbox (6.36028pt too wide) in paragraph at lines 304--308
+Overfull \hbox (6.36028pt too wide) in paragraph at lines 335--339
 \OT1/cmtt/m/n/10 https://shareok.org/bitstream/handle/11244/25747/Gundi[]okstat
 e[]0664M[]13905.pdf?sequence=1 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
-[6 <./figures/EDPlabeled.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
+[7 <./figures/EDPlabeled.png (PNG copy)> <./figures/dynamicStaticEnergy.png (PN
+G copy)>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
  (./reportMatthijsVanKeirsbilck.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 314.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
 Package rerunfilecheck Info: File `reportMatthijsVanKeirsbilck.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: C117F29D111689D639CE092CF7F47865;503.
+(rerunfilecheck)             Checksum: A0EEB1DE6FB1CC85B82487BFD7C6C090;684.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
  ) 
 Here is how much of TeX's memory you used:
- 28250 strings out of 495063
- 646915 string characters out of 3182200
- 852461 words of memory out of 3000000
- 30868 multiletter control sequences out of 15000+200000
+ 28282 strings out of 495063
+ 647772 string characters out of 3182200
+ 850806 words of memory out of 3000000
+ 30894 multiletter control sequences out of 15000+200000
  12316 words of font info for 48 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,9n,74p,672b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.13} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
- exist, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on reportMatthijsVanKeirsbilck.pdf (6 pages, 1216292 bytes).
+ 56i,8n,74p,672b,710s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on reportMatthijsVanKeirsbilck.pdf (8 pages, 1694303 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 
